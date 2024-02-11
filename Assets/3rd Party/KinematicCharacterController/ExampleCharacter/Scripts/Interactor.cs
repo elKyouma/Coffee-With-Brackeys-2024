@@ -72,7 +72,7 @@ public class Interactor : MonoBehaviour
         currentSelection = FindObjectViaRayCast();
 
         if (currentSelection == null)
-            currentSelection = FindObjectViaRayCast();
+            currentSelection = FindObjectClosestToCursor();
 
         if (currentSelection != previousSelection)
         {

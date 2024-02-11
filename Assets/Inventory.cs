@@ -7,7 +7,6 @@ public class Inventory : MonoBehaviour
 {
     private static IItem item;
     private static GameObject itemObj;
-
     public static void PickUpItem(IItem newItem, GameObject newItemObj)
     {
         if (item == null)
