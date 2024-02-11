@@ -1,21 +1,23 @@
 using UnityEngine;
 
-public class Billboard : MonoBehaviour 
+public class Billboard : MonoBehaviour
 {
+    [SerializeField]
     private Camera mainCamera;
     [SerializeField] bool reversed;
 
-    private void Start() 
+    void Start()
     {
         mainCamera = Camera.main;
     }
 
-    private void LateUpdate() 
+    void Update()
     {
-        transform.LookAt(transform.position + mainCamera.transform.forward);
+        transform.LookAt(mainCamera.transform);
         if (reversed)
         {
             transform.Rotate(0, 180, 0);
         }
     }
+
 }
