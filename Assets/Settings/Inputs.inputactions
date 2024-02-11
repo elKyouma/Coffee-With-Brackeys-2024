@@ -176,6 +176,45 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "PuzzleMode",
+            "id": "517c6e0c-fc12-43a1-ad7e-a525f82caef3",
+            "actions": [
+                {
+                    "name": "Leave",
+                    "type": "Button",
+                    "id": "7ab5d59d-c1b4-4dc2-8c41-8448e9c1b667",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f41538af-9b26-40f3-9c26-e93d0e0f61f5",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Leave",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "24ea31ad-2536-4139-9d5d-365e59101e18",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Leave",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
