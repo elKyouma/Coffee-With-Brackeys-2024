@@ -16,8 +16,7 @@ public class POIActivator : MonoBehaviour, IInteractable
         Interactor.DeleteInteractable(transform);
     }
 
-    public void Interact() => POIObject.SetActive(true);//!POEObject.activeSelf);
-
+    public void Interact() => GameManager.Instance.EnterPuzzleMode(POIObject);
     public void Selected()
     {
     }

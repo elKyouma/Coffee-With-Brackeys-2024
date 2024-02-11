@@ -69,6 +69,13 @@ namespace KinematicCharacterController.Examples
             if (context.ReadValue<float>() > 0.5f) OnItemUseEvent?.Invoke();
         }
 
+        public void OnLeavePuzzleMode(InputAction.CallbackContext context)
+        {
+            if (context.ReadValue<float>() < 0.5f) return;
+
+            GameManager.Instance.ExitPuzzleMode();
+        }
+
         private void HandleCameraInput()
         {
             // Create the look input vector for the camera

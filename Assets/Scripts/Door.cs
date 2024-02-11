@@ -31,7 +31,7 @@ public class Door : MonoBehaviour, IInteractable
     public void Interact()
     {
         float rotateAngles = angles;
-        if(Vector3.Dot(transform.forward, transform.position - GameManager.Instance.Player.position) > 0f)
+        if(Vector3.Dot(transform.forward, transform.position - GameManager.Instance.PlayerCharacter.position) > 0f)
             rotateAngles = -rotateAngles;
 
         if(transform.rotation.eulerAngles.y == startAngle)
