@@ -6,7 +6,7 @@ using KinematicCharacterController.Examples;
 public class Inventory : MonoBehaviour
 {
     private Player player;
-    private Item item;
+    private IItem item;
 
     private void Start()
     {
