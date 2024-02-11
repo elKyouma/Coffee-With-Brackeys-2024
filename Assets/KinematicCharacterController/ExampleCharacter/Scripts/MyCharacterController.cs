@@ -40,7 +40,7 @@ namespace KinematicCharacterController.Examples
         TowardsGroundSlopeAndGravity,
     }
 
-    public class ExampleCharacterController : MonoBehaviour, ICharacterController
+    public class MyCharacterController : MonoBehaviour, ICharacterController
     {
         public KinematicCharacterMotor Motor;
 

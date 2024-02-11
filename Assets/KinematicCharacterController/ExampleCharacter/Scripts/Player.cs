@@ -4,20 +4,26 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using KinematicCharacterController;
 using KinematicCharacterController.Examples;
+using System;
 
 namespace KinematicCharacterController.Examples
 {
-    public class ExamplePlayer : MonoBehaviour
+    public class Player : MonoBehaviour
     {
-        private ExampleCharacterController character;
-        public ExampleCharacterCamera characterCamera;
+        private MyCharacterController character;
+        private MyCharacterCamera characterCamera;
 
         private Vector2 movement;
         private Vector2 cameraMovement;
 
+        public static event Action OnInteraction;
+        public static event Action OnItemUseEvent;
+ 
+
         private void Start()
         {
-            character = GetComponent<ExampleCharacterController>();
+            character = GetComponentInChildren<MyCharacterController>();
+            characterCamera = GetComponentInChildren<MyCharacterCamera>();
 
             Cursor.lockState = CursorLockMode.Locked;
 
@@ -63,12 +69,12 @@ namespace KinematicCharacterController.Examples
 
         public void OnInteract(InputAction.CallbackContext context)
         {
-            var value = context.ReadValue<float>() > 0.5f;
+            if (context.ReadValue<float>() > 0.5f) OnInteraction?.Invoke();
         }
 
         public void OnItemUse(InputAction.CallbackContext context)
         {
-            var value = context.ReadValue<float>() > 0.5f;
+            if (context.ReadValue<float>() > 0.5f) OnItemUseEvent?.Invoke();
         }
 
         private void HandleCameraInput()
