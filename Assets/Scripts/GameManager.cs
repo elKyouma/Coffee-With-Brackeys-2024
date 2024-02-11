@@ -20,8 +20,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Transform player;
     [SerializeField]
+    private Transform handObject;
+    [SerializeField]
     private Transform playerCharacter;
     public Transform PlayerCharacter { get { return playerCharacter; }}
+    public Transform HandObject { get { return handObject; } }
 
     public void EnterPuzzleMode(GameObject go)
     {
