@@ -645,7 +645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8bfda392d20ba9438a7c2e612fbfc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1946161108}
+  player: {fileID: 711698544}
+  playerCharacter: {fileID: 1946161108}
 --- !u!4 &684779836
 Transform:
   m_ObjectHideFlags: 0
@@ -791,6 +792,7 @@ GameObject:
   - component: {fileID: 711698543}
   - component: {fileID: 711698542}
   - component: {fileID: 711698545}
+  - component: {fileID: 711698546}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -900,7 +902,19 @@ MonoBehaviour:
     m_ActionId: ae42f600-e63b-4145-9b74-3d8b19bb384b
     m_ActionName: Movement/ItemUse[/Mouse/leftButton]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 711698542}
+        m_TargetAssemblyTypeName: KinematicCharacterController.Examples.Player, Assembly-CSharp
+        m_MethodName: OnLeavePuzzleMode
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 7ab5d59d-c1b4-4dc2-8c41-8448e9c1b667
     m_ActionName: PuzzleMode/Leave[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
@@ -939,6 +953,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Threshold: 0.97
+--- !u!114 &711698546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711698541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d4674bbd74b6144bdd85e9b509df54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &748668627
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f24253a8d8a90394f958622596f16521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  POIObject: {fileID: 0}
+  POIObject: {fileID: 77052065}
 --- !u!65 &748668629
 BoxCollider:
   m_ObjectHideFlags: 0
