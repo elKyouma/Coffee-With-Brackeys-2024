@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 {
-    [SerializeField] private Camera playerCamera;
     [SerializeField] private float Threshold = 0.97f;
     
-    private List<Transform> interactables;
-    private Transform _selection = null;
-
+    private Camera playerCamera;
+    private static List<Transform> interactables;
+    private Transform previousSelection = null;
+    private Transform currentSelection = null;
     private bool interact = false;
 
     private void OnEnable()
@@ -23,60 +23,35 @@ public class Interactor : MonoBehaviour
         Player.OnInteraction -= Interact;
     }
 
-    private void Start()
+    private void Awake()
     {
+        playerCamera = GetComponentInChildren<Camera>();
         interactables = new List<Transform>(); 
     }
 
-    private void Update()
+    Transform FindObjectClosestToCursor()
     {
-        Transform selection = null;
-        float closest = 0f;
+        Transform result = null;
 
-        for(int i = 0; i < interactables.Count; i++)
+        float closest = 0f; 
+        for (int i = 0; i < interactables.Count; i++)
         {
             Vector3 vector1 = playerCamera.transform.forward;
             Vector3 vector2 = interactables[i].position - playerCamera.transform.position;
 
             float lookPercentage = Vector3.Dot(vector1.normalized, vector2.normalized);
-            
-            if(lookPercentage > closest && lookPercentage >= Threshold)
-            {
-                //Debug.Log(lookPercentage);
-                closest = lookPercentage;
-                
 
-                selection = interactables[i];
+            if (lookPercentage > closest && lookPercentage >= Threshold)
+            {
+                closest = lookPercentage;
+                result = interactables[i];
             }
 
         }
-        if(_selection != null && selection != _selection)
-            _selection.GetComponent<IInteractable>().Unselected();
-        
-        if (selection != null && selection != _selection)
-            selection.GetComponent<IInteractable>().Selected();
-
-        if(selection != null && interact == true)
-        {
-            selection.GetComponent<IInteractable>().Interact();
-        }
-
-        _selection = selection;
-
-
+        return result;
     }
 
-    public void AddInteractable(Transform interactable)
-    {
-        interactables.Add(interactable);
-    }
-
-    public void DeleteInteractable(Transform interactable)
-    {
-        interactables.Remove(interactable);
-    }
-
-    private void Interact()
+    Transform FindObjectViaRayCast()
     {
         Vector2 screenCentre = new Vector2(Screen.width / 2, Screen.height / 2);
         var ray = playerCamera.ScreenPointToRay(screenCentre);
@@ -85,15 +60,37 @@ public class Interactor : MonoBehaviour
         {
             var selection = hit.transform;
             if (selection.GetComponent<IInteractable>() != null)
-            {
-                if (_selection != selection)
-                {
-                    if (_selection != null)
-                        _selection.GetComponent<IInteractable>().Unselected();
-                    selection.GetComponent<IInteractable>().Selected();
-                }
-                _selection = selection;
-            }
+                return selection;
         }
+
+        return null;
+    }
+
+    private void Update()
+    {
+        previousSelection = currentSelection;
+        currentSelection = FindObjectViaRayCast();
+
+        if (currentSelection == null)
+            currentSelection = FindObjectViaRayCast();
+
+        if (currentSelection != previousSelection)
+        {
+            previousSelection?.GetComponent<IInteractable>().Unselected();
+            currentSelection?.GetComponent<IInteractable>().Selected();
+        }
+
+        if(interact)
+            currentSelection?.GetComponent<IInteractable>().Interact();
+
+    }
+
+    public static void AddInteractable(Transform interactable) => interactables.Add(interactable);
+    public static void DeleteInteractable(Transform interactable) => interactables.Remove(interactable);
+
+    private void Interact()
+    {
+        previousSelection?.GetComponent<IInteractable>().Interact();
+
     }
 }
