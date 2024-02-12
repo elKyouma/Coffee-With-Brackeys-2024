@@ -586,16 +586,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422828190}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!82 &476750278 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6405153164661266264, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-  m_PrefabInstance: {fileID: 4727391226505078619}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &476750280 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 26112653216024038, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-  m_PrefabInstance: {fileID: 4727391226505078619}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &635289796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +995,18 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 7ab5d59d-c1b4-4dc2-8c41-8448e9c1b667
     m_ActionName: PuzzleMode/Leave[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 20f5c4b0-2644-4ff2-b527-8ff5556079b5
+    m_ActionName: Movement/Inspect Mode[/Keyboard/i]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aa9e1541-e8ae-4773-8326-758cd0f8301e
+    m_ActionName: PuzzleMode/MousePos[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cbadce40-9dae-4f52-9180-f17f0b3de771
+    m_ActionName: InspectorMode/Leave[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -1173,107 +1175,6 @@ Transform:
   - {fileID: 77052067}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &790723504 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7064344789895243292, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-  m_PrefabInstance: {fileID: 4727391226505078619}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &790723507
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790723504}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 636c12638dd4c9a47bd1e2122548d709, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &894597196
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,6 +1987,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 7ab5d59d-c1b4-4dc2-8c41-8448e9c1b667
     m_ActionName: PuzzleMode/Leave[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 20f5c4b0-2644-4ff2-b527-8ff5556079b5
+    m_ActionName: Movement/Inspect Mode[/Keyboard/i]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aa9e1541-e8ae-4773-8326-758cd0f8301e
+    m_ActionName: PuzzleMode/MousePos[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cbadce40-9dae-4f52-9180-f17f0b3de771
+    m_ActionName: InspectorMode/Leave[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -2225,48 +2138,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 26112653216024038, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
       propertyPath: Mute
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 26112653216024038, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 214f678fd562fcf4ebd6775ee8d50d3e, type: 3}
-    - target: {fileID: 2185731288703841219, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: musicSource
-      value: 
-      objectReference: {fileID: 476750278}
-    - target: {fileID: 2185731288703841219, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: musicVolume
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2185731288703841219, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: ambientSource
-      value: 
-      objectReference: {fileID: 476750278}
-    - target: {fileID: 2185731288703841219, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: ambienceSource
-      value: 
-      objectReference: {fileID: 476750280}
-    - target: {fileID: 2185731288703841219, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: ambienceVolume
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2185731288703841219, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: footStepSource
-      value: 
-      objectReference: {fileID: 790723507}
-    - target: {fileID: 2185731288703841219, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: backgroundSource
-      value: 
-      objectReference: {fileID: 476750280}
     - target: {fileID: 6405153164661266264, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
       propertyPath: Mute
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6405153164661266264, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 35d4c00697c17c444a4f4dc77dd43f7c, type: 3}
     - target: {fileID: 7064344789895243292, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
       propertyPath: m_Name
       value: SoundManager
@@ -2314,10 +2191,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7064344789895243292, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 790723507}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
