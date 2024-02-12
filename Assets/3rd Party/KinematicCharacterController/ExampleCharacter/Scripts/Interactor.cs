@@ -2,6 +2,7 @@ using KinematicCharacterController.Examples;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Interactor : MonoBehaviour
 {
@@ -54,7 +55,12 @@ public class Interactor : MonoBehaviour
     Transform FindObjectViaRayCast()
     {
         Vector2 screenCentre = new Vector2(Screen.width / 2, Screen.height / 2);
-        var ray = playerCamera.ScreenPointToRay(screenCentre);
+        Ray ray;
+        if(GameManager.Instance.IsInPuzzleMode)
+            ray = playerCamera.ScreenPointToRay(Player.MousePosition);
+        else
+            ray = playerCamera.ScreenPointToRay(screenCentre);
+
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
