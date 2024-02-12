@@ -23,11 +23,8 @@ public abstract class Item : MonoBehaviour, IInteractable
         outlineFillMaterial.name = "OutlineFill (Instance)";
 
         // Disable Rotatable if exists
-        var rotatable = GetComponent<Rotatable>();
-        if (rotatable != null)
-        {
-            rotatable.enabled = false;
-        }
+        if (GetComponentInChildren<Rotatable>())
+            GetComponentInChildren<Rotatable>().rotateAllowed = false;
     }
 
     private void OnEnable()

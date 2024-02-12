@@ -56,10 +56,7 @@ public class GameManager : MonoBehaviour
         // heldObject.transform.position = inspectedObjectTransform.position;
         StartCoroutine(MoveToInspectedPosition(heldObject, inspectedObjectTransform, 0.5f));
         blurVolume.enabled = true;
-        foreach (var children in inspectedObjectTransform.GetComponentsInChildren<Rotatable>())
-        {
-            children.enabled = true;
-        }
+        heldObject.GetComponentInChildren<Rotatable>().rotateAllowed = true;
     }
     public void ExitInspectorMode()
     {
@@ -69,10 +66,7 @@ public class GameManager : MonoBehaviour
         // reset rotation
         heldObject.transform.rotation = handObject.rotation;
         blurVolume.enabled = false;
-        foreach (var children in inspectedObjectTransform.GetComponentsInChildren<Rotatable>())
-        {
-            children.enabled = false;
-        }
+        heldObject.GetComponentInChildren<Rotatable>().rotateAllowed = false;
     }
 
     IEnumerator MoveToInspectedPosition(GameObject objectToMove, Transform targetTransform, float duration)
