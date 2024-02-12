@@ -61,8 +61,7 @@ namespace KinematicCharacterController.Examples
         public void OnCameraMove(InputAction.CallbackContext context) => cameraMovement = context.ReadValue<Vector2>();
         public void OnInteract(InputAction.CallbackContext context)
         {
-            Debug.Log("INPUUUTY");
-            if (context.started) { OnInteraction?.Invoke(); Debug.Log("TAK"); }
+            if (context.started) OnInteraction?.Invoke();
         }
 
         public void OnItemUse(InputAction.CallbackContext context)
