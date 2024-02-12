@@ -22,7 +22,7 @@ public class SoundBox : MonoBehaviour
 
     IEnumerator SoundBoxDestruction(float time)
     {
-        yield return new WaitForSeconds(time);
+        yield return new WaitForSeconds(time + 0.1f);
         Destroy(gameObject);
     }
 }
