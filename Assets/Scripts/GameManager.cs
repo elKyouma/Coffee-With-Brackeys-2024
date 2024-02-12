@@ -33,10 +33,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Volume blurVolume;
 
+    public bool IsInPuzzleMode { get; private set; }
+
     public void EnterPuzzleMode(GameObject go)
     {
         if (go == null) return;
 
+        Cursor.lockState = CursorLockMode.None;
+
+        IsInPuzzleMode = true;
         ActivePOI = go;
         ActivePOI.SetActive(true);
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(puzzleModeActionMap);
@@ -44,6 +49,10 @@ public class GameManager : MonoBehaviour
 
     public void ExitPuzzleMode()
     {
+        IsInPuzzleMode = false;
+
+        Cursor.lockState = CursorLockMode.Locked;
+
         ActivePOI.SetActive(false);
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(defaultActionMap);
         ActivePOI = null;

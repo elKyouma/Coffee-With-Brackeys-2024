@@ -21,6 +21,9 @@ namespace KinematicCharacterController.Examples
         public static event Action OnInspection;
 
 
+        private static Vector2 mousePos = Vector2.zero;
+        public static Vector2 MousePosition { get { return mousePos; } private set { mousePos = value; } }
+
         private void Start()
         {
             character = GetComponentInChildren<MyCharacterController>();
@@ -38,11 +41,6 @@ namespace KinematicCharacterController.Examples
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-            }
-
             HandleCharacterInput();
         }
 
@@ -58,6 +56,7 @@ namespace KinematicCharacterController.Examples
             HandleCameraInput();
         }
 
+        public void OnMousePos(InputAction.CallbackContext context) => MousePosition = context.ReadValue<Vector2>();
         public void OnMove(InputAction.CallbackContext context) => movement = context.ReadValue<Vector2>();
         public void OnCameraMove(InputAction.CallbackContext context) => cameraMovement = context.ReadValue<Vector2>();
         public void OnInteract(InputAction.CallbackContext context)
