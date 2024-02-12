@@ -7,6 +7,8 @@ public class CombinationBlockScript : MonoBehaviour
 {
     public string value;
     private string[] cycleValues = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+
+    [SerializeField]
     private int currentIndex = 0;
     [SerializeField]
     private int defaultIndex = 0;
@@ -14,6 +16,8 @@ public class CombinationBlockScript : MonoBehaviour
     private CombinationPadlockScript padlock;
     [SerializeField]
     private float rotationTime = 0.5f;
+    [SerializeField]
+    private float currentRotation;
 
     //Audio
 
@@ -41,7 +45,9 @@ public class CombinationBlockScript : MonoBehaviour
     {
         SoundManager.Instance.PlaySound(rotateSound, transform.position);
         var deltaAngle = 360 / cycleValues.Length;
-        var currentRotation = transform.rotation.eulerAngles.y;
-        transform.LeanRotateY(currentRotation + deltaAngle, rotationTime);
+        Debug.Log("deltaAngle: " + deltaAngle);
+        LeanTween.rotateLocal(gameObject, new Vector3(0, deltaAngle * currentIndex), rotationTime);
+        // currentRotation = targetRotation;
+        // yield return new WaitForSeconds(rotationTime);
     }
 }
