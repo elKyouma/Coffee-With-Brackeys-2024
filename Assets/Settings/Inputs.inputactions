@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Inspect Mode",
+                    "type": "Button",
+                    "id": "20f5c4b0-2644-4ff2-b527-8ff5556079b5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -174,6 +183,17 @@
                     "action": "ItemUse",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c950205f-47b7-4eec-a506-7cbd1e7c5808",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Inspect Mode",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -206,6 +226,45 @@
                 {
                     "name": "",
                     "id": "24ea31ad-2536-4139-9d5d-365e59101e18",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Leave",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "InspectorMode",
+            "id": "68c77a79-5864-484d-ace9-51d0027c46f7",
+            "actions": [
+                {
+                    "name": "Leave",
+                    "type": "Button",
+                    "id": "cbadce40-9dae-4f52-9180-f17f0b3de771",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cd621596-1a70-4003-9b02-8a00b838a02e",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Leave",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "104d8f77-0ac9-4b20-a017-6a1ade3ea7d8",
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
