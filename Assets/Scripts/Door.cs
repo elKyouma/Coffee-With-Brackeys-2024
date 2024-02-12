@@ -12,6 +12,9 @@ public class Door : MonoBehaviour, IInteractable
     private const float angles = 90;
     private const string amplitudeParam = "_Amplitude";
 
+    [SerializeField] private AudioClip openingSound;
+    [SerializeField] private AudioClip closingSound;
+
     private void Awake()
     {
         meshRenderer = GetComponentInChildren<MeshRenderer>();
@@ -35,9 +38,15 @@ public class Door : MonoBehaviour, IInteractable
             rotateAngles = -rotateAngles;
 
         if(transform.rotation.eulerAngles.y == startAngle)
+        {
             transform.LeanRotateY(startAngle + rotateAngles, openingSpeed);
+            SoundManager.Instance.PlaySound(openingSound, transform.position);
+        }
         else
+        {
             transform.LeanRotateY(startAngle, openingSpeed);
+            SoundManager.Instance.PlaySound(closingSound, transform.position);
+        }
     }
 
     public void Selected()
