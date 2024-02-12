@@ -12,7 +12,13 @@ public class CombinationPadlockScript : MonoBehaviour
     private CombinationBlockScript[] blocks;
     [SerializeField]
     private string[] blockValues;
+    [SerializeField]
+    private GameObject MetalPiece;
+    [SerializeField]
+    private float metalPieceOffset = 0.5f;
 
+    [SerializeField]
+    private SoundSO unlockSound;
     void Start()
     {
         blocks = GetComponentsInChildren<CombinationBlockScript>();
@@ -29,7 +35,7 @@ public class CombinationPadlockScript : MonoBehaviour
         if (input == combination)
         {
             isLocked = false;
-            Debug.Log("Unlocked");
+            Unlock();
         }
         else
         {
@@ -46,4 +52,10 @@ public class CombinationPadlockScript : MonoBehaviour
         isLocked = true;
     }
 
+    public void Unlock()
+    {
+        Debug.Log("Unlocked");
+        SoundManager.Instance.PlaySound(unlockSound, transform.position);
+        LeanTween.moveY(MetalPiece, MetalPiece.transform.position.y + metalPieceOffset, 1f);
+    }
 }
