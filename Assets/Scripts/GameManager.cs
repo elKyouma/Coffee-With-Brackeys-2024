@@ -50,9 +50,11 @@ public class GameManager : MonoBehaviour
     }
     public void EnterInspectorMode()
     {
+        if (handObject.childCount == 0) return;
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(inspectorModeActionMap);
         var heldObject = handObject.GetComponentInChildren<Item>().gameObject;
-        heldObject.transform.position = inspectedObjectTransform.position;
+        // heldObject.transform.position = inspectedObjectTransform.position;
+        StartCoroutine(MoveToInspectedPosition(heldObject, inspectedObjectTransform, 0.5f));
         blurVolume.enabled = true;
         foreach (var children in inspectedObjectTransform.GetComponentsInChildren<Rotatable>())
         {
@@ -72,4 +74,20 @@ public class GameManager : MonoBehaviour
             children.enabled = false;
         }
     }
+
+    IEnumerator MoveToInspectedPosition(GameObject objectToMove, Transform targetTransform, float duration)
+    {
+        float elapsedTime = 0;
+        Vector3 startingPos = objectToMove.transform.position;
+
+        while (elapsedTime < duration)
+        {
+            objectToMove.transform.position = Vector3.Lerp(startingPos, targetTransform.position, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        objectToMove.transform.position = targetTransform.position;
+    }
+
 }

@@ -332,8 +332,7 @@ Transform:
   m_LocalPosition: {x: 0.75, y: -0.37999994, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5691480005792284458}
+  m_Children: []
   m_Father: {fileID: 7221821768506145011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3769642523188655690
@@ -495,6 +494,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 20f5c4b0-2644-4ff2-b527-8ff5556079b5
     m_ActionName: Movement/Inspect Mode[/Keyboard/i]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7658603888617653837}
+        m_TargetAssemblyTypeName: KinematicCharacterController.Examples.Player, Assembly-CSharp
+        m_MethodName: OnLeaveInspectMode
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: cbadce40-9dae-4f52-9180-f17f0b3de771
+    m_ActionName: InspectorMode/Leave[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -537,178 +552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d4674bbd74b6144bdd85e9b509df54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &6784040630671094907
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5691480005792284458}
-  - component: {fileID: 7431292424063055333}
-  - component: {fileID: 7606699325806549835}
-  - component: {fileID: 8548888519743727804}
-  - component: {fileID: 3573092580454309522}
-  m_Layer: 6
-  m_Name: Capsule
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5691480005792284458
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6784040630671094907}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1727841917438686930}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7431292424063055333
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6784040630671094907}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7606699325806549835
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6784040630671094907}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8548888519743727804
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6784040630671094907}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3573092580454309522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6784040630671094907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fde92b1cb6bfc48b698f888a3b45cb18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pressed:
-    m_Name: Pressed
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: 74a3c555-fe45-4dd2-b4d9-fdc704465109
-    m_Processors: 
-    m_Interactions: Press
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 0378f326-9034-4de9-82fe-8ce9f62446c7
-      m_Path: <Mouse>/leftButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pressed
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 2274e1c8-6391-4894-ad50-7d1b58b7e32b
-      m_Path: <Touchscreen>/Press
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pressed
-      m_Flags: 0
-    m_Flags: 0
-  axis:
-    m_Name: Axis
-    m_Type: 0
-    m_ExpectedControlType: Vector2
-    m_Id: a74a761c-5058-456a-ac2e-f95210a4a878
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 471428ac-8934-48e1-b0ec-6d1c77ee6239
-      m_Path: <Mouse>/delta
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Axis
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 4fca6d72-0636-4738-8f66-d619759520f8
-      m_Path: <Touchscreen>/delta
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Axis
-      m_Flags: 0
-    m_Flags: 0
-  speed: 0.3
-  inverted: 0
 --- !u!1 &8365462276556576533
 GameObject:
   m_ObjectHideFlags: 0
