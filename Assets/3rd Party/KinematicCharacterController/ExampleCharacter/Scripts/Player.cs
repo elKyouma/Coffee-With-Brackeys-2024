@@ -61,29 +61,30 @@ namespace KinematicCharacterController.Examples
         public void OnCameraMove(InputAction.CallbackContext context) => cameraMovement = context.ReadValue<Vector2>();
         public void OnInteract(InputAction.CallbackContext context)
         {
-            if (context.ReadValue<float>() > 0.5f) OnInteraction?.Invoke();
+            Debug.Log("INPUUUTY");
+            if (context.started) { OnInteraction?.Invoke(); Debug.Log("TAK"); }
         }
 
         public void OnItemUse(InputAction.CallbackContext context)
         {
-            if (context.ReadValue<float>() > 0.5f) OnItemUseEvent?.Invoke();
+            if (context.started) OnItemUseEvent?.Invoke();
         }
 
         public void OnLeavePuzzleMode(InputAction.CallbackContext context)
         {
-            if (context.ReadValue<float>() < 0.5f) return;
+            if (context.started) return;
 
             GameManager.Instance.ExitPuzzleMode();
         }
         public void OnEnterInspectMode(InputAction.CallbackContext context)
         {
-            if (context.ReadValue<float>() > 0.5f) OnInspection?.Invoke();
+            if (context.started) OnInspection?.Invoke();
 
             GameManager.Instance.EnterInspectorMode();
         }
         public void OnLeaveInspectMode(InputAction.CallbackContext context)
         {
-            if (context.ReadValue<float>() < 0.5f) return;
+            if (context.started) return;
 
             GameManager.Instance.ExitInspectorMode();
         }

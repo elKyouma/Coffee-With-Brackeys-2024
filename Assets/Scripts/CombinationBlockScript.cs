@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CombinationBlockScript : MonoBehaviour
+public class CombinationBlockScript : OutlineInteractable
 
 {
     public string value;
@@ -24,18 +24,6 @@ public class CombinationBlockScript : MonoBehaviour
     [SerializeField]
     private SoundSO rotateSound;
 
-    void OnMouseDown()
-    {
-        AddValue();
-    }
-
-    public void AddValue()
-    {
-        currentIndex = (currentIndex + 1) % cycleValues.Length;
-        value = cycleValues[currentIndex];
-        padlock.CheckCombination();
-        Rotate();
-    }
     public void Reset()
     {
         value = cycleValues[defaultIndex];
@@ -45,9 +33,14 @@ public class CombinationBlockScript : MonoBehaviour
     {
         SoundManager.Instance.PlaySound(rotateSound, transform.position);
         var deltaAngle = 360 / cycleValues.Length;
-        Debug.Log("deltaAngle: " + deltaAngle);
         LeanTween.rotateLocal(gameObject, new Vector3(0, deltaAngle * currentIndex), rotationTime);
-        // currentRotation = targetRotation;
-        // yield return new WaitForSeconds(rotationTime);
+    }
+
+    public override void Interact()
+    {
+        currentIndex = (currentIndex + 1) % cycleValues.Length;
+        value = cycleValues[currentIndex];
+        padlock.CheckCombination();
+        Rotate();
     }
 }
