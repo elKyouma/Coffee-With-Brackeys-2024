@@ -21,6 +21,10 @@ public abstract class Item : MonoBehaviour, IInteractable
 
         outlineMaskMaterial.name = "OutlineMask (Instance)";
         outlineFillMaterial.name = "OutlineFill (Instance)";
+
+        // Disable Rotatable if exists
+        if (GetComponentInChildren<Rotatable>())
+            GetComponentInChildren<Rotatable>().rotateAllowed = false;
     }
 
     private void OnEnable()
