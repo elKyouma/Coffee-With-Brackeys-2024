@@ -301,10 +301,15 @@ namespace KinematicCharacterController.Examples
 
                             // Smooth movement Velocity
                             currentVelocity = Vector3.Lerp(currentVelocity, targetMovementVelocity, 1f - Mathf.Exp(-StableMovementSharpness * deltaTime));
+                            if (currentVelocity.magnitude > 1f)
+                                SoundManager.Instance.MuteFootsteps(false);
+                            else
+                                SoundManager.Instance.MuteFootsteps(true);
                         }
                         // Air movement
                         else
                         {
+                            SoundManager.Instance.MuteFootsteps(true);
                             // Add move input
                             if (_moveInputVector.sqrMagnitude > 0f)
                             {

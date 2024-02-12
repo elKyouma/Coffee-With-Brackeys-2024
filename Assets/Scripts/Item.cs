@@ -71,11 +71,11 @@ public abstract class Item : MonoBehaviour, IInteractable
     private void TurnOnOutline()
     {
         // Apply properties according to mode
-        outlineFillMaterial.SetColor("_OutlineColor", Color.white);
+        outlineFillMaterial.SetColor("_OutlineColor", Color.yellow);
 
-        outlineMaskMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.Always);
+        outlineMaskMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.LessEqual);
         outlineFillMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.LessEqual);
-        outlineFillMaterial.SetFloat("_OutlineWidth", 3f);
+        outlineFillMaterial.SetFloat("_OutlineWidth", 7f);
     }
 
     private void TurnOffOutline()
@@ -88,6 +88,7 @@ public abstract class Item : MonoBehaviour, IInteractable
         if (!interactable) return;
 
         TurnOnOutline();
+
 
     }
 

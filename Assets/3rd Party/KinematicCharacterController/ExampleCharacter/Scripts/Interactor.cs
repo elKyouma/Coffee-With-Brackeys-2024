@@ -2,6 +2,7 @@ using KinematicCharacterController.Examples;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Interactor : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class Interactor : MonoBehaviour
     private static List<Transform> interactables;
     private Transform previousSelection = null;
     private Transform currentSelection = null;
-    private bool interact = false;
 
     private void OnEnable()
     {
@@ -54,7 +54,12 @@ public class Interactor : MonoBehaviour
     Transform FindObjectViaRayCast()
     {
         Vector2 screenCentre = new Vector2(Screen.width / 2, Screen.height / 2);
-        var ray = playerCamera.ScreenPointToRay(screenCentre);
+        Ray ray;
+        if(GameManager.Instance.IsInPuzzleMode)
+            ray = playerCamera.ScreenPointToRay(Player.MousePosition);
+        else
+            ray = playerCamera.ScreenPointToRay(screenCentre);
+
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
@@ -79,10 +84,6 @@ public class Interactor : MonoBehaviour
             previousSelection?.GetComponent<IInteractable>().Unselected();
             currentSelection?.GetComponent<IInteractable>().Selected();
         }
-
-        if(interact)
-            currentSelection?.GetComponent<IInteractable>().Interact();
-
     }
 
     public static void AddInteractable(Transform interactable) => interactables.Add(interactable);
@@ -90,7 +91,6 @@ public class Interactor : MonoBehaviour
 
     private void Interact()
     {
-        previousSelection?.GetComponent<IInteractable>().Interact();
-
+        currentSelection?.GetComponent<IInteractable>().Interact();
     }
 }

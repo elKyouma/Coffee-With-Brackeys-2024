@@ -21,6 +21,9 @@ namespace KinematicCharacterController.Examples
         public static event Action OnInspection;
 
 
+        private static Vector2 mousePos = Vector2.zero;
+        public static Vector2 MousePosition { get { return mousePos; } private set { mousePos = value; } }
+
         private void Start()
         {
             character = GetComponentInChildren<MyCharacterController>();
@@ -38,11 +41,6 @@ namespace KinematicCharacterController.Examples
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-            }
-
             HandleCharacterInput();
         }
 
@@ -58,33 +56,34 @@ namespace KinematicCharacterController.Examples
             HandleCameraInput();
         }
 
+        public void OnMousePos(InputAction.CallbackContext context) => MousePosition = context.ReadValue<Vector2>();
         public void OnMove(InputAction.CallbackContext context) => movement = context.ReadValue<Vector2>();
         public void OnCameraMove(InputAction.CallbackContext context) => cameraMovement = context.ReadValue<Vector2>();
         public void OnInteract(InputAction.CallbackContext context)
         {
-            if (context.ReadValue<float>() > 0.5f) OnInteraction?.Invoke();
+            if (context.started) OnInteraction?.Invoke();
         }
 
         public void OnItemUse(InputAction.CallbackContext context)
         {
-            if (context.ReadValue<float>() > 0.5f) OnItemUseEvent?.Invoke();
+            if (context.started) OnItemUseEvent?.Invoke();
         }
 
         public void OnLeavePuzzleMode(InputAction.CallbackContext context)
         {
-            if (context.ReadValue<float>() < 0.5f) return;
+            if (context.started) return;
 
             GameManager.Instance.ExitPuzzleMode();
         }
         public void OnEnterInspectMode(InputAction.CallbackContext context)
         {
-            if (context.ReadValue<float>() > 0.5f) OnInspection?.Invoke();
+            if (context.started) OnInspection?.Invoke();
 
             GameManager.Instance.EnterInspectorMode();
         }
         public void OnLeaveInspectMode(InputAction.CallbackContext context)
         {
-            if (context.ReadValue<float>() < 0.5f) return;
+            if (context.started) return;
 
             GameManager.Instance.ExitInspectorMode();
         }
