@@ -5,9 +5,9 @@ using KinematicCharacterController.Examples;
 
 public class Inventory : MonoBehaviour
 {
-    private static IItem item;
+    private static Item item;
     private static GameObject itemObj;
-    public static void PickUpItem(IItem newItem, GameObject newItemObj)
+    public static void PickUpItem(Item newItem, GameObject newItemObj)
     {
         if (item == null)
             item = newItem;
