@@ -18,6 +18,7 @@ public class Inventory : MonoBehaviour
 
         itemObj.transform.parent = GameManager.Instance.HandObject;
         itemObj.transform.localPosition = Vector3.zero;
+        itemObj.transform.rotation = Quaternion.LookRotation(Camera.main.transform.forward, Camera.main.transform.up);
         itemObj.GetComponent<Rigidbody>().isKinematic = true;
         itemObj.GetComponentInChildren<Collider>().enabled = false;
         Player.OnItemUseEvent += item.UseItem;
