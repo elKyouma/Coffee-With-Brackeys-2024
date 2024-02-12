@@ -85,6 +85,7 @@ public abstract class Item : MonoBehaviour, IInteractable
 
         TurnOnOutline();
 
+
     }
 
     public void Unselected()
