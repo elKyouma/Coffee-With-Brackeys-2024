@@ -15,6 +15,11 @@ public class CombinationBlockScript : MonoBehaviour
     [SerializeField]
     private float rotationTime = 0.5f;
 
+    //Audio
+
+    [SerializeField]
+    private SoundSO rotateSound;
+
     void OnMouseDown()
     {
         AddValue();
@@ -34,6 +39,7 @@ public class CombinationBlockScript : MonoBehaviour
     }
     public void Rotate()
     {
+        SoundManager.Instance.PlaySound(rotateSound, transform.position);
         var deltaAngle = 360 / cycleValues.Length;
         var currentRotation = transform.rotation.eulerAngles.y;
         transform.LeanRotateY(currentRotation + deltaAngle, rotationTime);
