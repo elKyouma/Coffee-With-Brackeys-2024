@@ -1495,8 +1495,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingSpeed: 0.5
-  openingSound: {fileID: 8300000, guid: b5e333cfdbef8f8408296424ca36f4e9, type: 3}
-  closingSound: {fileID: 8300000, guid: 46871cf788eca30458bc3862f0425ddf, type: 3}
+  openingSound: {fileID: 11400000, guid: c3dc56b327c23114f8b5ed1c081daf67, type: 2}
+  closingSound: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
 --- !u!4 &991787173
 Transform:
   m_ObjectHideFlags: 0
@@ -1704,8 +1704,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingSpeed: 0.478
-  openingSound: {fileID: 8300000, guid: b5e333cfdbef8f8408296424ca36f4e9, type: 3}
-  closingSound: {fileID: 8300000, guid: 46871cf788eca30458bc3862f0425ddf, type: 3}
+  openingSound: {fileID: 11400000, guid: c3dc56b327c23114f8b5ed1c081daf67, type: 2}
+  closingSound: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
 --- !u!4 &1368598450
 Transform:
   m_ObjectHideFlags: 0

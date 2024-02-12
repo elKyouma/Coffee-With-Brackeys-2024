@@ -12,8 +12,8 @@ public class Door : MonoBehaviour, IInteractable
     private const float angles = 90;
     private const string amplitudeParam = "_Amplitude";
 
-    [SerializeField] private AudioClip openingSound;
-    [SerializeField] private AudioClip closingSound;
+    [SerializeField] private SoundSO openingSound;
+    [SerializeField] private SoundSO closingSound;
 
     private void Awake()
     {

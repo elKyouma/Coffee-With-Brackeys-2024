@@ -17,10 +17,10 @@ public class SoundManager : MonoBehaviour
             Instance = this;
     }
 
-    public void PlaySound(AudioClip sound, Vector3 soundPosition)
+    public void PlaySound(SoundSO sound, Vector3 soundPosition, float offset = 0)
     {
         soundBox = Instantiate(soundBoxPrefab, soundPosition, Quaternion.identity);
-        soundBox.GetComponent<SoundBox>().PlayOneClip(sound);
+        soundBox.GetComponent<SoundBox>().Play(sound, offset);
     }
 
 
