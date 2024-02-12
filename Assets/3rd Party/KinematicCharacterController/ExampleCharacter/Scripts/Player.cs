@@ -18,7 +18,8 @@ namespace KinematicCharacterController.Examples
 
         public static event Action OnInteraction;
         public static event Action OnItemUseEvent;
- 
+        public static event Action OnInspection;
+
 
         private void Start()
         {
@@ -74,6 +75,18 @@ namespace KinematicCharacterController.Examples
             if (context.ReadValue<float>() < 0.5f) return;
 
             GameManager.Instance.ExitPuzzleMode();
+        }
+        public void OnEnterInspectMode(InputAction.CallbackContext context)
+        {
+            if (context.ReadValue<float>() > 0.5f) OnInspection?.Invoke();
+
+            GameManager.Instance.EnterInspectorMode();
+        }
+        public void OnLeaveInspectMode(InputAction.CallbackContext context)
+        {
+            if (context.ReadValue<float>() < 0.5f) return;
+
+            GameManager.Instance.ExitInspectorMode();
         }
 
         private void HandleCameraInput()
