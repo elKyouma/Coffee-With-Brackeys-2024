@@ -6,7 +6,7 @@ public class FlashLight : MonoBehaviour, IItem, IInteractable
 {
     private bool interactable = true;
     private MeshRenderer meshRenderer;
-    private void Awake() => meshRenderer = GetComponent<MeshRenderer>();
+    private void Awake() => meshRenderer = GetComponentInChildren<MeshRenderer>();
 
     private void OnEnable()
     {
