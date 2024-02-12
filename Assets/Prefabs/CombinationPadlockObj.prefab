@@ -103,7 +103,7 @@ MonoBehaviour:
   padlock: {fileID: 6362592143563837545}
   rotationTime: 0.5
   currentRotation: 0
-  rotateSound: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
+  rotateSound: {fileID: 11400000, guid: 231cb35c9f3fa514ea616c13f7d7c44e, type: 2}
 --- !u!64 &2204499740261594450
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -348,7 +348,7 @@ MonoBehaviour:
   padlock: {fileID: 6362592143563837545}
   rotationTime: 0.5
   currentRotation: 0
-  rotateSound: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
+  rotateSound: {fileID: 11400000, guid: 231cb35c9f3fa514ea616c13f7d7c44e, type: 2}
 --- !u!64 &5963137765916482242
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -474,7 +474,7 @@ MonoBehaviour:
   padlock: {fileID: 6362592143563837545}
   rotationTime: 0.5
   currentRotation: 0
-  rotateSound: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
+  rotateSound: {fileID: 11400000, guid: 231cb35c9f3fa514ea616c13f7d7c44e, type: 2}
 --- !u!64 &4895547444985173440
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -548,7 +548,7 @@ MonoBehaviour:
   blockValues: []
   MetalPiece: {fileID: 8039977796267422972}
   metalPieceOffset: 0.005
-  unlockSound: {fileID: 11400000, guid: c3dc56b327c23114f8b5ed1c081daf67, type: 2}
+  unlockSound: {fileID: 11400000, guid: a088a7d7f276159438fee55449c1869e, type: 2}
 --- !u!114 &6358745303406315112
 MonoBehaviour:
   m_ObjectHideFlags: 0
