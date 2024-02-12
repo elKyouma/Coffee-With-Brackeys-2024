@@ -3,7 +3,27 @@ guid: 5bab7d190a6b65d4b82f340045492112
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 14_-_Polished_Aluminum.003
+    second: {fileID: 2100000, guid: 58b6d053d11cede49863246488f97399, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 14_-_Politrjd_Aluminum.003
+    second: {fileID: 2100000, guid: 240e52abf6bd1624c87e4b0699f90205, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 22_-_Default.003
+    second: {fileID: 2100000, guid: 87a8201e2a3169e4285c1a9b87c511e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 22_-_Defaultgerg.003
+    second: {fileID: 2100000, guid: 164ad826c5cd61f4ab6cae012a04bbd3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
