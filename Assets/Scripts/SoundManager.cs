@@ -37,5 +37,10 @@ public class SoundManager : MonoBehaviour
         soundBox.GetComponent<SoundBox>().Play(sound, offset);
     }
 
+    public void MuteFootsteps(bool active)
+    {
+        footStepSource.mute = active;
+    }
+
 
 }
