@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] private AudioSource ambientSource;
-    [SerializeField] private AudioSource backgroundSource;
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField, Range(0, 1)] private float musicVolume = 1f;
+    [SerializeField] private AudioSource ambienceSource;
+    [SerializeField, Range(0, 1)] private float ambienceVolume = 1f;
+
     [SerializeField] private GameObject soundBoxPrefab;
     private GameObject soundBox;
 
@@ -15,6 +18,12 @@ public class SoundManager : MonoBehaviour
     {
         if (Instance == null)
             Instance = this;
+    }
+
+    private void Start()
+    {
+        musicSource.volume = musicVolume;
+        ambienceSource.volume = ambienceVolume;
     }
 
     public void PlaySound(SoundSO sound, Vector3 soundPosition, float offset = 0)
