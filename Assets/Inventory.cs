@@ -18,14 +18,16 @@ public class Inventory : MonoBehaviour
 
         itemObj.transform.parent = GameManager.Instance.HandObject;
         itemObj.transform.localPosition = Vector3.zero;
-        itemObj.GetComponent<Collider>().enabled = false;
+        itemObj.GetComponent<Rigidbody>().isKinematic = true;
+        itemObj.GetComponentInChildren<Collider>().enabled = false;
         Player.OnItemUseEvent += item.UseItem;
     }
 
     public static void DropItem()
     {
         itemObj.transform.parent = null;
-        itemObj.GetComponent<Collider>().enabled = true;
+        itemObj.GetComponent<Rigidbody>().isKinematic = false;
+        itemObj.GetComponentInChildren<Collider>().enabled = true;
         Player.OnItemUseEvent -= item.UseItem;
     }
 }
