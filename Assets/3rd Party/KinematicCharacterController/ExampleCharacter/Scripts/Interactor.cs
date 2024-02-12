@@ -12,7 +12,6 @@ public class Interactor : MonoBehaviour
     private static List<Transform> interactables;
     private Transform previousSelection = null;
     private Transform currentSelection = null;
-    private bool interact = false;
 
     private void OnEnable()
     {
@@ -85,10 +84,6 @@ public class Interactor : MonoBehaviour
             previousSelection?.GetComponent<IInteractable>().Unselected();
             currentSelection?.GetComponent<IInteractable>().Selected();
         }
-
-        if(interact)
-            currentSelection?.GetComponent<IInteractable>().Interact();
-
     }
 
     public static void AddInteractable(Transform interactable) => interactables.Add(interactable);
@@ -96,7 +91,6 @@ public class Interactor : MonoBehaviour
 
     private void Interact()
     {
-        previousSelection?.GetComponent<IInteractable>().Interact();
-
+        currentSelection?.GetComponent<IInteractable>().Interact();
     }
 }
