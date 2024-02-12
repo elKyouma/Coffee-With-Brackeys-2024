@@ -45,7 +45,7 @@ public class ImportMetallicSmoothness : AssetPostprocessor
         Texture2D metallic = null;
         Texture2D smoothness = null;
 
-        if (filename.EndsWith("Metallic"))
+        if (filename.Contains("Metallic"))
         {
             metallic = texture;
 
@@ -55,12 +55,30 @@ public class ImportMetallicSmoothness : AssetPostprocessor
             {
                 smoothness = AssetDatabase.LoadAssetAtPath<Texture2D>(smoothnessPath);
             }
+
+            smoothnessPath = convertMetallicSmoothnessPath("Metallic", "Roughness", out combinedPath);
+
+            if (File.Exists(smoothnessPath))
+            {
+                smoothness = AssetDatabase.LoadAssetAtPath<Texture2D>(smoothnessPath);
+            }
         }
-        else if (filename.EndsWith("Smoothness"))
+        else if (filename.Contains("Smoothness"))
         {
             smoothness = texture;
 
             string metallicPath = convertMetallicSmoothnessPath("Smoothness", "Metallic", out combinedPath);
+
+            if (File.Exists(metallicPath))
+            {
+                metallic = AssetDatabase.LoadAssetAtPath<Texture2D>(metallicPath);
+            }
+        }
+        else if (filename.Contains("Roughness"))
+        {
+            smoothness = texture;
+
+            string metallicPath = convertMetallicSmoothnessPath("Roughness", "Metallic", out combinedPath);
 
             if (File.Exists(metallicPath))
             {
@@ -117,7 +135,7 @@ public class ImportMetallicSmoothness : AssetPostprocessor
     {
         string filename = Path.GetFileNameWithoutExtension(assetPath);
 
-        return filename.EndsWith("Metallic") || filename.EndsWith("Smoothness");
+        return filename.Contains("Metallic") || filename.Contains("Smoothness") || filename.Contains("Roughness");
     }
 
     private string convertMetallicSmoothnessPath(string from, string to, out string combinedPath)
@@ -126,6 +144,11 @@ public class ImportMetallicSmoothness : AssetPostprocessor
         string extension = Path.GetExtension(assetPath);
         string pathWithoutFilename = Path.GetDirectoryName(assetPath);
         string baseFilename = filename.Substring(0, filename.Length - string.Format(" {0}", from).Length);
+        Debug.Log(filename);
+        Debug.Log(extension);
+        Debug.Log(pathWithoutFilename);
+        Debug.Log(baseFilename + "0");
+        Debug.Log("0000");
 
         string newPath = string.Format("{0}/{1} {2}{3}", pathWithoutFilename, baseFilename, to, extension);
 

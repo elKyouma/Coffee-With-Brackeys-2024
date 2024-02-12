@@ -39,10 +39,11 @@ public abstract class Item : MonoBehaviour, IInteractable
 
             materials.Add(outlineMaskMaterial);
             materials.Add(outlineFillMaterial);
-
+            
             renderer.materials = materials.ToArray();
         }
     }
+
     private void OnDisable()
     {
         Interactor.AddInteractable(transform);

@@ -547,8 +547,8 @@ MonoBehaviour:
   combination: 111
   blockValues: []
   MetalPiece: {fileID: 8039977796267422972}
-  metalPieceOffset: 0.5
-  unlockSound: {fileID: 11400000, guid: a088a7d7f276159438fee55449c1869e, type: 2}
+  metalPieceOffset: 0.005
+  unlockSound: {fileID: 11400000, guid: c3dc56b327c23114f8b5ed1c081daf67, type: 2}
 --- !u!114 &6358745303406315112
 MonoBehaviour:
   m_ObjectHideFlags: 0
