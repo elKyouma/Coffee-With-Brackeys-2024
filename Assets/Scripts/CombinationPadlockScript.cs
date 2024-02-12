@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class CombinationPadlockScript : MonoBehaviour
 {
     public bool isLocked = true;
@@ -56,6 +55,6 @@ public class CombinationPadlockScript : MonoBehaviour
     {
         Debug.Log("Unlocked");
         SoundManager.Instance.PlaySound(unlockSound, transform.position);
-        LeanTween.moveY(MetalPiece, MetalPiece.transform.position.y + metalPieceOffset, 1f);
+        LeanTween.moveLocalY(MetalPiece, MetalPiece.transform.localPosition.y + metalPieceOffset, 1f);
     }
 }
