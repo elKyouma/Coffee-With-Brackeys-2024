@@ -112,10 +112,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43fc37fc6a57244eafbccf583aac6e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightObject: {fileID: 8172186837474472003}
   inHand: 0
   inHandLight: {fileID: 5066549472224516413}
   outsideHandLight: {fileID: 9212076091727973331}
-  light: {fileID: 5540805184570666708}
 --- !u!54 &707965748162093287
 Rigidbody:
   m_ObjectHideFlags: 0
