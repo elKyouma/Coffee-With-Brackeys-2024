@@ -14,6 +14,8 @@ public class Interactor : MonoBehaviour
     private Transform previousSelection = null;
     public static Transform Selection { get; private set; }
 
+    bool updateOutlinesOnStart = true;
+
     private void OnEnable()
     {
         Player.OnInteraction += Interact;
@@ -75,6 +77,14 @@ public class Interactor : MonoBehaviour
 
     private void Update()
     {
+        if(updateOutlinesOnStart)
+        {
+            updateOutlinesOnStart = false;
+            for (int i = 0; i < interactables.Count; i++)
+                interactables[i].GetComponent<OutlineInteractable>()?.TurnOffOutline();
+
+        }
+
         previousSelection = Selection;
         Selection = FindObjectViaRayCast();
 
@@ -86,6 +96,7 @@ public class Interactor : MonoBehaviour
             previousSelection?.GetComponent<IInteractable>().Unselected();
             Selection?.GetComponent<IInteractable>().Selected();
         }
+
     }
 
     public static void AddInteractable(Transform interactable) => interactables.Add(interactable);
