@@ -30,6 +30,12 @@ public class Interactor : MonoBehaviour
         interactables = new List<Transform>();
     }
 
+    private void Start()
+    {
+        foreach (var x in interactables)
+            x.GetComponent<IInteractable>().Unselected();
+    }
+
     Transform FindObjectClosestToCursor()
     {
         Transform result = null;
@@ -86,6 +92,7 @@ public class Interactor : MonoBehaviour
             previousSelection?.GetComponent<IInteractable>().Unselected();
             Selection?.GetComponent<IInteractable>().Selected();
         }
+
     }
 
     public static void AddInteractable(Transform interactable) => interactables.Add(interactable);
