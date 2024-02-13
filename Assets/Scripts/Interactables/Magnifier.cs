@@ -37,7 +37,6 @@ public class Magnifier : Item, IInteractable
     {
         if (!inUse)
         {
-            Debug.Log("Using " + name);
             LeanTween.moveLocal(magnifier, new Vector3(-0.75f, 0.175f, -0.6f), 1);
             Resize(texture, 1000, 1000);
             inUse = true;
