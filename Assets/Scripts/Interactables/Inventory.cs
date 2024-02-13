@@ -14,7 +14,7 @@ public class Inventory : MonoBehaviour
         else
         {
             DropItem();
-            item = newItem;
+            ItemInHand = newItem;
         }
 
         itemObj = newItemObj;
