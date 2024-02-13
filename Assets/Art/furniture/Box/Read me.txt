@@ -1,0 +1,15 @@
+There are 3 textures.
+Base Color
+Normal
+And the third. It is divided into 3 channels R G B
+R - Ambient Occlusion
+G - Roughness
+B - Metallic
+
+Присутствует 3 текстуры.
+Bace Color
+Normal
+И третья. Она разделена на 3 канала R G B
+R - Ambient Oclusion
+G - Roughness
+B - Metalic
