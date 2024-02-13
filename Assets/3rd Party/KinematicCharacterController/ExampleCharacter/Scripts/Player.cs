@@ -20,7 +20,6 @@ namespace KinematicCharacterController.Examples
         public static event Action OnItemUseEvent;
         public static event Action OnInspection;
 
-
         private static Vector2 mousePos = Vector2.zero;
         public static Vector2 MousePosition { get { return mousePos; } private set { mousePos = value; } }
 
@@ -67,6 +66,10 @@ namespace KinematicCharacterController.Examples
         public void OnItemUse(InputAction.CallbackContext context)
         {
             if (context.started) OnItemUseEvent?.Invoke();
+        }
+        public void OnItemDrop(InputAction.CallbackContext context)
+        {
+            if (context.started) Inventory.DropItem();
         }
 
         public void OnLeavePuzzleMode(InputAction.CallbackContext context)

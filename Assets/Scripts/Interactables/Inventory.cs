@@ -12,8 +12,11 @@ public class Inventory : MonoBehaviour
         if (ItemInHand == null)
             ItemInHand = newItem;
         else
-            Debug.Log("Brak miejsca w inventory");
-        
+        {
+            DropItem();
+            item = newItem;
+        }
+
         itemObj = newItemObj;
 
         itemObj.transform.parent = GameManager.Instance.HandObject;
@@ -36,6 +39,7 @@ public class Inventory : MonoBehaviour
         itemObj.transform.parent = null;
         itemObj.GetComponent<Rigidbody>().isKinematic = false;
         itemObj.GetComponentInChildren<Collider>().enabled = true;
+        ItemInHand.Drop();
         Player.OnItemUseEvent -= ItemInHand.UseItem;
     }
 }
