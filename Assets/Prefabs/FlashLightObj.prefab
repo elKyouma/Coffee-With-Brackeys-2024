@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &797263621588049953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8984685933628794661}
+  m_Layer: 0
+  m_Name: InHandPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8984685933628794661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797263621588049953}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.000000007450581, y: -1.323489e-23, z: 0.000000011175869, w: 1}
+  m_LocalPosition: {x: -0.74999994, y: 0.38, z: 0.37999985}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5306524433187908355}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1826386985861007763
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,6 +65,8 @@ Transform:
   m_Children:
   - {fileID: 9075620141809675779}
   - {fileID: 6197547769482851117}
+  - {fileID: 8984685933628794661}
+  - {fileID: 7672278146899879862}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &330482000360518256
@@ -48,6 +81,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43fc37fc6a57244eafbccf583aac6e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightObject: {fileID: 4393878895323063577}
+  inHand: 0
+  inHandLight: {fileID: 8984685933628794661}
+  outsideHandLight: {fileID: 7672278146899879862}
 --- !u!54 &3571816815527739898
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -137,6 +174,7 @@ MonoBehaviour:
       m_Action: Axis
       m_Flags: 0
     m_Flags: 0
+  rotateAllowed: 0
   speed: 0.3
   inverted: 0
 --- !u!1 &4393878895323063577
@@ -184,9 +222,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.7783511, b: 0.41176474, a: 1}
-  m_Intensity: 150.77
-  m_Range: 10
-  m_SpotAngle: 83.218155
+  m_Intensity: 10
+  m_Range: 50
+  m_SpotAngle: 99.97573
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -257,6 +295,37 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &8999338296728878293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7672278146899879862}
+  m_Layer: 0
+  m_Name: OutsideHandPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7672278146899879862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8999338296728878293}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.236}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5306524433187908355}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8825275239011142120
 PrefabInstance:
   m_ObjectHideFlags: 0
