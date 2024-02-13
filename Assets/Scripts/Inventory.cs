@@ -22,6 +22,13 @@ public class Inventory : MonoBehaviour
         itemObj.GetComponent<Rigidbody>().isKinematic = true;
         itemObj.GetComponentInChildren<Collider>().enabled = false;
         Player.OnItemUseEvent += item.UseItem;
+
+        if (item is FlashLight)
+        {
+            FlashLight flashLight = (FlashLight)item;
+            flashLight.inHand = true;
+            flashLight.ReplaceLight();
+        }
     }
 
     public static void DropItem()
