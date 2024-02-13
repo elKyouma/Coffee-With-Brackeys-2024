@@ -12,8 +12,11 @@ public class Inventory : MonoBehaviour
         if (item == null)
             item = newItem;
         else
-            Debug.Log("Brak miejsca w inventory");
-        
+        {
+            DropItem();
+            item = newItem;
+        }
+
         itemObj = newItemObj;
 
         itemObj.transform.parent = GameManager.Instance.HandObject;
@@ -22,6 +25,13 @@ public class Inventory : MonoBehaviour
         itemObj.GetComponent<Rigidbody>().isKinematic = true;
         itemObj.GetComponentInChildren<Collider>().enabled = false;
         Player.OnItemUseEvent += item.UseItem;
+
+        if (item is FlashLight)
+        {
+            FlashLight flashLight = (FlashLight)item;
+            flashLight.inHand = true;
+            flashLight.ReplaceLight();
+        }
     }
 
     public static void DropItem()
@@ -29,6 +39,7 @@ public class Inventory : MonoBehaviour
         itemObj.transform.parent = null;
         itemObj.GetComponent<Rigidbody>().isKinematic = false;
         itemObj.GetComponentInChildren<Collider>().enabled = true;
+        item.Drop();
         Player.OnItemUseEvent -= item.UseItem;
     }
 }
