@@ -14,8 +14,6 @@ public class Interactor : MonoBehaviour
     private Transform previousSelection = null;
     public static Transform Selection { get; private set; }
 
-    bool updateOutlinesOnStart = true;
-
     private void OnEnable()
     {
         Player.OnInteraction += Interact;
@@ -30,6 +28,12 @@ public class Interactor : MonoBehaviour
     {
         playerCamera = GetComponentInChildren<Camera>();
         interactables = new List<Transform>();
+    }
+
+    private void Start()
+    {
+        foreach (var x in interactables)
+            x.GetComponent<IInteractable>().Unselected();
     }
 
     Transform FindObjectClosestToCursor()
@@ -77,14 +81,6 @@ public class Interactor : MonoBehaviour
 
     private void Update()
     {
-        if(updateOutlinesOnStart)
-        {
-            updateOutlinesOnStart = false;
-            for (int i = 0; i < interactables.Count; i++)
-                interactables[i].GetComponent<OutlineInteractable>()?.TurnOffOutline();
-
-        }
-
         previousSelection = Selection;
         Selection = FindObjectViaRayCast();
 

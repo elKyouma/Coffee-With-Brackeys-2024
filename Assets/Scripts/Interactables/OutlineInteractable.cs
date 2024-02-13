@@ -68,7 +68,7 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
         outlineFillMaterial.SetFloat("_OutlineWidth", 7f);
     }
 
-    public void TurnOffOutline() =>outlineFillMaterial.SetFloat("_OutlineWidth", 0.0f);
+    private void TurnOffOutline() => outlineFillMaterial.SetFloat("_OutlineWidth", 0.0f);
     public void Selected() => TurnOnOutline();
     public void Unselected() => TurnOffOutline();
 }
