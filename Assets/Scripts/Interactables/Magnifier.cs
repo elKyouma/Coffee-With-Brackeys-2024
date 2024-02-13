@@ -10,6 +10,7 @@ public class Magnifier : Item, IInteractable
     public Transform camera1;
     public Transform player;
     public GameObject magnifier;
+    public RenderTexture texture;
     private bool distortion = true;
     private bool inUse = false;
 
@@ -38,12 +39,24 @@ public class Magnifier : Item, IInteractable
         {
             Debug.Log("Using " + name);
             LeanTween.moveLocal(magnifier, new Vector3(-0.75f, 0.175f, -0.6f), 1);
+            Resize(texture, 1000, 1000);
             inUse = true;
         }   
         else
         {
             LeanTween.moveLocal(magnifier, new Vector3(0f, 0f, 0f), 1);
+            Resize(texture, 25, 25);
             inUse = false;
+        }
+    }
+
+    void Resize(RenderTexture renderTexture, int width, int height)
+    {
+        if (renderTexture)
+        {
+            renderTexture.Release();
+            renderTexture.width = width;
+            renderTexture.height = height;
         }
     }
 }

@@ -22,31 +22,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12c69bbc185f181418483a2b1dc5b817, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.73
+      value: 3.2688165
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12c69bbc185f181418483a2b1dc5b817, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.025639178
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12c69bbc185f181418483a2b1dc5b817, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.97
+      value: 3.6702988
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12c69bbc185f181418483a2b1dc5b817, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.04353722
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12c69bbc185f181418483a2b1dc5b817, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12c69bbc185f181418483a2b1dc5b817, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.9990518
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12c69bbc185f181418483a2b1dc5b817, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12c69bbc185f181418483a2b1dc5b817, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12c69bbc185f181418483a2b1dc5b817, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -184.991
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12c69bbc185f181418483a2b1dc5b817, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7508671c6a46340a26831d59ecdefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breakingSound: {fileID: 11400000, guid: fe306366a9703254799be425473f37b2, type: 2}
 --- !u!54 &4394960997089337972
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -358,6 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7508671c6a46340a26831d59ecdefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breakingSound: {fileID: 11400000, guid: fe306366a9703254799be425473f37b2, type: 2}
 --- !u!54 &1590798248434088919
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -423,6 +425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7508671c6a46340a26831d59ecdefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breakingSound: {fileID: 11400000, guid: fe306366a9703254799be425473f37b2, type: 2}
 --- !u!54 &4074771062087465632
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -488,6 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7508671c6a46340a26831d59ecdefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breakingSound: {fileID: 11400000, guid: fe306366a9703254799be425473f37b2, type: 2}
 --- !u!54 &1004476762222057078
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -553,6 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7508671c6a46340a26831d59ecdefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breakingSound: {fileID: 11400000, guid: fe306366a9703254799be425473f37b2, type: 2}
 --- !u!54 &7741516550045568553
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -618,6 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7508671c6a46340a26831d59ecdefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breakingSound: {fileID: 11400000, guid: fe306366a9703254799be425473f37b2, type: 2}
 --- !u!54 &9121539534614362559
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -683,6 +689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7508671c6a46340a26831d59ecdefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breakingSound: {fileID: 11400000, guid: fe306366a9703254799be425473f37b2, type: 2}
 --- !u!54 &8144093577993727913
 Rigidbody:
   m_ObjectHideFlags: 0
