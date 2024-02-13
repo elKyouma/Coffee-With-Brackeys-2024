@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class FlashLight : Item, IInteractable
 {
+    [SerializeField]
+    private GameObject lightObject;
+
     public override void UseItem()
     {
-        Debug.Log("Using " + name);
+        lightObject.SetActive(!lightObject.activeSelf);
     }
 }
