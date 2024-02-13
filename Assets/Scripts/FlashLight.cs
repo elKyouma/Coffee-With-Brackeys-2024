@@ -11,8 +11,6 @@ public class FlashLight : Item, IInteractable
     private Transform inHandLight; // Where the light will be when in hand
     [SerializeField]
     private Transform outsideHandLight; // Where the light will be when outside of hand
-    [SerializeField]
-    private Light light;
 
     void Start()
     {
@@ -21,9 +19,9 @@ public class FlashLight : Item, IInteractable
 
     public void ReplaceLight()
     {
-        light.transform.parent = inHand ? inHandLight : outsideHandLight;
-        light.transform.localPosition = Vector3.zero;
-        light.transform.localRotation = Quaternion.identity;
+        lightObject.transform.parent = inHand ? inHandLight : outsideHandLight;
+        lightObject.transform.localPosition = Vector3.zero;
+        lightObject.transform.localRotation = Quaternion.identity;
     }
 
     public override void UseItem()

@@ -455,6 +455,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365904932}
   m_CullTransparentMesh: 1
+--- !u!1 &417200914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4393878895323063577, guid: c8708b6af3ba10afcb8dab62f7a2e088, type: 3}
+  m_PrefabInstance: {fileID: 695919172}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &422828190
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +745,10 @@ PrefabInstance:
       propertyPath: inHandLight
       value: 
       objectReference: {fileID: 588924436}
+    - target: {fileID: 330482000360518256, guid: c8708b6af3ba10afcb8dab62f7a2e088, type: 3}
+      propertyPath: lightObject
+      value: 
+      objectReference: {fileID: 417200914}
     - target: {fileID: 330482000360518256, guid: c8708b6af3ba10afcb8dab62f7a2e088, type: 3}
       propertyPath: outsideHandLight
       value: 
@@ -1481,6 +1490,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4d3b0e1ff12b8c48bcdd76b4d890efa, type: 3}
+--- !u!1 &1528681122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8172186837474472003, guid: 72ad50069404f90f0a4b44084bd3c629, type: 3}
+  m_PrefabInstance: {fileID: 8542245962202752152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1561130805 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7672278146899879862, guid: c8708b6af3ba10afcb8dab62f7a2e088, type: 3}
@@ -1897,6 +1911,10 @@ PrefabInstance:
       propertyPath: inHandLight
       value: 
       objectReference: {fileID: 143495206}
+    - target: {fileID: 8480240438837219654, guid: 72ad50069404f90f0a4b44084bd3c629, type: 3}
+      propertyPath: lightObject
+      value: 
+      objectReference: {fileID: 1528681122}
     - target: {fileID: 8480240438837219654, guid: 72ad50069404f90f0a4b44084bd3c629, type: 3}
       propertyPath: outsideHandLight
       value: 
