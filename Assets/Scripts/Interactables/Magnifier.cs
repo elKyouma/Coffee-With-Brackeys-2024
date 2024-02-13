@@ -9,7 +9,9 @@ public class Magnifier : Item, IInteractable
 {
     public Transform camera1;
     public Transform player;
+    public GameObject magnifier;
     private bool distortion = true;
+    private bool inUse = false;
 
 
     public void Update()
@@ -18,8 +20,6 @@ public class Magnifier : Item, IInteractable
         Vector3 toPlayer = player.position - transform.position;
         float dot = Vector3.Dot(forward.normalized, toPlayer.normalized);
 
-        Debug.Log(dot);
-        Debug.Log(camera1.localEulerAngles);
         if (dot > 0 && camera1.localEulerAngles.x < 180)
         {
             camera1.Rotate(180, 0, 0);
@@ -34,6 +34,16 @@ public class Magnifier : Item, IInteractable
 
     public override void UseItem()
     {
-        Debug.Log("Using " + name);
+        if (!inUse)
+        {
+            Debug.Log("Using " + name);
+            LeanTween.moveLocal(magnifier, new Vector3(-0.75f, 0.175f, -0.6f), 1);
+            inUse = true;
+        }   
+        else
+        {
+            LeanTween.moveLocal(magnifier, new Vector3(0f, 0f, 0f), 1);
+            inUse = false;
+        }
     }
 }
