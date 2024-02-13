@@ -46,7 +46,7 @@ public abstract class Item : MonoBehaviour, IInteractable
 
     private void OnDisable()
     {
-        Interactor.AddInteractable(transform);
+        Interactor.DeleteInteractable(transform);
 
         foreach (var renderer in renderers)
         {

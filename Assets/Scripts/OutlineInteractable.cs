@@ -25,6 +25,8 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
 
     private void OnEnable()
     {
+        Interactor.AddInteractable(transform);
+
         foreach (var renderer in renderers)
         {
 
@@ -39,6 +41,8 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
     }
     private void OnDisable()
     {
+        Interactor.DeleteInteractable(transform);
+
         foreach (var renderer in renderers)
         {
 

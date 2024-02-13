@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &32498163 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8039977796267422972, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-  m_PrefabInstance: {fileID: 2121099033}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &40559231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1334,6 +1329,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knob1: {fileID: 0}
   knob2: {fileID: 0}
+  defaultVideo: {fileID: 0}
+  channels: []
 --- !u!1 &1585069538
 GameObject:
   m_ObjectHideFlags: 3
@@ -1448,54 +1445,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4276976766666356839, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276976766666356839, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276976766666356839, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276976766666356839, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276976766666356839, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276976766666356839, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276976766666356839, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276976766666356839, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276976766666356839, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276976766666356839, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276976766666356839, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6362592143563837545, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
-      propertyPath: MetalPiece
-      value: 
-      objectReference: {fileID: 32498163}
     - target: {fileID: 7535215235074519718, guid: 7128b9c0a04e4cd32a25f5ad22653950, type: 3}
       propertyPath: m_Name
       value: CombinationPadlockObj
@@ -1710,6 +1659,6 @@ SceneRoots:
   - {fileID: 1476760676}
   - {fileID: 3762151104148241369}
   - {fileID: 2121099033}
-  - {fileID: 53467937}
   - {fileID: 40559231}
   - {fileID: 1481151675}
+  - {fileID: 53467937}

@@ -233,9 +233,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3463566192282657501}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0012308098, y: 0.0018407926, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 554019158998169594}
@@ -244,7 +244,7 @@ Transform:
   - {fileID: 7073899601204007312}
   - {fileID: 8848355072184920919}
   m_Father: {fileID: 8332072654242898086}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &3482722705140969953
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +525,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0012308098, y: 0.026959207, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4276976766666356839}
@@ -549,6 +549,8 @@ MonoBehaviour:
   MetalPiece: {fileID: 8039977796267422972}
   metalPieceOffset: 0.005
   unlockSound: {fileID: 11400000, guid: a088a7d7f276159438fee55449c1869e, type: 2}
+  telephone: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: d145797ea7fa3e54aaf92f075970386b, type: 2}
 --- !u!114 &6358745303406315112
 MonoBehaviour:
   m_ObjectHideFlags: 0
