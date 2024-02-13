@@ -19,7 +19,7 @@ public class CombinationPadlockScript : MonoBehaviour
     [SerializeField]
     private SoundSO unlockSound;
 
-    [SerializeField] private TelephoneScipt telephone;
+    [SerializeField] private TelephoneScript telephone;
     [SerializeField] private SoundSO dialogue;
     void Start()
     {
