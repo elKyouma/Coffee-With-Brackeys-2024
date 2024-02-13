@@ -12,7 +12,7 @@ public class Interactor : MonoBehaviour
     private Camera playerCamera;
     private static List<Transform> interactables;
     private Transform previousSelection = null;
-    private Transform currentSelection = null;
+    public static Transform Selection { get; private set; }
 
     private void OnEnable()
     {
@@ -75,16 +75,16 @@ public class Interactor : MonoBehaviour
 
     private void Update()
     {
-        previousSelection = currentSelection;
-        currentSelection = FindObjectViaRayCast();
+        previousSelection = Selection;
+        Selection = FindObjectViaRayCast();
 
-        if (currentSelection == null)
-            currentSelection = FindObjectClosestToCursor();
+        if (Selection == null)
+            Selection = FindObjectClosestToCursor();
 
-        if (currentSelection != previousSelection)
+        if (Selection != previousSelection)
         {
             previousSelection?.GetComponent<IInteractable>().Unselected();
-            currentSelection?.GetComponent<IInteractable>().Selected();
+            Selection?.GetComponent<IInteractable>().Selected();
         }
     }
 
@@ -93,6 +93,6 @@ public class Interactor : MonoBehaviour
 
     private void Interact()
     {
-        currentSelection?.GetComponent<IInteractable>().Interact();
+        Selection?.GetComponent<IInteractable>().Interact();
     }
 }
