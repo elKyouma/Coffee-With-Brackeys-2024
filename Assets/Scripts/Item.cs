@@ -39,7 +39,7 @@ public abstract class Item : MonoBehaviour, IInteractable
 
             materials.Add(outlineMaskMaterial);
             materials.Add(outlineFillMaterial);
-            
+
             renderer.materials = materials.ToArray();
         }
     }
@@ -67,6 +67,11 @@ public abstract class Item : MonoBehaviour, IInteractable
 
         interactable = false;
         Inventory.PickUpItem(this, gameObject);
+    }
+
+    public void Drop()
+    {
+        interactable = true;
     }
 
     private void TurnOnOutline()
