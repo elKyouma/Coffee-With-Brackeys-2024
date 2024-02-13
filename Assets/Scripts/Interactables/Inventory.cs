@@ -24,6 +24,9 @@ public class Inventory : MonoBehaviour
         itemObj.transform.rotation = Quaternion.LookRotation(Camera.main.transform.forward, Camera.main.transform.up);
         itemObj.GetComponent<Rigidbody>().isKinematic = true;
         itemObj.GetComponentInChildren<Collider>().enabled = false;
+        itemObj.layer = LayerMask.NameToLayer("Hand Object");
+        foreach (Transform x in itemObj.GetComponentsInChildren<Transform>())
+            x.gameObject.layer = LayerMask.NameToLayer("Hand Object");
         Player.OnItemUseEvent += ItemInHand.UseItem;
 
         if (ItemInHand is FlashLight)
@@ -40,6 +43,9 @@ public class Inventory : MonoBehaviour
         itemObj.GetComponent<Rigidbody>().isKinematic = false;
         itemObj.GetComponentInChildren<Collider>().enabled = true;
         ItemInHand.Drop();
+        itemObj.layer = LayerMask.NameToLayer("Default");
+        foreach (Transform x in itemObj.GetComponentsInChildren<Transform>())
+            x.gameObject.layer = LayerMask.NameToLayer("Default");
         Player.OnItemUseEvent -= ItemInHand.UseItem;
     }
 }
