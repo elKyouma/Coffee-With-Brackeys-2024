@@ -9,6 +9,7 @@ public class Magnifier : Item, IInteractable
 {
     public Transform camera1;
     public Transform player;
+    public GameObject magnifier;
     private bool distortion = true;
     private bool inUse = false;
 
@@ -36,10 +37,12 @@ public class Magnifier : Item, IInteractable
         if (!inUse)
         {
             Debug.Log("Using " + name);
+            LeanTween.moveLocal(magnifier, new Vector3(-0.75f, 0.175f, -0.6f), 1);
             inUse = true;
         }   
         else
         {
+            LeanTween.moveLocal(magnifier, new Vector3(0f, 0f, 0f), 1);
             inUse = false;
         }
     }
