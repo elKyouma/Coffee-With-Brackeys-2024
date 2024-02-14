@@ -11,6 +11,7 @@ public class BookshelfPuzzle : MonoBehaviour
     [SerializeField] private float animationTime = 1f;
     [SerializeField] private float animationDelay = 0.5f;
     [SerializeField] private float moveDistance = 0.5f;
+    private bool hasMoved = false; // Track if the bookshelf has moved
 
     void Start()
     {
@@ -24,27 +25,54 @@ public class BookshelfPuzzle : MonoBehaviour
         pulledBooks.Clear();
         for (int i = 0; i < books.Count; i++)
         {
-            if (books[i].isPulled)  // Adjusted to property access if you updated Book as per previous suggestions
+            if (books[i].isPulled)
             {
                 pulledBooks.Add(i);
             }
         }
-        if (ValidatePuzzle())
-        {
-            // Animate only the bookshelfObject
-            AnimateBookshelf();
-        }
+        CheckPuzzleState();
     }
 
-    private void AnimateBookshelf()
+    private void CheckPuzzleState()
+    {
+        if (ValidatePuzzle() && !hasMoved)
+        {
+            AnimateBookshelfDown();
+        }
+        else if (!ValidatePuzzle() && hasMoved)
+        {
+            MoveBookshelfBack();
+        }
+        // When the puzzle is not solved and hasn't been moved, we do nothing here.
+    }
+
+    private void AnimateBookshelfDown()
+    {
+        hasMoved = true; // Mark as moved
+        LeanTween.moveY(objectToMove, objectToMove.transform.position.y - moveDistance, animationTime)
+            .setEaseOutCubic()
+            .setDelay(animationDelay)
+            .setOnComplete(() =>
+            {
+                // Optional: Actions after moving down, if necessary.
+            });
+    }
+
+    private void MoveBookshelfBack()
     {
         LeanTween.moveY(objectToMove, objectToMove.transform.position.y + moveDistance, animationTime)
-                 .setEaseOutCubic()
-                 .setDelay(animationDelay);
+            .setEaseOutCubic()
+            .setDelay(animationDelay)
+            .setOnComplete(() =>
+            {
+                hasMoved = false; // Reset move flag after moving back
+            });
     }
 
     private bool ValidatePuzzle()
     {
+        Debug.Log("Solution: " + string.Join(", ", solution));
+        Debug.Log("Pulled books: " + string.Join(", ", pulledBooks));
         return pulledBooks.SetEquals(solution);
     }
 }
