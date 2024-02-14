@@ -47,15 +47,32 @@ public class GameManager : MonoBehaviour
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(puzzleModeActionMap);
     }
 
-    public void ExitPuzzleMode()
+    // public void ExitPuzzleMode()
+    // {
+    //     IsInPuzzleMode = false;
+
+    //     Cursor.lockState = CursorLockMode.Locked;
+
+
+    //     ActivePOI.SetActive(false);
+    //     player.GetComponent<PlayerInput>().SwitchCurrentActionMap(defaultActionMap);
+    //     ActivePOI = null;
+    // }
+    IEnumerator DelayedExitPuzzleMode(float delay)
     {
+
         IsInPuzzleMode = false;
 
         Cursor.lockState = CursorLockMode.Locked;
-
         ActivePOI.SetActive(false);
+        yield return new WaitForSeconds(delay);
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(defaultActionMap);
         ActivePOI = null;
+    }
+    public void ExitPuzzleMode()
+    {
+        float delay = 2f;
+        StartCoroutine(DelayedExitPuzzleMode(delay));
     }
     public void EnterInspectorMode()
     {

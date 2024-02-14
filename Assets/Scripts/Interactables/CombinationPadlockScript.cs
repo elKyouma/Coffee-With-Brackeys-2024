@@ -19,6 +19,8 @@ public class CombinationPadlockScript : MonoBehaviour
     [SerializeField]
     private SoundSO unlockSound;
 
+    [SerializeField]
+    private GameObject box;
     [SerializeField] private TelephoneScript telephone;
     [SerializeField] private SoundSO dialogue;
     void Start()
@@ -59,6 +61,8 @@ public class CombinationPadlockScript : MonoBehaviour
         Debug.Log("Unlocked");
         SoundManager.Instance.PlaySound(unlockSound, transform.position);
         LeanTween.moveLocalY(MetalPiece, MetalPiece.transform.localPosition.y + metalPieceOffset, 1f);
-        telephone.StartRinging(dialogue);
+        // telephone.StartRinging(dialogue);
+        GameManager.Instance.ExitPuzzleMode();
+        box.GetComponent<Animator>().Play("Open");
     }
 }
