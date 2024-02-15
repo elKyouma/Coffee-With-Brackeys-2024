@@ -10,6 +10,8 @@ public abstract class Item : MonoBehaviour, IInteractable
     private Renderer[] renderers;
     private Material outlineMaskMaterial;
     private Material outlineFillMaterial;
+    public bool Active { get { return interactable && GameManager.Instance.state == GameManager.GameState.Normal; } }
+
     private void Awake()
     {
         // Cache renderers
@@ -63,7 +65,7 @@ public abstract class Item : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (!interactable) return;
+        if (!Active) return;
 
         interactable = false;
         Inventory.PickUpItem(this, gameObject);
@@ -91,7 +93,7 @@ public abstract class Item : MonoBehaviour, IInteractable
 
     public void Selected()
     {
-        if (!interactable) return;
+        if (!Active) return;
 
         TurnOnOutline();
 
@@ -100,7 +102,7 @@ public abstract class Item : MonoBehaviour, IInteractable
 
     public void Unselected()
     {
-        if (!interactable) return;
+        if (!Active) return;
 
         TurnOffOutline();
     }

@@ -43,6 +43,7 @@ public class Interactor : MonoBehaviour
         float closest = 0f;
         for (int i = 0; i < interactables.Count; i++)
         {
+            if (interactables[i].GetComponent<OutlineInteractable>()?.State != GameManager.Instance.state) continue;
             if (Vector3.Distance(interactables[i].position, playerCamera.transform.position) > InteractionDistance)
                 continue;
             Vector3 vector1 = playerCamera.transform.forward;
@@ -63,7 +64,7 @@ public class Interactor : MonoBehaviour
 
         Vector2 screenCentre = new Vector2(Screen.width / 2, Screen.height / 2);
         Ray ray;
-        if (GameManager.Instance.IsInPuzzleMode)
+        if (GameManager.Instance.state != GameManager.GameState.Normal)
             ray = playerCamera.ScreenPointToRay(Player.MousePosition);
         else
             ray = playerCamera.ScreenPointToRay(screenCentre);
@@ -72,7 +73,7 @@ public class Interactor : MonoBehaviour
         if (Physics.Raycast(ray, out hit) && Vector3.Distance(playerCamera.transform.position, hit.point) <= InteractionDistance)
         {
             var selection = hit.transform;
-            if (selection.GetComponent<IInteractable>() != null)
+            if (selection.GetComponent<IInteractable>() != null && (selection.GetComponent<OutlineInteractable>() == null || selection.GetComponent<OutlineInteractable>()?.State == GameManager.Instance.state))
                 return selection;
         }
 

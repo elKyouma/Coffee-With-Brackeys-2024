@@ -33,35 +33,35 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Volume blurVolume;
 
-    public bool IsInPuzzleMode { get; private set; }
+
+    public enum GameState
+    {
+        Normal,
+        Puzzle,
+        Inspect
+    }
+
+    public GameState state;
 
     public void EnterPuzzleMode(GameObject go)
     {
         if (go == null) return;
-
         Cursor.lockState = CursorLockMode.None;
 
-        IsInPuzzleMode = true;
+        state = GameState.Puzzle;
         ActivePOI = go;
         ActivePOI.SetActive(true);
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(puzzleModeActionMap);
     }
+    public void ExitPuzzleMode()
+    {
+        float delay = 2f;
+        StartCoroutine(DelayedExitPuzzleMode(delay));
+    }
 
-    // public void ExitPuzzleMode()
-    // {
-    //     IsInPuzzleMode = false;
-
-    //     Cursor.lockState = CursorLockMode.Locked;
-
-
-    //     ActivePOI.SetActive(false);
-    //     player.GetComponent<PlayerInput>().SwitchCurrentActionMap(defaultActionMap);
-    //     ActivePOI = null;
-    // }
     IEnumerator DelayedExitPuzzleMode(float delay)
     {
-
-        IsInPuzzleMode = false;
+        state = GameState.Normal;
 
         Cursor.lockState = CursorLockMode.Locked;
         ActivePOI.SetActive(false);
@@ -69,23 +69,21 @@ public class GameManager : MonoBehaviour
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(defaultActionMap);
         ActivePOI = null;
     }
-    public void ExitPuzzleMode()
-    {
-        float delay = 2f;
-        StartCoroutine(DelayedExitPuzzleMode(delay));
-    }
     public void EnterInspectorMode()
     {
+        state = GameState.Inspect;
         if (handObject.childCount == 0) return;
+        
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(inspectorModeActionMap);
         var heldObject = handObject.GetComponentInChildren<Item>().gameObject;
-        // heldObject.transform.position = inspectedObjectTransform.position;
         StartCoroutine(MoveToInspectedPosition(heldObject, inspectedObjectTransform, 0.5f));
         blurVolume.enabled = true;
         heldObject.GetComponentInChildren<Rotatable>().rotateAllowed = true;
     }
     public void ExitInspectorMode()
     {
+        state = GameState.Normal;
+
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(defaultActionMap);
         var heldObject = handObject.GetComponentInChildren<Item>().gameObject;
         heldObject.transform.position = handObject.position;
