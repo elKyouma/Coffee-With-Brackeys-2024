@@ -190,7 +190,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1005845191531460518}
-  - component: {fileID: 8946566763352254875}
   - component: {fileID: 2767682817598841591}
   m_Layer: 0
   m_Name: pivotPointDoor
@@ -220,33 +219,6 @@ Transform:
   - {fileID: 2380198486544462109}
   m_Father: {fileID: 658521828696381888}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8946566763352254875
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519320348617832660}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &2767682817598841591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,7 +416,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4802462863480004481
 Transform:
   m_ObjectHideFlags: 0
@@ -677,6 +649,7 @@ GameObject:
   - component: {fileID: 6784017088345388399}
   - component: {fileID: 2550955486392484875}
   - component: {fileID: 2830517286087063346}
+  - component: {fileID: 3394912618056542547}
   m_Layer: 0
   m_Name: Safe-Door_Hand
   m_TagString: Untagged
@@ -749,6 +722,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &3394912618056542547
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4351677544501336859}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 21.569527
+  m_Center: {x: -0.00004673004, y: 66.94168, z: 66.34662}
 --- !u!1 &4722898057625587792
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,8 +915,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 94.26355, y: 123.68334, z: 12.008106}
-  m_Center: {x: -0.00005531311, y: 75.030426, z: 54.036346}
+  m_Size: {x: 94.26355, y: 123.683334, z: 13.976395}
+  m_Center: {x: -0.000056624413, y: 75.030426, z: 55.02047}
 --- !u!114 &8701930060148042924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,6 +1155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4190859715679399257}
   - component: {fileID: 4465675408701149792}
+  - component: {fileID: 1561453447326510552}
   m_Layer: 0
   m_Name: pivotPointHand
   m_TagString: Untagged
@@ -1197,6 +1192,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+--- !u!54 &1561453447326510552
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8573578237476716544}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8576478738590964793
 GameObject:
   m_ObjectHideFlags: 0
