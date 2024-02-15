@@ -161,6 +161,7 @@ GameObject:
   - component: {fileID: 7735074062782326901}
   - component: {fileID: 1196720425484272139}
   - component: {fileID: 6845756643915129136}
+  - component: {fileID: 5554434964455721675}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -261,7 +262,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -278,10 +279,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+  opening: 0
   openingSpeed: 0.5
   plankToDestroy: 7
   openingSound: {fileID: 11400000, guid: c3dc56b327c23114f8b5ed1c081daf67, type: 2}
   closingSound: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
+--- !u!65 &5554434964455721675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753073071750299644}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8105614, y: 0.038000666, z: 2.0063162}
+  m_Center: {x: 0.40528062, y: 0.0000007857743, z: 1.0031581}
 --- !u!1 &913559149311430602
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +366,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 865843e9158f4e34896be9cd0b5a2fd4, type: 2}
+  - {fileID: 2100000, guid: aa53116808d09754487477694307c694, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1611,7 +1634,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7115266061612193209}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4999979, y: 0.50000215, z: 0.50000215, w: -0.4999979}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
   m_LocalPosition: {x: -0.17, y: 0, z: 2.311}
   m_LocalScale: {x: 1.3751806, y: 1.3751806, z: 1.3751806}
   m_ConstrainProportionsScale: 0
