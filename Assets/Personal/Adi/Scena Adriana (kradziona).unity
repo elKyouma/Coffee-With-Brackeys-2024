@@ -222,6 +222,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3160943144882741979, guid: a4a157692db27004faeba6fd9a32f63e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160943144882741979, guid: a4a157692db27004faeba6fd9a32f63e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -239,15 +243,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4714258633820781924, guid: a4a157692db27004faeba6fd9a32f63e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.39077365
+      value: 4.034
       objectReference: {fileID: 0}
     - target: {fileID: 4714258633820781924, guid: a4a157692db27004faeba6fd9a32f63e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.19
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 4714258633820781924, guid: a4a157692db27004faeba6fd9a32f63e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.95024
+      value: -14.756
       objectReference: {fileID: 0}
     - target: {fileID: 4714258633820781924, guid: a4a157692db27004faeba6fd9a32f63e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5687,6 +5691,7 @@ MonoBehaviour:
   inspectedObjectTransform: {fileID: 673482777}
   blurVolume: {fileID: 323133982}
   state: 0
+  opening: 0
 --- !u!4 &684779836
 Transform:
   m_ObjectHideFlags: 0
@@ -6313,6 +6318,7 @@ MonoBehaviour:
   state: 0
   openingSpeed: 0.5
   plankToDestroy: 7
+  opening: 0
   openingSound: {fileID: 11400000, guid: c3dc56b327c23114f8b5ed1c081daf67, type: 2}
   closingSound: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
 --- !u!4 &991787173
@@ -6400,19 +6406,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5329951881616782388, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.45469674
+      value: 0.32983956
       objectReference: {fileID: 0}
     - target: {fileID: 5329951881616782388, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.24222106
+      value: -0.010886066
       objectReference: {fileID: 0}
     - target: {fileID: 5329951881616782388, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.75643986
+      value: 0.9434605
       objectReference: {fileID: 0}
     - target: {fileID: 5329951881616782388, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.4029623
+      value: 0.03113809
       objectReference: {fileID: 0}
     - target: {fileID: 5339525058596899277, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6456,19 +6462,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7989221908870830395, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.45469674
+      value: 0.32983956
       objectReference: {fileID: 0}
     - target: {fileID: 7989221908870830395, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.24222106
+      value: -0.010886066
       objectReference: {fileID: 0}
     - target: {fileID: 7989221908870830395, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.75643986
+      value: 0.9434605
       objectReference: {fileID: 0}
     - target: {fileID: 7989221908870830395, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.4029623
+      value: 0.03113809
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6782,7 +6788,9 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2514219164204726300, guid: 0811362ae53573c47be253aac1dbdd5d, type: 3}
+    - {fileID: 5199146505246802654, guid: 0811362ae53573c47be253aac1dbdd5d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8684,6 +8692,7 @@ MonoBehaviour:
   state: 0
   openingSpeed: 0.478
   plankToDestroy: 7
+  opening: 0
   openingSound: {fileID: 11400000, guid: c3dc56b327c23114f8b5ed1c081daf67, type: 2}
   closingSound: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
 --- !u!4 &1368598450
