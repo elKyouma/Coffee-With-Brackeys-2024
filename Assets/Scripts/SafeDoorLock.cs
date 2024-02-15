@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SafeDoorLock : MonoBehaviour
+public class SafeDoorLock : OutlineInteractable
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool IsOpenable = true;
+    public override void Interact()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (!IsOpenable) return;
+        Debug.Log("Door Open");
+        transform.parent.GetComponentInChildren<SafeDoor>().Unlock();
+        IsOpenable = false;
     }
 }
