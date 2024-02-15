@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SafeDoor : MonoBehaviour, IInteractable
+public class SafeDoor : MonoBehaviour
 {
     [SerializeField, Range(0.2f, 1f)]
     private float openingSpeed = 0.5f;
@@ -11,7 +11,6 @@ public class SafeDoor : MonoBehaviour, IInteractable
     private float startAngle;
     private const float angles = 120;
     private const string amplitudeParam = "_Amplitude";
-    private bool openable = false;
 
     [SerializeField] private SoundSO openingSound;
     [SerializeField] private SoundSO closingSound;
@@ -22,25 +21,9 @@ public class SafeDoor : MonoBehaviour, IInteractable
         meshRenderer.material.SetFloat(amplitudeParam, 0.0f);
         startAngle = transform.rotation.eulerAngles.y;
     }
-
-    private void OnEnable()
-    {
-        Interactor.AddInteractable(transform);
-    }
-
-    private void OnDisable()
-    {
-        Interactor.DeleteInteractable(transform);
-    }
-
-    public void Unlock()
-    {
-        openable = true;
-    }
         
-    public void Interact()
+    public void Open()
     {
-        if (!openable) return;
         float rotateAngles = -angles;
         Transform point = GetComponentInParent<Transform>();
 
@@ -54,17 +37,5 @@ public class SafeDoor : MonoBehaviour, IInteractable
             point.LeanRotateY(startAngle, openingSpeed);
             SoundManager.Instance.PlaySound(closingSound, transform.position);
         }
-    }
-
-    public void Selected()
-    {
-        meshRenderer.material.SetFloat(amplitudeParam, 0.5f);
-
-    }
-
-    public void Unselected()
-    {
-        meshRenderer.material.SetFloat(amplitudeParam, 0.0f);
-
     }
 }

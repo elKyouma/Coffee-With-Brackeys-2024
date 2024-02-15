@@ -10,8 +10,13 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
     private Material outlineMaskMaterial;
     private Material outlineFillMaterial;
 
+    [SerializeField]
+    GameManager.GameState state;
+    public GameManager.GameState State { get { return state; } }
+
     private void Awake()
     {
+
         // Cache renderers
         renderers = GetComponentsInChildren<Renderer>();
 
