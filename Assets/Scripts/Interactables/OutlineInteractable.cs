@@ -59,7 +59,7 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
 
     public abstract void Interact();
 
-    private void TurnOnOutline()
+    public void TurnOnOutline()
     {
         // Apply properties according to mode
         outlineFillMaterial.SetColor("_OutlineColor", Color.yellow);
@@ -70,6 +70,6 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
     }
 
     private void TurnOffOutline() => outlineFillMaterial.SetFloat("_OutlineWidth", 0.0f);
-    public void Selected() => TurnOnOutline();
+    public virtual void Selected() => TurnOnOutline();
     public void Unselected() => TurnOffOutline();
 }
