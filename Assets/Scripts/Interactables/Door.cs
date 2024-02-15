@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour, IInteractable
+public class DoorWithPlanks : MonoBehaviour, IInteractable
 {
     [SerializeField, Range(0.2f, 1f)]
     private float openingSpeed = 0.5f;
@@ -11,6 +11,8 @@ public class Door : MonoBehaviour, IInteractable
     private float startAngle;
     private const float angles = 90;
     private const string amplitudeParam = "_Amplitude";
+    private bool openable = false;
+    public int PlankDoRozjebania = 7;
 
     [SerializeField] private SoundSO openingSound;
     [SerializeField] private SoundSO closingSound;
@@ -31,20 +33,31 @@ public class Door : MonoBehaviour, IInteractable
     {
         Interactor.DeleteInteractable(transform);
     }
+
+    public void IsOpenable()
+    {
+        PlankDoRozjebania--;
+        if (PlankDoRozjebania <= 0)
+        {
+            openable = true;
+        }
+    }
     public void Interact()
     {
+        if (!openable) return;
         float rotateAngles = angles;
-        if (Vector3.Dot(transform.forward, transform.position - GameManager.Instance.PlayerCharacter.position) > 0f)
+        Transform point = GetComponentInParent<Transform>(); 
+        if (Vector3.Dot(transform.forward, transform.position - GameManager.Instance.PlayerCharacter.position) < 0f)
             rotateAngles = -rotateAngles;
 
         if (transform.rotation.eulerAngles.y == startAngle)
         {
-            transform.LeanRotateY(startAngle + rotateAngles, openingSpeed);
+            point.LeanRotateY(startAngle + rotateAngles, openingSpeed);
             SoundManager.Instance.PlaySound(openingSound, transform.position);
         }
         else
-        {
-            transform.LeanRotateY(startAngle, openingSpeed);
+        {   
+            point.LeanRotateY(startAngle, openingSpeed);
             SoundManager.Instance.PlaySound(closingSound, transform.position);
         }
     }
