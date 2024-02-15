@@ -19,6 +19,10 @@ public class SafeDoorHand : OutlineInteractable
             TurnOnOutline();
         }
     }
+    public bool IsOpen()
+    {
+        return isOpen;
+    }
     public override void Interact()
     {
         if (!isOpenable) return;
