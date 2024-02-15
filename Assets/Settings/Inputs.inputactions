@@ -232,12 +232,12 @@
                 },
                 {
                     "name": "MousePos",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "aa9e1541-e8ae-4773-8326-758cd0f8301e",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Interact",
