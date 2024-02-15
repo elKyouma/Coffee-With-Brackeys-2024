@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorWithPlanks : MonoBehaviour, IInteractable
+public class SafeDoor : MonoBehaviour, IInteractable
 {
     [SerializeField, Range(0.2f, 1f)]
     private float openingSpeed = 0.5f;
 
     private MeshRenderer meshRenderer;
     private float startAngle;
-    private const float angles = 90;
+    private const float angles = 120;
     private const string amplitudeParam = "_Amplitude";
     private bool openable = false;
-    public int PlankDoRozjebania = 7;
 
     [SerializeField] private SoundSO openingSound;
     [SerializeField] private SoundSO closingSound;
@@ -34,21 +33,16 @@ public class DoorWithPlanks : MonoBehaviour, IInteractable
         Interactor.DeleteInteractable(transform);
     }
 
-    public void IsOpenable()
+    public void Unlock()
     {
-        PlankDoRozjebania--;
-        if (PlankDoRozjebania <= 0)
-        {
-            openable = true;
-        }
+        openable = true;
     }
+        
     public void Interact()
     {
         if (!openable) return;
-        float rotateAngles = angles;
-        Transform point = GetComponentInParent<Transform>(); 
-        if (Vector3.Dot(transform.forward, transform.position - GameManager.Instance.PlayerCharacter.position) < 0f)
-            rotateAngles = -rotateAngles;
+        float rotateAngles = -angles;
+        Transform point = GetComponentInParent<Transform>();
 
         if (transform.rotation.eulerAngles.y == startAngle)
         {

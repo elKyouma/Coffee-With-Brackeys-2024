@@ -15,7 +15,7 @@ public class Plank : OutlineInteractable, IDestructable
         rb.velocity = transform.forward * (-2);
         SoundManager.Instance.PlaySound(breakingSound, transform.position);
         IsDestructable = false;
-        transform.parent.GetComponentInChildren<DoorWithPlanks>().IsOpenable();
+        transform.parent.GetComponentInChildren<DoorWithPlanks>().DeletePlank();
     }
 
     public override void Interact()
