@@ -12,6 +12,13 @@ public class SafeDoorHand : OutlineInteractable
     {
         isOpenable = true;
     }
+    public override void Selected()
+    {
+        if (isOpenable && !isOpen)
+        {
+            TurnOnOutline();
+        }
+    }
     public override void Interact()
     {
         if (!isOpenable) return;
