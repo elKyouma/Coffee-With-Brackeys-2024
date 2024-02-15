@@ -14,12 +14,9 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
     GameManager.GameState state;
     public GameManager.GameState State { get { return state; } }
 
-    private void Awake()
+    private void SetUp()
     {
-
-        // Cache renderers
         renderers = GetComponentsInChildren<Renderer>();
-
         // Instantiate outline materials
         outlineMaskMaterial = Instantiate(Resources.Load<Material>(@"Materials/OutlineMask"));
         outlineFillMaterial = Instantiate(Resources.Load<Material>(@"Materials/OutlineFill"));
@@ -31,10 +28,9 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
     private void OnEnable()
     {
         Interactor.AddInteractable(transform);
-
+        if (renderers == null) SetUp();
         foreach (var renderer in renderers)
         {
-
             // Append outline shaders
             var materials = renderer.sharedMaterials.ToList();
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Drawer : OutlineInteractable
 {
     [SerializeField] private float range;
+    [SerializeField] private float speed;
     private float startPosZ;
     private void Awake()
     {
@@ -14,8 +15,8 @@ public class Drawer : OutlineInteractable
     public override void Interact()
     {
         if (transform.localPosition.z <= startPosZ + range * 0.5f)
-            transform.LeanMoveLocalZ(startPosZ + range, 1f).setEaseInOutQuad();
+            transform.LeanMoveLocalZ(startPosZ + range, speed).setEaseInOutQuad();
         else
-            transform.LeanMoveLocalZ(startPosZ, 1f).setEaseInOutQuad();
+            transform.LeanMoveLocalZ(startPosZ, speed).setEaseInOutQuad();
     }
 }
