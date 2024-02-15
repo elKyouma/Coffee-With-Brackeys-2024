@@ -188,6 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   range: 0.4
+  speed: 0.6
 --- !u!54 &5199146505246802654
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -239,6 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   range: 0.4
+  speed: 0
 --- !u!54 &8863601072839501448
 Rigidbody:
   m_ObjectHideFlags: 0
