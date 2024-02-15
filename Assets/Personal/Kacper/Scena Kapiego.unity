@@ -1230,6 +1230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+  opening: 0
   openingSpeed: 0.5
   plankToDestroy: 7
   openingSound: {fileID: 0}
@@ -1472,6 +1473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+  opening: 0
   openingSpeed: 0.478
   plankToDestroy: 7
   openingSound: {fileID: 0}
