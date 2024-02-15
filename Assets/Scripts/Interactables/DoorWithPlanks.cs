@@ -1,17 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class DoorWithPlanks : OutlineInteractable
 {
+    private enum DoorOpenings
+    {
+        right,
+        left,
+        both,
+    }
+
+    [SerializeField] DoorOpenings opening;
     [SerializeField, Range(0.2f, 1f)]
     private float openingSpeed = 0.5f;
 
     private float startAngle;
     private const float angles = 90;
     [SerializeField] private int plankToDestroy = 7;
-    [SerializeField] GameManager.DoorOpenings opening;
-    public GameManager.DoorOpenings Opening { get { return opening; } }
 
     private bool Openable => plankToDestroy <= 0;
 
@@ -33,8 +40,21 @@ public class DoorWithPlanks : OutlineInteractable
         if (!Openable) return;
         float rotateAngles = angles;
         Transform point = GetComponentInParent<Transform>();
-        if (Vector3.Dot(transform.forward, transform.position - GameManager.Instance.PlayerCharacter.position) < 0f)
-            rotateAngles = -rotateAngles;
+
+        switch (opening)
+        {
+            case DoorOpenings.right:
+                break;
+            case DoorOpenings.left:
+                rotateAngles = -rotateAngles;
+                break;
+            case DoorOpenings.both:
+                if (Vector3.Dot(transform.forward, transform.position - GameManager.Instance.PlayerCharacter.position) < 0f)
+                    rotateAngles = -rotateAngles;
+                break;
+            default:
+                break;
+        }
 
         if (transform.rotation.eulerAngles.y == startAngle)
         {
