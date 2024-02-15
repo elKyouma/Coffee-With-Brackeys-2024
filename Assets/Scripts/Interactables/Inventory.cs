@@ -35,6 +35,8 @@ public class Inventory : MonoBehaviour
             flashLight.inHand = true;
             flashLight.ReplaceLight();
         }
+
+        ItemInHand.TurnOffOutline();
     }
 
     public static void DropItem()
@@ -47,5 +49,7 @@ public class Inventory : MonoBehaviour
         foreach (Transform x in itemObj.GetComponentsInChildren<Transform>())
             x.gameObject.layer = LayerMask.NameToLayer("Default");
         Player.OnItemUseEvent -= ItemInHand.UseItem;
+
+        ItemInHand.TurnOnOutline();
     }
 }
