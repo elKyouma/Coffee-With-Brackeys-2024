@@ -11,7 +11,6 @@ public class Magnifier : Item, IInteractable
     public Transform player;
     public GameObject magnifier;
     public RenderTexture texture;
-    private bool distortion = true;
     private bool inUse = false;
 
 
