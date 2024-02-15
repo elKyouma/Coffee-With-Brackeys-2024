@@ -74,6 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ad40453c5b3e647bbf65f9bc8f174c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 1
 --- !u!136 &3323415258839096551
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -272,7 +273,6 @@ GameObject:
   - component: {fileID: 2727914016699459066}
   - component: {fileID: 2172686787841976451}
   - component: {fileID: 4278136885177032112}
-  - component: {fileID: 3751013707959100517}
   m_Layer: 0
   m_Name: Main_Bank-Safe-Jt
   m_TagString: Untagged
@@ -345,33 +345,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &3751013707959100517
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2669941344201177120}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &2974645938379813092
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +511,6 @@ GameObject:
   - component: {fileID: 2688868617606638017}
   - component: {fileID: 5661392585575405537}
   - component: {fileID: 1048559558379566829}
-  - component: {fileID: 2822693968640892334}
   m_Layer: 0
   m_Name: Safe-Main
   m_TagString: Untagged
@@ -611,28 +583,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2822693968640892334
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3918428268597875294}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6891244095116403592, guid: c9e3002aa72d36b48a0b0cf8fd62f0b0, type: 3}
 --- !u!1 &4232114020515805111
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,6 +828,8 @@ GameObject:
   - component: {fileID: 1618865848443756400}
   - component: {fileID: 564090912692729369}
   - component: {fileID: 7217004004472343244}
+  - component: {fileID: 8701930060148042924}
+  - component: {fileID: 456050759026879723}
   m_Layer: 0
   m_Name: Safe-Door
   m_TagString: Untagged
@@ -971,6 +923,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 94.26355, y: 123.68334, z: 12.008106}
   m_Center: {x: -0.00005531311, y: 75.030426, z: 54.036346}
+--- !u!114 &8701930060148042924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045581308781458125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24253a8d8a90394f958622596f16521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  POIObject: {fileID: 3160943144882741979}
+--- !u!54 &456050759026879723
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045581308781458125}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7587088618036722108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,6 +1196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a11a44287300474e932f5e74ecac596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 0
 --- !u!1 &8576478738590964793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,7 +1208,6 @@ GameObject:
   - component: {fileID: 3029537889592505770}
   - component: {fileID: 1714819776608174868}
   - component: {fileID: 2654717196456972332}
-  - component: {fileID: 7265944271261035900}
   m_Layer: 0
   m_Name: Door_Lock_Knob
   m_TagString: Untagged
@@ -1290,19 +1282,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7265944271261035900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8576478738590964793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f24253a8d8a90394f958622596f16521, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  POIObject: {fileID: 3160943144882741979}
 --- !u!1 &8692087378373714153
 GameObject:
   m_ObjectHideFlags: 0
