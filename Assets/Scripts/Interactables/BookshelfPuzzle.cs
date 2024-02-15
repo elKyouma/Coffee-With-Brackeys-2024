@@ -27,7 +27,6 @@ public class BookshelfPuzzle : MonoBehaviour
         foreach (Book book in books)
         {
             book.id = int.Parse(book.name.Split('.')[1]);
-            Debug.Log(book.id);
         }
         books.Sort((x, y) => x.id.CompareTo(y.id));
     }
@@ -83,8 +82,6 @@ public class BookshelfPuzzle : MonoBehaviour
 
     private bool ValidatePuzzle()
     {
-        Debug.Log("Solution: " + string.Join(", ", solution));
-        Debug.Log("Pulled books: " + string.Join(", ", pulledBooks));
         return pulledBooks.SetEquals(solution);
     }
 }
