@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
 
     public void EnterPuzzleMode(GameObject go)
     {
-        if (go == null) return;
+        if (go == null || ActivePOI != null) return;
         Cursor.lockState = CursorLockMode.None;
 
         state = GameState.Puzzle;
