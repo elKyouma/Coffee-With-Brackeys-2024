@@ -9,7 +9,7 @@ public class SafeDoorLock : OutlineInteractable
     {
         if (!IsOpenable) return;
         Debug.Log("Door Open");
-        transform.parent.GetComponentInChildren<SafeDoor>().Unlock();
+        transform.parent.GetComponentInChildren<SafeDoorHand>().Unlock();
         IsOpenable = false;
     }
 }
