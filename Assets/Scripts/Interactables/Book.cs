@@ -14,6 +14,7 @@ public class Book : OutlineInteractable
     public bool isPulled = false;
     [SerializeField]
     private pullAxis pullAxis;
+    public int id;
     void Start()
     {
         bookshelfPuzzle = FindObjectOfType<BookshelfPuzzle>();

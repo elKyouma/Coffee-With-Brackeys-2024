@@ -65,7 +65,7 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
 
         outlineMaskMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.LessEqual);
         outlineFillMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.LessEqual);
-        outlineFillMaterial.SetFloat("_OutlineWidth", 7f);
+        outlineFillMaterial.SetFloat("_OutlineWidth", 8f);
     }
 
     private void TurnOffOutline() => outlineFillMaterial.SetFloat("_OutlineWidth", 0.0f);
