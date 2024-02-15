@@ -5,17 +5,18 @@ using UnityEngine;
 public class Drawer : OutlineInteractable
 {
     [SerializeField] private float range;
-    private float startPosX;
+    [SerializeField] private float speed;
+    private float startPosZ;
     private void Awake()
     {
-        startPosX = transform.localPosition.x;
+        startPosZ = transform.localPosition.z;
     }
 
     public override void Interact()
     {
-        if (transform.localPosition.x == startPosX)
-            transform.LeanMoveLocalX(startPosX + range, 1f).setEaseInOutQuad();
+        if (transform.localPosition.z <= startPosZ + range * 0.5f)
+            transform.LeanMoveLocalZ(startPosZ + range, speed).setEaseInOutQuad();
         else
-            transform.LeanMoveLocalX(startPosX, 1f).setEaseInOutQuad();
+            transform.LeanMoveLocalZ(startPosZ, speed).setEaseInOutQuad();
     }
 }
