@@ -17,7 +17,19 @@ public class BookshelfPuzzle : MonoBehaviour
     {
         solution = new HashSet<int>(solutionArray);
         books = new List<Book>(FindObjectsOfType<Book>());
+        SortBooks();
+
         UpdateBooks();
+    }
+    void SortBooks()
+    {
+        // by id (Cube.1, Cube.2, Cube.3, etc.)
+        foreach (Book book in books)
+        {
+            book.id = int.Parse(book.name.Split('.')[1]);
+            Debug.Log(book.id);
+        }
+        books.Sort((x, y) => x.id.CompareTo(y.id));
     }
 
     public void UpdateBooks()
