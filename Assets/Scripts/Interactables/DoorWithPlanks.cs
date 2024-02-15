@@ -9,8 +9,10 @@ public class DoorWithPlanks : OutlineInteractable
 
     private float startAngle;
     private const float angles = 90;
-    [SerializeField]
-    private int plankToDestroy = 7;
+    [SerializeField] private int plankToDestroy = 7;
+    [SerializeField] GameManager.DoorOpenings opening;
+    public GameManager.DoorOpenings Opening { get { return opening; } }
+
     private bool Openable => plankToDestroy <= 0;
 
     [SerializeField] private SoundSO openingSound;
