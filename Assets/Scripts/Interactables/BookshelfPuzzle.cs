@@ -13,6 +13,9 @@ public class BookshelfPuzzle : MonoBehaviour
     [SerializeField] private float moveDistance = 0.5f;
     private bool hasMoved = false; // Track if the bookshelf has moved
 
+    [SerializeField] private SoundSO bookSlideSound;
+    [SerializeField] private AudioSource fireplaceAudioSource;
+
     void Start()
     {
         solution = new HashSet<int>(solutionArray);
@@ -60,13 +63,16 @@ public class BookshelfPuzzle : MonoBehaviour
     private void AnimateBookshelfDown()
     {
         hasMoved = true; // Mark as moved
+        fireplaceAudioSource.mute = false;
         LeanTween.moveY(objectToMove, objectToMove.transform.position.y - moveDistance, animationTime)
             .setEaseOutCubic()
             .setDelay(animationDelay)
             .setOnComplete(() =>
             {
                 // Optional: Actions after moving down, if necessary.
+                fireplaceAudioSource.mute = true;
             });
+        
     }
 
     private void MoveBookshelfBack()
@@ -78,10 +84,13 @@ public class BookshelfPuzzle : MonoBehaviour
             {
                 hasMoved = false; // Reset move flag after moving back
             });
+        
     }
 
     private bool ValidatePuzzle()
     {
         return pulledBooks.SetEquals(solution);
     }
+
+    public SoundSO getBookSlideSound() => bookSlideSound;
 }

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ad0793a89b4e0a4a946b43986ecedfb, type: 3}
   m_Name: DoorOpeningSound
   m_EditorClassIdentifier: 
-  audio: {fileID: 8300000, guid: b5e333cfdbef8f8408296424ca36f4e9, type: 3}
+  audio: {fileID: 8300000, guid: a2e3b441bf64ba746b0c58eb223e0e71, type: 3}
   soundVolume: 1
