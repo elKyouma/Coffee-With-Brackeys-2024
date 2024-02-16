@@ -18,12 +18,18 @@ public class DoorWithPlanks : OutlineInteractable
 
     private float startAngle;
     private const float angles = 90;
+    [Header("Planks")]
     [SerializeField] private int plankToDestroy = 7;
 
     private bool Openable => plankToDestroy <= 0;
 
     [SerializeField] private SoundSO openingSound;
     [SerializeField] private SoundSO closingSound;
+
+    [Header("Key")]
+    [Tooltip("If -1, no key is needed")]
+    [SerializeField] private int keyId = -1;
+    [SerializeField] private SoundSO usingKeySound;
 
     private void Start()
     {
@@ -38,6 +44,7 @@ public class DoorWithPlanks : OutlineInteractable
     public override void Interact()
     {
         if (!Openable) return;
+        if (keyId >= 0 && keyId != GameManager.Instance.HandObject.GetComponentInChildren<Key>().keyId) return;
         float rotateAngles = angles;
         Transform point = GetComponentInParent<Transform>();
 
