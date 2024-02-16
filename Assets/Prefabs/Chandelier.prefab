@@ -303,8 +303,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.6218114, b: 0.3754716, a: 1}
-  m_Intensity: 3
-  m_Range: 6
+  m_Intensity: 2.5
+  m_Range: 7
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -315,7 +315,7 @@ Light:
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 1
+    m_NearPlane: 0.84
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -345,10 +345,10 @@ Light:
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 2
+  m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 6.52e-43, y: 0.000034365454, z: 6.52e-43, w: 0.000034365454}
+  m_BoundingSphereOverride: {x: -22437.76, y: 1.7116878e+19, z: 1.485871e-15, w: 1.3600372e+26}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
