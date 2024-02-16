@@ -90,7 +90,7 @@ public class Interactor : MonoBehaviour
 
         if (Selection != previousSelection)
         {
-            previousSelection?.GetComponent<IInteractable>().Unselected();
+            previousSelection?.GetComponent<IInteractable>()?.Unselected();
             Selection?.GetComponent<IInteractable>().Selected();
         }
 
