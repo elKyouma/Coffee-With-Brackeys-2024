@@ -15,7 +15,7 @@ public class ClockHand : OutlineInteractable
     {
         if (!rotateToCursor) return;
 
-        if(Input.GetMouseButtonUp(0)) rotateToCursor = false;
+        if (Input.GetMouseButtonUp(0)) rotateToCursor = false;
 
         Vector2 pos = Camera.main.WorldToScreenPoint(transform.position);
         Vector2 dir = Player.MousePosition - pos;
