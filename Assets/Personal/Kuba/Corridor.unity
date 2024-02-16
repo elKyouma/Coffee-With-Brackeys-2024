@@ -1468,15 +1468,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1727841917438686930, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6053
+      value: 0.317
       objectReference: {fileID: 0}
     - target: {fileID: 1727841917438686930, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1795
+      value: -0.179
       objectReference: {fileID: 0}
     - target: {fileID: 1727841917438686930, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4042
+      value: 0.404
       objectReference: {fileID: 0}
     - target: {fileID: 2023390123371339102, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: CapsuleRadius
@@ -6362,6 +6362,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4433934979002262853, guid: 2559acdb79730914384f45f36f37e6c3, type: 3}
   m_PrefabInstance: {fileID: 869321260}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &870244091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 343897754669121246, guid: 28a7de13a6369f846bf6d64963e8fa43, type: 3}
+  m_PrefabInstance: {fileID: 1227048651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &870244096
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870244091}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &870244097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870244091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41064fd4212b60d4f90ca56e74e8d768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  range: 0.285
+  speed: 0.268
 --- !u!1001 &870439251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6797,6 +6844,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2063345074}
     m_Modifications:
+    - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.5810282e+32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.8e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1.3e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: -2.3440847e+32
+      objectReference: {fileID: 0}
     - target: {fileID: 3720266075535538743, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
       propertyPath: m_Name
       value: Chandelier (1)
@@ -11905,7 +11968,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 343897754669121246, guid: 28a7de13a6369f846bf6d64963e8fa43, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 870244097}
+    - targetCorrespondingSourceObject: {fileID: 343897754669121246, guid: 28a7de13a6369f846bf6d64963e8fa43, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 870244096}
+    - targetCorrespondingSourceObject: {fileID: 4965136139764123710, guid: 28a7de13a6369f846bf6d64963e8fa43, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1406645136}
+    - targetCorrespondingSourceObject: {fileID: 4965136139764123710, guid: 28a7de13a6369f846bf6d64963e8fa43, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1406645135}
   m_SourcePrefab: {fileID: 100100000, guid: 28a7de13a6369f846bf6d64963e8fa43, type: 3}
 --- !u!4 &1227048652 stripped
 Transform:
@@ -12279,6 +12354,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2063345074}
     m_Modifications:
+    - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 6.401409e-27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.02e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 2.2e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 3.5763e-41
+      objectReference: {fileID: 0}
     - target: {fileID: 3720266075535538743, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
       propertyPath: m_Name
       value: Chandelier
@@ -12411,6 +12502,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7719714595363463373, guid: de20a1662867a34c4981f436e6017797, type: 3}
   m_PrefabInstance: {fileID: 1119351600}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1406645130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4965136139764123710, guid: 28a7de13a6369f846bf6d64963e8fa43, type: 3}
+  m_PrefabInstance: {fileID: 1227048651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1406645135
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406645130}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1406645136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406645130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41064fd4212b60d4f90ca56e74e8d768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  range: 0.285
+  speed: 0.268
 --- !u!1001 &1418969968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15491,19 +15629,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 3e-45
+      value: 3.5873e-41
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: NaN
+      value: 1.02e-43
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 1e-45
+      value: 5.6e-44
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 0
+      value: 3.0309e-41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16628,7 +16766,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.4e-44, z: 2.9803e-41, w: 1.79725e-40}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 6.35e-43, z: 2.2139e-41, w: -1.7277043e+13}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -21014,15 +21152,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0
+      value: 1.02e-43
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 1e-45
+      value: 1.06e-43
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 0
+      value: 2.5188e-41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23640,19 +23778,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0
+      value: 3.6591e-41
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: NaN
+      value: 1.02e-43
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 42
+      value: 6.2e-44
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 12
+      value: 3.118e-41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24727,19 +24865,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7877495237420833831, guid: a4cc2bca194207f4dbf85779c4da51ee, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 51
+      value: 1.0133158e+31
       objectReference: {fileID: 0}
     - target: {fileID: 7877495237420833831, guid: a4cc2bca194207f4dbf85779c4da51ee, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 6.52e-43
+      value: 1.02e-43
       objectReference: {fileID: 0}
     - target: {fileID: 7877495237420833831, guid: a4cc2bca194207f4dbf85779c4da51ee, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 43
+      value: 7e-45
       objectReference: {fileID: 0}
     - target: {fileID: 7877495237420833831, guid: a4cc2bca194207f4dbf85779c4da51ee, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 0
+      value: 3.2694e-41
       objectReference: {fileID: 0}
     - target: {fileID: 8574904025510558457, guid: a4cc2bca194207f4dbf85779c4da51ee, type: 3}
       propertyPath: m_Name
