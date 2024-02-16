@@ -43,15 +43,6 @@ public class GameManager : MonoBehaviour
 
     public GameState state;
 
-    public enum DoorOpenings
-    {
-        right,
-        both,
-        left,
-    }
-
-    public DoorOpenings opening;
-
     public void EnterPuzzleMode(GameObject go)
     {
         if (go == null || ActivePOI != null) return;

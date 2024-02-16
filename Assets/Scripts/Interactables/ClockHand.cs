@@ -8,6 +8,7 @@ public class ClockHand : OutlineInteractable
     bool rotateToCursor = false;
     public override void Interact()
     {
+        Debug.Log("Interakcja");
         rotateToCursor = true;
     }
 
