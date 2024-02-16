@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Drawer : OutlineInteractable
 {
-    [SerializeField] private float range;
-    [SerializeField] private float speed;
+    [SerializeField, Range(0.1f, 0.8f)] private float range;
+    [SerializeField, Range(0.1f, 0.8f)] private float speed;
     private float startPosZ;
     private void Awake()
     {

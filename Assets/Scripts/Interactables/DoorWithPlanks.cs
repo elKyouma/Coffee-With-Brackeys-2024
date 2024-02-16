@@ -56,7 +56,7 @@ public class DoorWithPlanks : OutlineInteractable
                 break;
         }
 
-        if (transform.rotation.eulerAngles.y == startAngle)
+        if (transform.rotation.eulerAngles.y <= startAngle + angles * 0.5f)
         {
             point.LeanRotateY(startAngle + rotateAngles, openingSpeed);
             SoundManager.Instance.PlaySound(openingSound, transform.position);
