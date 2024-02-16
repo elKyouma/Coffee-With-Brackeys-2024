@@ -21,7 +21,7 @@ public class ClockHand : OutlineInteractable
         Vector2 dir = Player.MousePosition - pos;
         dir.x = -dir.x;
         dir.Normalize();
-        transform.rotation = Quaternion.LookRotation(dir, transform.up);
+        transform.rotation = Quaternion.LookRotation(new Vector3(0f, dir.y, dir.x), transform.up);
 
     }
 }
