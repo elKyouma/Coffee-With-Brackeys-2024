@@ -7,6 +7,6 @@ public class Key : Item
     public int keyId;
     public override void UseItem()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }

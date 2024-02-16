@@ -30,6 +30,7 @@ public class DoorWithPlanks : OutlineInteractable
     [Tooltip("If -1, no key is needed")]
     [SerializeField] private int keyId = -1;
     [SerializeField] private SoundSO usingKeySound;
+    [SerializeField] private SoundSO tryToOpenSound;
 
     private void Start()
     {
@@ -41,10 +42,26 @@ public class DoorWithPlanks : OutlineInteractable
         plankToDestroy--;
 
     }
+
+    private void UnlockTheDoor()
+    {
+        SoundManager.Instance.PlaySound(usingKeySound, transform.position);
+        keyId = -1;
+    }
+
     public override void Interact()
     {
         if (!Openable) return;
-        if (keyId >= 0 && keyId != GameManager.Instance.HandObject.GetComponentInChildren<Key>().keyId) return;
+
+        if(keyId >= 0)
+        {
+            if(keyId == GameManager.Instance.HandObject.GetComponentInChildren<Key>()?.keyId)
+                UnlockTheDoor();
+            else
+                SoundManager.Instance.PlaySound(tryToOpenSound, transform.position);
+            return;
+        }
+
         float rotateAngles = angles;
         Transform point = GetComponentInParent<Transform>();
 
