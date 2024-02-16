@@ -15,6 +15,8 @@ public class Book : OutlineInteractable
     [SerializeField]
     private pullAxis pullAxis;
     public int id;
+
+
     void Start()
     {
         bookshelfPuzzle = FindObjectOfType<BookshelfPuzzle>();
@@ -46,6 +48,8 @@ public class Book : OutlineInteractable
         Vector3 targetPosition = transform.position + (isPulled ? pullVector : -pullVector);
         // Animate the book to the new position in world space
         LeanTween.move(gameObject, targetPosition, animationTime).setEase(LeanTweenType.easeOutCubic);
+
+        SoundManager.Instance.PlaySound(bookshelfPuzzle.getBookSlideSound(), gameObject.transform.position);
 
         // Toggle the pulled state
         isPulled = !isPulled;
