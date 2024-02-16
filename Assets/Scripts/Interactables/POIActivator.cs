@@ -17,6 +17,7 @@ public class POIActivator : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        GetComponent<Collider>().enabled = false;
         GameManager.Instance.EnterPuzzleMode(POIObject);
     }
     public void Selected()
