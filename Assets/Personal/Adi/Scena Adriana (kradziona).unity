@@ -5535,7 +5535,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: ed7a2274c7b749f48ac6da9f4289b45c, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 4f08c7b25dda1e441af574b66de895da, type: 2}
 --- !u!4 &323133983
 Transform:
   m_ObjectHideFlags: 0
@@ -6535,6 +6535,8 @@ MonoBehaviour:
   plankToDestroy: 7
   openingSound: {fileID: 11400000, guid: c3dc56b327c23114f8b5ed1c081daf67, type: 2}
   closingSound: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
+  keyId: -1
+  usingKeySound: {fileID: 0}
 --- !u!4 &991787173
 Transform:
   m_ObjectHideFlags: 0
@@ -8802,6 +8804,8 @@ MonoBehaviour:
   plankToDestroy: 7
   openingSound: {fileID: 11400000, guid: c3dc56b327c23114f8b5ed1c081daf67, type: 2}
   closingSound: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
+  keyId: -1
+  usingKeySound: {fileID: 0}
 --- !u!4 &1368598450
 Transform:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ public class Plank : OutlineInteractable, IDestructable
         transform.parent.GetComponentInChildren<DoorWithPlanks>().DeletePlank();
     }
 
+
     public override void Interact()
     {
     }
