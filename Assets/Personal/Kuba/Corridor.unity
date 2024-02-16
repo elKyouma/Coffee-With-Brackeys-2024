@@ -196,6 +196,14 @@ PrefabInstance:
       propertyPath: m_StaticShadowCaster
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8753972528919272471, guid: 9bb971e42f592ad43b010e47f41fb9e2, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753972528919272471, guid: 9bb971e42f592ad43b010e47f41fb9e2, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2538,7 +2546,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -2677,18 +2685,6 @@ PrefabInstance:
     - target: {fileID: 3632529789053911388, guid: 25dc4384447d6da44b3ebb11df9e9a58, type: 3}
       propertyPath: m_Name
       value: wallBottom (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7017143200305603813, guid: 25dc4384447d6da44b3ebb11df9e9a58, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 97
-      objectReference: {fileID: 0}
-    - target: {fileID: 7017143200305603813, guid: 25dc4384447d6da44b3ebb11df9e9a58, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 97
-      objectReference: {fileID: 0}
-    - target: {fileID: 7017143200305603813, guid: 25dc4384447d6da44b3ebb11df9e9a58, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 74.00249
       objectReference: {fileID: 0}
     - target: {fileID: 7017143200305603813, guid: 25dc4384447d6da44b3ebb11df9e9a58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3804,6 +3800,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2063345074}
     m_Modifications:
+    - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3720266075535538743, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
       propertyPath: m_Name
       value: Chandelier (1)
@@ -6978,20 +6978,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
       propertyPath: m_BoundingSphereOverride.w
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 1.02e-43
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 7.8e-44
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3449142149625220427, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 1.9264e-41
+      value: 2.6914583e+20
       objectReference: {fileID: 0}
     - target: {fileID: 3720266075535538743, guid: 1b397368bcafb8f4f8a5eca307529a85, type: 3}
       propertyPath: m_Name
@@ -8130,6 +8134,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 896821815}
     m_Modifications:
+    - target: {fileID: 3173011703638519933, guid: 25dc4384447d6da44b3ebb11df9e9a58, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3632529789053911388, guid: 25dc4384447d6da44b3ebb11df9e9a58, type: 3}
       propertyPath: m_Name
       value: wallBottom (1)
@@ -14882,6 +14890,10 @@ PrefabInstance:
       value: AntiqueLamp
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.w
       value: 1.0836589e-38
       objectReference: {fileID: 0}
@@ -14891,11 +14903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 2.8e-44
+      value: 2.5e-44
       objectReference: {fileID: 0}
     - target: {fileID: 8898557372352685165, guid: 7cac56545bd7ab84b9b898f2cedeeda8, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 5.693e-42
+      value: 3.802e-42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15483,6 +15495,10 @@ PrefabInstance:
     - target: {fileID: 7844042649327518602, guid: a4cc2bca194207f4dbf85779c4da51ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7877495237420833831, guid: a4cc2bca194207f4dbf85779c4da51ee, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7877495237420833831, guid: a4cc2bca194207f4dbf85779c4da51ee, type: 3}
       propertyPath: m_BounceIntensity
