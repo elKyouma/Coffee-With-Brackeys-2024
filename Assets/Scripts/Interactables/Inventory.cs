@@ -41,6 +41,7 @@ public class Inventory : MonoBehaviour
 
     public static void DropItem()
     {
+        if (!itemObj) return;
         itemObj.transform.parent = null;
         itemObj.GetComponent<Rigidbody>().isKinematic = false;
         itemObj.GetComponentInChildren<Collider>().enabled = true;
