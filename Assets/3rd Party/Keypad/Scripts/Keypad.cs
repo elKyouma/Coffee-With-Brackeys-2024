@@ -123,6 +123,7 @@ public class Keypad : MonoBehaviour
         keypadDisplayText.text = accessGrantedText;
         onAccessGranted?.Invoke();
         panelMesh.material.SetVector("_EmissionColor", screenGrantedColor * screenIntensity);
+        GameManager.Instance.ExitPuzzleMode();
         audioSource.PlayOneShot(accessGrantedSfx);
     }
 
