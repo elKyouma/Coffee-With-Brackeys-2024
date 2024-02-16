@@ -144,11 +144,6 @@ public class ImportMetallicSmoothness : AssetPostprocessor
         string extension = Path.GetExtension(assetPath);
         string pathWithoutFilename = Path.GetDirectoryName(assetPath);
         string baseFilename = filename.Substring(0, filename.Length - string.Format(" {0}", from).Length);
-        Debug.Log(filename);
-        Debug.Log(extension);
-        Debug.Log(pathWithoutFilename);
-        Debug.Log(baseFilename + "0");
-        Debug.Log("0000");
 
         string newPath = string.Format("{0}/{1} {2}{3}", pathWithoutFilename, baseFilename, to, extension);
 
