@@ -68,7 +68,6 @@ public class SafeDoorLock : OutlineInteractable
                 if (currentAngle > startOpening + code[1] + 7.2f) OpeningFailed();
                 break;
         }
-        SoundManager.Instance.PlaySound(stageCompete, transform.position);
 
         if (solved)
         {
