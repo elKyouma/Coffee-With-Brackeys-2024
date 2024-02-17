@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 
-[RequireComponent(typeof(Rotatable))]
+[RequireComponent(typeof(Rotatable)),SelectionBase]
 public abstract class Item : MonoBehaviour, IInteractable
 {
     private bool interactable = true;
