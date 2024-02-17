@@ -21970,7 +21970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2477ccdbf9ed8142a78516807fc9d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: d145797ea7fa3e54aaf92f075970386b, type: 2}
+  dialogue: {fileID: 11400000, guid: bae2b9453f12c374f8936be0ebccf88c, type: 2}
   phoneTrigger: {fileID: 1073086766}
   telephone: {fileID: 2108327841}
 --- !u!1 &1898608927 stripped
