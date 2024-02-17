@@ -48,7 +48,7 @@ public class SafeDoorLock : OutlineInteractable
         if (angleDiff < -100) angleDiff += 360;
 
         currentAngle += angleDiff;
-        transform.rotation = Quaternion.AngleAxis(angle, transform.forward);
+        transform.localRotation = Quaternion.Euler(0, 0, angle);
 
         float startOpening = -360 * rounds;
         Debug.Log(stage);
