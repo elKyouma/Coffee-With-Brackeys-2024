@@ -52,6 +52,8 @@ public class SoundManager : MonoBehaviour
     }
     public void SetVolume(float volume)
     {
+        if (volume < 0.0001f)
+            volume = 0.0001f;
         RefreshSliders(volume, volume);
         PlayerPrefs.SetFloat("MasterVolume", volume);
         masterMixer.SetFloat("Master", Mathf.Log10(volume) * 20);
