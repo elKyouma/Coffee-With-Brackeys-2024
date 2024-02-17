@@ -12,7 +12,7 @@ public class Magnifier : Item, IInteractable
     public GameObject magnifier;
     public RenderTexture texture;
     private bool inUse = false;
-
+    public Transform center;
 
     public void Update()
     {
@@ -36,7 +36,7 @@ public class Magnifier : Item, IInteractable
     {
         if (!inUse)
         {
-            LeanTween.moveLocal(magnifier, new Vector3(-0.75f, 0.175f, -0.6f), 1);
+            LeanTween.moveLocal(magnifier, transform.InverseTransformPoint(center.position - transform.forward - transform.up * 0.2f), 1);
             Resize(texture, 1000, 1000);
             inUse = true;
         }   

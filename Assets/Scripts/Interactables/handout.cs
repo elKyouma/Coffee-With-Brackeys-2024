@@ -5,13 +5,14 @@ using UnityEngine;
 public class handout : Item, IInteractable
 {
     private bool inUse = false;
+    public Transform center;
 
     public override void UseItem()
     {
         
         if (!inUse)
         {
-            LeanTween.moveLocal(gameObject, new Vector3(-0.75f, 0.4f, -0.5f), 1);
+            LeanTween.moveLocal(gameObject, transform.InverseTransformPoint(center.position - transform.forward * 0.7f), 1);
             inUse = true;
         }
         else
