@@ -7,6 +7,7 @@ using System.Linq;
 [RequireComponent(typeof(Rotatable)),SelectionBase]
 public abstract class Item : MonoBehaviour, IInteractable
 {
+    private const string tag = "ItemCatcher";
     private bool interactable = true;
     private Renderer[] renderers;
     private Material outlineMaskMaterial;
@@ -109,4 +110,12 @@ public abstract class Item : MonoBehaviour, IInteractable
     }
 
     public abstract void UseItem();
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!other.CompareTag(tag)) return;
+
+        transform.position = GameManager.Instance.PlayerCharacter.position;
+        transform.position += Vector3.up;
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+    }
 }
