@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class TelephoneScript : OutlineInteractable
 {
-    private bool isRinging = true;
+    private bool isRinging = false;
     private SoundSO dialogue = null;
 
     [SerializeField] private Light diode;
 
     [SerializeField] AudioSource ringingSource;
+    [SerializeField] AudioSource dialogueSource;
 
     public override void Interact()
     {
@@ -17,23 +18,29 @@ public class TelephoneScript : OutlineInteractable
         {
             isRinging = false;
             ringingSource.mute = true;
-            SoundManager.Instance.PlaySound(dialogue, transform.position);
+            dialogueSource.Play();
             diode.intensity = 0f;
         }
     }
 
-    public void StartRinging(SoundSO newDialogue)
+    public void StartRinging(SoundSO newDialogue, float offset = 0f)
     {
-        isRinging = true;
-        dialogue = newDialogue;
-        ringingSource.mute = false;
+        dialogueSource.clip = newDialogue.audio;
+        dialogueSource.volume = newDialogue.soundVolume;
+        StartCoroutine(Wait(offset));
     }
     private void Update()
     {
         if(isRinging)
         {
-            diode.intensity = Mathf.Sin(2 * Time.time) * 100f;
+            diode.intensity = Mathf.Sin(2 * Time.time);
         }
+    }
+    private IEnumerator Wait(float time)
+    {
+        yield return new WaitForSeconds(time);
+        isRinging = true;
+        ringingSource.mute = false;
     }
 
 }
