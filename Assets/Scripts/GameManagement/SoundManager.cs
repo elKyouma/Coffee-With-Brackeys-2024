@@ -5,9 +5,9 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] private AudioSource musicSource;
-    [SerializeField, Range(0, 1)] private float musicVolume = 1f;
+    [SerializeField, Range(0, 1)] public float musicVolume = 1f;
     [SerializeField] private AudioSource ambienceSource;
-    [SerializeField, Range(0, 1)] private float ambienceVolume = 1f;
+    [SerializeField, Range(0, 1)] public float ambienceVolume = 1f;
     [SerializeField] private AudioSource footStepSource;
     [SerializeField, Range(0, 1)] private float footStepVolume = 1f;
 
