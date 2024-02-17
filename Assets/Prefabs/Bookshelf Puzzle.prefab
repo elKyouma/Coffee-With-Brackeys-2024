@@ -105,6 +105,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8733043432697265579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -231,6 +235,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7779938519096228309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -357,6 +365,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3492455643265105858
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -483,6 +495,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2302185940654794320
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -609,6 +625,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &739171558444196912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -735,6 +755,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5375975696839016072
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -861,6 +885,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5994037329168371983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -987,6 +1015,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4673710911327238158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1113,6 +1145,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &411920494479022067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1239,6 +1275,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5019667183980558600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1365,6 +1405,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5408979900019061802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1491,6 +1535,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2648700511357007786
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1617,6 +1665,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6852873642054157741
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1743,6 +1795,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3680790657149812346
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1869,6 +1925,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2708247663038273842
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1995,6 +2055,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5985066682167630867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2121,6 +2185,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5527833362581886053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2247,6 +2315,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &688096540574672460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2373,6 +2445,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6005888749541112446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2499,6 +2575,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7881420976206178076
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2625,6 +2705,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5674010343292401043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2751,6 +2835,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5434366767434014532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2877,6 +2965,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1985272434303665414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3003,6 +3095,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7532565575828975422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3129,6 +3225,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1963255963205861814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3255,6 +3355,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1164062271207441380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3381,6 +3485,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7127109291328024596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3507,6 +3615,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7914449766077898069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3633,6 +3745,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &478097454830630071
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3759,6 +3875,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7573707669620933543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3885,6 +4005,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3545257065647384242
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4011,6 +4135,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5588453304373015813
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4137,6 +4265,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6997534733710580425
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4263,6 +4395,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3231154160120967124
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4389,6 +4525,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3123274612683320663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4515,6 +4655,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1498002063486978685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4641,6 +4785,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4025322394477313387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4767,6 +4915,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5124217901775634751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4893,6 +5045,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8981841498169087541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5019,6 +5175,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3319840814874968296
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5145,6 +5305,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3298718009879165625
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5271,6 +5435,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &693032107548256793
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5397,6 +5565,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2027690327052227050
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5523,6 +5695,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &316230255237651783
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5649,6 +5825,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1745888999165820508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5775,6 +5955,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4036616280237667949
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5901,6 +6085,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &9139689450253692729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6027,6 +6215,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8169062075114650211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6185,6 +6377,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3971234744337117189
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6311,6 +6507,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8055680144498578638
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6437,6 +6637,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &608839494550855692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6563,6 +6767,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6719654803253097974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6689,6 +6897,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4516576294359187322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6815,6 +7027,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7237827764696100162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6941,6 +7157,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7275111957112328665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7067,6 +7287,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2713535404979021523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7193,6 +7417,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &639031553330095808
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7319,6 +7547,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8555956766856315681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7445,6 +7677,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7710566917598053557
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7571,6 +7807,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6051015879842118893
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7697,6 +7937,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6104412056506204996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7823,6 +8067,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2399132205156008038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7949,6 +8197,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2999897076616214410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8075,6 +8327,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2628536893562997498
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8201,6 +8457,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5230257675599057611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8327,6 +8587,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1361328139410246566
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8453,6 +8717,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5048427093671200756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8579,6 +8847,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5023895829824470632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8705,6 +8977,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6913172900056920628
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8831,6 +9107,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &758347809067380537
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8957,6 +9237,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2023820334869910259
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9083,6 +9367,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7272263365483566353
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9209,6 +9497,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8089946012323251177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9335,6 +9627,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &131000310371491227
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9461,6 +9757,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4684560212180137437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9587,6 +9887,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3268678858742104585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9713,6 +10017,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6332231660156888843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9839,6 +10147,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6379901743232459586
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9965,6 +10277,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6069228294573950058
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10091,6 +10407,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6620406123748157759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10217,6 +10537,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1713077290212978648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10343,6 +10667,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1093354393469764665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10469,6 +10797,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8145593033125757323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10595,6 +10927,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2482814066356308558
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10721,6 +11057,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5829221619531708503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10847,6 +11187,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2360837429912204243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10973,6 +11317,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3047164134025911567
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11099,6 +11447,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7839642678958715165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11225,6 +11577,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &9190484170703026671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11351,6 +11707,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5015014771715699859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11477,6 +11837,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &529224134780279814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11603,6 +11967,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1141372854631256689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11729,6 +12097,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6823847100361303125
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11855,6 +12227,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2074550795513680997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11981,6 +12357,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2922797861906124978
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12107,6 +12487,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &96128878429204970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12233,6 +12617,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5612865326004246639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12359,6 +12747,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2236302858772745501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12485,6 +12877,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4319536129730694573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12695,6 +13091,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &452335620163992650
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12821,6 +13221,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &9073006706415042676
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12947,6 +13351,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6717058410803807326
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13073,6 +13481,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2166837329920704465
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13199,6 +13611,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7602829304971214083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13325,6 +13741,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &123775711926075439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13451,6 +13871,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7684892837613953692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13577,6 +14001,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1001416644813046595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13703,6 +14131,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5345188284393051310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13829,6 +14261,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7457560544356550821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13955,6 +14391,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &532989190935751914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14081,6 +14521,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3805180670693788736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14207,6 +14651,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2107875210326714767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14333,6 +14781,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6882932966158673460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14459,6 +14911,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2573051427435160070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14585,6 +15041,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7772795152386438983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14711,6 +15171,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6400608521002050405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14943,6 +15407,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8492356298611848810
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15069,6 +15537,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &929756278112325115
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15195,6 +15667,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3257616543777138459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15321,6 +15797,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5861962477627341324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15447,6 +15927,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7246062417146388630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15573,6 +16057,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4014996967186158159
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15699,6 +16187,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &811837324920187437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15825,6 +16317,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7721083601852419864
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15951,6 +16447,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2279421770407130946
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16077,6 +16577,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1163079074532128384
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16203,6 +16707,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7203353118302105284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16329,6 +16837,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &780458408706944918
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16455,6 +16967,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5911961385203238814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16581,6 +17097,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &9163059194881544836
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16707,6 +17227,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1090009090485369319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16833,6 +17357,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2253496261907395551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16959,6 +17487,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2544947632689549965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17085,6 +17617,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7803166459343705897
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17211,6 +17747,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4842848203520874547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17337,6 +17877,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4350601204923409394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17463,6 +18007,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7237957772798427545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17589,6 +18137,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7605015230027963739
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17715,6 +18267,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5265494454196954708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17841,6 +18397,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7010327821571111937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17967,6 +18527,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7228946551632751458
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18093,6 +18657,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2807298759870648332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18219,6 +18787,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6916294372982740508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18345,6 +18917,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6936777184382764233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18471,6 +19047,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6354633391291041262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18597,6 +19177,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2667739800592704900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18723,6 +19307,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &982040725315225215
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18849,6 +19437,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &722357316868758036
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18975,6 +19567,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &898340839464005746
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19101,6 +19697,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5198858375033092588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19227,6 +19827,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7248375977617605168
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19353,6 +19957,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7409947099795999756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19479,6 +20087,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &468051317712666815
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19605,6 +20217,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &393545734968870598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19731,6 +20347,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8960828347004175906
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19857,6 +20477,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6438139035003024933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19983,6 +20607,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3810055288503866661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20109,6 +20737,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &511194304183904132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20235,6 +20867,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1060212990503337827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20361,6 +20997,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8094545785496145935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20487,6 +21127,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8208090482501598846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20613,6 +21257,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4303551973635827725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20739,6 +21387,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6407379312421306982
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21185,6 +21837,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &898156250063987607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21311,6 +21967,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2519332059593272736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21437,6 +22097,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8658145188856062648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21669,6 +22333,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6703332730167990234
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21795,6 +22463,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5769201581863292089
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21921,6 +22593,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8614191515037855825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22047,6 +22723,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &146161592927849555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22173,6 +22853,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &140447773374501505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22299,6 +22983,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7651867805419273789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22425,6 +23113,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1785747116585358403
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22551,6 +23243,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4636104073919388783
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22677,6 +23373,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7377855370291773945
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22803,6 +23503,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5784482026684800252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22929,6 +23633,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5379492158483359339
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23055,6 +23763,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8387469166316625818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23181,6 +23893,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6179904863975917022
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23307,6 +24023,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8395111359561288977
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23433,6 +24153,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &718844656168098199
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23559,6 +24283,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8188426033549034293
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23685,6 +24413,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4177671202541378903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23811,6 +24543,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3980063423971194388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23937,6 +24673,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2930844156698928198
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24063,6 +24803,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &893281913296476834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24189,6 +24933,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6012800690407412424
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24315,6 +25063,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8735526594034951157
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24441,6 +25193,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3732305088874121265
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24567,6 +25323,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &168658813837030802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24693,6 +25453,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1987635657626610523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24819,6 +25583,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1713698885237623697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24945,6 +25713,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8335668667772622304
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25071,6 +25843,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &29300901443976254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25197,6 +25973,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8262240310128269147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25323,6 +26103,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6072441864338275005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25449,6 +26233,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3670912589830510824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25575,6 +26363,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1135853455514028995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25701,6 +26493,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7159068425164161218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25827,6 +26623,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3559318982514353648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25953,6 +26753,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3000550742999538366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26079,6 +26883,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6119237885802007213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26205,6 +27013,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4400975182250677620
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26331,6 +27143,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3417199701106484727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26457,6 +27273,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5157175919965187406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26583,6 +27403,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6173675687146716135
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26709,6 +27533,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5888497278495531864
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26835,6 +27663,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &721430089836135278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26961,6 +27793,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6315978914429460527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27087,6 +27923,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3143274854049276691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27213,6 +28053,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4459727371804897201
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27339,6 +28183,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8163461274586509309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27465,6 +28313,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5722778466278216258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27591,6 +28443,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7791310058724028085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27717,6 +28573,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8075196631251449817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27843,6 +28703,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4108008293952681357
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27969,6 +28833,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1335319582785662335
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28095,6 +28963,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8823426695194653144
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28221,6 +29093,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7283487300178614308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28242,132 +29118,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0029101216, y: 0.0006693509, z: 0.0035670237}
   m_Center: {x: 0, y: 0, z: 0.0000000013969839}
---- !u!1 &6957907676252463204
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6695467245037273223}
-  - component: {fileID: 2450184421600388955}
-  - component: {fileID: 8637761292145863077}
-  - component: {fileID: 4913564839783813074}
-  - component: {fileID: 3983797039185927873}
-  m_Layer: 0
-  m_Name: Cube.0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6695467245037273223
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6957907676252463204}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.00000005338508, y: 0.7071068, z: -0.7071068, w: 0.000000053385083}
-  m_LocalPosition: {x: 3.8797567, y: 0.9086037, z: 4.2099285}
-  m_LocalScale: {x: 210.91571, y: 210.91571, z: 210.91571}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6320424220746828549}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2450184421600388955
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6957907676252463204}
-  m_Mesh: {fileID: -8678823145569952518, guid: abba37b9a099510c9a72e5c5b5da24d0, type: 3}
---- !u!23 &8637761292145863077
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6957907676252463204}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 8606d90c527b1911d9b0e08febde4d42, type: 2}
-  - {fileID: 2100000, guid: 3c49fe0b13283c4cda9de50215f0a99c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4913564839783813074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6957907676252463204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f88171dedd81d05183e08ee21528c2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  state: 0
-  bookshelfPuzzle: {fileID: 7672239337899971135}
-  pullDistance: 0.3
-  animationTime: 0.5
-  isPulled: 0
-  pullAxis: 0
-  id: 0
---- !u!65 &3983797039185927873
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6957907676252463204}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.0029101216, y: 0.0006693509, z: 0.0035670237}
-  m_Center: {x: 0, y: 0, z: 9.313226e-10}
 --- !u!1 &7018123506322916683
 GameObject:
   m_ObjectHideFlags: 0
@@ -28473,6 +29223,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1859475692681780379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28599,6 +29353,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6881203867814165840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28725,6 +29483,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1677628623240771684
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28851,6 +29613,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7613465817469059250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28977,6 +29743,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3197368536780222654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29103,6 +29873,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &9134540962879724604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29229,6 +30003,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4891127652234181912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29355,6 +30133,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6100106294858768548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29428,6 +30210,8 @@ MonoBehaviour:
   animationTime: 4
   animationDelay: 2
   moveDistance: 6.8
+  bookSlideSound: {fileID: 0}
+  fireplaceAudioSource: {fileID: 0}
 --- !u!1 &7289669199322216101
 GameObject:
   m_ObjectHideFlags: 0
@@ -29533,6 +30317,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4099108017240819959
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29659,6 +30447,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1642271218303214242
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29785,6 +30577,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7821052961549522844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29911,6 +30707,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5462684465037289844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30037,6 +30837,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5403503580784849702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30163,6 +30967,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5748614744446967759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30289,6 +31097,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6546335324259134859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30415,6 +31227,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4707837974279491529
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30541,6 +31357,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6687950121717518425
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30667,6 +31487,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7165367134877334001
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30793,6 +31617,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3904861687221209079
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30919,6 +31747,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2083657935678737988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31045,6 +31877,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2271881517343136566
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31171,6 +32007,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &730232254718296651
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31297,6 +32137,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4254456289559204741
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31423,6 +32267,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8060777007041166643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31549,6 +32397,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3512698884094608884
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31675,6 +32527,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8854370899081445408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31801,6 +32657,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6746117450478275883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31927,6 +32787,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1047548833935629003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32053,6 +32917,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1019189922470322328
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32179,6 +33047,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6379010358222180640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32305,6 +33177,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8109100589726061506
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32431,6 +33307,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4589542886656313674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32557,6 +33437,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1218412299096092163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32683,6 +33567,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2157370023478921691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32809,6 +33697,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4793460238236562775
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32935,6 +33827,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &986465563338318329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33061,6 +33957,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3089784586574285184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33187,6 +34087,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4889785644936149163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33313,6 +34217,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7530104395082211726
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33439,6 +34347,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6162329649203424274
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33565,6 +34477,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6496102693435638846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33691,6 +34607,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4982217284776811343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33817,6 +34737,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2941414642273155309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33943,6 +34867,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6403797938347481232
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34069,6 +34997,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &219733970884602070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34195,6 +35127,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6894763656295135906
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34321,6 +35257,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7097743218345465060
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34447,6 +35387,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &309358544907153395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34573,6 +35517,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4254381795574376163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34699,6 +35647,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3486656341322763150
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34825,6 +35777,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3518249669168011217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34951,6 +35907,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5601376622541404197
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35077,6 +36037,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3047667088410835141
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35203,6 +36167,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &213122560080708642
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35329,6 +36297,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &5957590086581531717
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35455,6 +36427,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1341873345292817799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35581,6 +36557,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1916418860538082439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35707,6 +36687,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1498415549974921343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35833,6 +36817,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &2885411357388167412
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35959,6 +36947,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3333714732036567484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36085,6 +37077,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &1553073357403292204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36211,6 +37207,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &3740301429392088742
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36337,6 +37337,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8707921452537741508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36463,6 +37467,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &6716282743306021790
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36589,6 +37597,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &4111239947227177083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36715,6 +37727,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 2
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &9181143319044747083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36841,6 +37857,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &7398557785714763238
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36967,6 +37987,10 @@ MonoBehaviour:
   isPulled: 0
   pullAxis: 0
   id: 0
+  hasSymbol: 0
+  symbol: {fileID: 0}
+  symbolTexture: {fileID: 0}
+  symbolPosition: {fileID: 0}
 --- !u!65 &8391334976708840401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36988,3 +38012,69 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0029101216, y: 0.0006693509, z: 0.0035670237}
   m_Center: {x: 0, y: 0, z: 0.0000000018626451}
+--- !u!1001 &456121579437137917
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6320424220746828549}
+    m_Modifications:
+    - target: {fileID: 4783954307572846639, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: bookshelfPuzzle
+      value: 
+      objectReference: {fileID: 7672239337899971135}
+    - target: {fileID: 6539063745816584058, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.8797567
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539063745816584058, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9086037
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539063745816584058, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.2099285
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539063745816584058, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.000000053385083
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539063745816584058, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000005338508
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539063745816584058, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539063745816584058, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539063745816584058, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539063745816584058, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539063745816584058, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7411530815877709721, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+      propertyPath: m_Name
+      value: Cube.0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+--- !u!4 &6695467245037273223 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6539063745816584058, guid: 98fa39d1632b02cfe9b30a2c7d2a8ea3, type: 3}
+  m_PrefabInstance: {fileID: 456121579437137917}
+  m_PrefabAsset: {fileID: 0}
