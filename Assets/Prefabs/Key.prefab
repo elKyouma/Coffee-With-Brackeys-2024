@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 317780556829875321}
   - component: {fileID: 2438547587655346182}
   - component: {fileID: 2982425139108253597}
-  m_Layer: 0
+  - component: {fileID: 930878084127843779}
+  m_Layer: 7
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,6 +75,39 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &930878084127843779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5264644368711961587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde92b1cb6bfc48b698f888a3b45cb18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressed:
+    m_Name: Pressed
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 149d5ebe-337c-4275-b8ea-3d0487990c63
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  axis:
+    m_Name: Axis
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 9446ae7c-c86d-4a2e-a3ec-e3745bba451a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  rotateAllowed: 0
+  speed: 1
+  inverted: 0
 --- !u!1001 &8426687167445339732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141,6 +175,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cb45b123caeca7d44871c5f44a8ba982, type: 3}
       propertyPath: m_Name
       value: Key2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cb45b123caeca7d44871c5f44a8ba982, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: cb45b123caeca7d44871c5f44a8ba982, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
