@@ -9,12 +9,14 @@ public class BookshelfPuzzle : MonoBehaviour
     private HashSet<int> solution = new HashSet<int>();
     [SerializeField] private GameObject objectToMove; // The actual bookshelf object to move
     [SerializeField] private float animationTime = 1f;
-    [SerializeField] private float animationDelay = 0.5f;
+    [SerializeField] private float animationDelay = 0;
     [SerializeField] private float moveDistance = 0.5f;
     private bool hasMoved = false; // Track if the bookshelf has moved
 
     [SerializeField] private SoundSO bookSlideSound;
     [SerializeField] private AudioSource fireplaceAudioSource;
+
+    [SerializeField] private CameraShaker cameraShaker;
 
     void Start()
     {
@@ -64,12 +66,14 @@ public class BookshelfPuzzle : MonoBehaviour
     {
         hasMoved = true; // Mark as moved
         fireplaceAudioSource.mute = false;
+        cameraShaker.ShakeOn(animationTime);
         LeanTween.moveY(objectToMove, objectToMove.transform.position.y - moveDistance, animationTime)
             .setEaseOutCubic()
             .setDelay(animationDelay)
             .setOnComplete(() =>
             {
                 // Optional: Actions after moving down, if necessary.
+
                 fireplaceAudioSource.mute = true;
             });
         

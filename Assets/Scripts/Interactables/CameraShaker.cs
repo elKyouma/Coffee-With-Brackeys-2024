@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CameraShaker : MonoBehaviour
 {
-    public float stress = 0;
+    private float stress = 0;
 
     private Vector3 _lastPosition;
     private Vector3 _lastRotation;
@@ -14,7 +14,10 @@ public class CameraShaker : MonoBehaviour
     [Tooltip("Maximum angle that the gameobject can shake. In euler angles.")]
     public Vector3 MaximumAngularShake = Vector3.one * 5;
     [Tooltip("Maximum translation that the gameobject can receive when applying the shake effect.")]
-    public Vector3 MaximumTranslationShake = Vector3.one * .75f;
+    public Vector3 MaximumTranslationShake = Vector3.one * 0.25f;
+
+
+    private float time;
 
     private void Update()
     {
@@ -49,11 +52,17 @@ public class CameraShaker : MonoBehaviour
         transform.localRotation = Quaternion.Euler(transform.localRotation.eulerAngles - _lastRotation);
         _lastPosition = Vector3.zero;
         _lastRotation = Vector3.zero;
+
+        if(stress < (time / 2))
+        {
+            TraumaExponent = 1 / TraumaExponent;
+        }
     }
 
-    public void ShakeOn()
+    public void ShakeOn(float newtime)
     {
-        stress = 1.2f;
+        time = newtime;
+        TraumaExponent = 2;
     }
 
 }
