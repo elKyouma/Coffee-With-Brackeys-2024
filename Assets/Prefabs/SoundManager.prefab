@@ -44,7 +44,7 @@ AudioSource:
   m_GameObject: {fileID: 7064344789895243292}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 401e738c8e7844bed9ac4897c0a958f3, type: 2}
   m_audioClip: {fileID: 8300000, guid: 35d4c00697c17c444a4f4dc77dd43f7c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -140,7 +140,7 @@ AudioSource:
   m_GameObject: {fileID: 7064344789895243292}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 401e738c8e7844bed9ac4897c0a958f3, type: 2}
   m_audioClip: {fileID: 8300000, guid: 214f678fd562fcf4ebd6775ee8d50d3e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -246,6 +246,8 @@ MonoBehaviour:
   footStepSource: {fileID: 6052804349186955174}
   footStepVolume: 1
   soundBoxPrefab: {fileID: 351619700765359922, guid: fa958bd815b3d9d499a9fde4784d9904, type: 3}
+  masterSlider: {fileID: 0}
+  masterMixer: {fileID: 24100000, guid: 401e738c8e7844bed9ac4897c0a958f3, type: 2}
 --- !u!82 &6052804349186955174
 AudioSource:
   m_ObjectHideFlags: 0
@@ -255,7 +257,7 @@ AudioSource:
   m_GameObject: {fileID: 7064344789895243292}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 401e738c8e7844bed9ac4897c0a958f3, type: 2}
   m_audioClip: {fileID: 8300000, guid: 636c12638dd4c9a47bd1e2122548d709, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
