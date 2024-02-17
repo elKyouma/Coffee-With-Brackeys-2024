@@ -6,20 +6,20 @@ using UnityEngine.UIElements;
 using System.Security.Permissions;
 using System.Xml.Serialization;
 using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime;
 
 public class SafeDoorLock : OutlineInteractable
 {
     public GameObject door;
 
-    private List<float> code = new List<float>() { -129.6f, 129.6f, -36f };
+    private List<float> code = new List<float>() { -129.6f, 489.6f, 324f };
 
     private bool IsOpenable = true;
     private bool rotate = false;
     private bool solved = false;
 
     public float currentAngle = 0;
-    private int stage = 0;
-    private int rounds = 3;
+    public int stage = 0;
 
     public override void Interact()
     {
@@ -50,8 +50,7 @@ public class SafeDoorLock : OutlineInteractable
         currentAngle += angleDiff;
         transform.localRotation = Quaternion.Euler(0, 0, angle);
 
-        float startOpening = -360 * rounds;
-        Debug.Log(stage);
+        float startOpening = -360 * 3;
 
         switch (stage)
         {
@@ -59,17 +58,15 @@ public class SafeDoorLock : OutlineInteractable
                 if (currentAngle < startOpening) stage++;
                 break;
             case 1:
-                if (currentAngle < startOpening + code[0] + 3.6f)
-                {
-                    stage++;
-                    rounds--;
-                }
+                if (currentAngle < startOpening + code[0] + 3.6f) stage++;
                 break;
             case 2:
                 if (currentAngle > startOpening + code[1] - 3.6f) stage++;
+                if (currentAngle < startOpening + code[0] - 7.2f) OpeningFailed();
                 break;
             case 3:
                 if (currentAngle < startOpening + code[2] + 3.6f) solved = true;
+                if (currentAngle > startOpening + code[1] + 7.2f) OpeningFailed();
                 break;
         }
 
@@ -79,8 +76,16 @@ public class SafeDoorLock : OutlineInteractable
             transform.parent.GetComponentInChildren<SafeDoorHand>().Unlock();
             IsOpenable = false;
             rotate = false;
+            GameManager.Instance.ExitPuzzleMode();
         }
 
+    }
+    public void OpeningFailed()
+    {
+        currentAngle = 0;
+        stage = 0;
+        rotate = false;
+        LeanTween.rotateLocal(gameObject, new Vector3(0, 0, 0), 0.5f);
     }
 }
 

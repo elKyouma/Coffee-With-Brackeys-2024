@@ -17,6 +17,7 @@ public class POIActivator : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        transform.parent.GetComponentInChildren<SafeDoorLock>().OpeningFailed();
         GameManager.Instance.EnterPuzzleMode(POIObject);
     }
     public void Selected()
