@@ -32,13 +32,16 @@ public class GameManager : MonoBehaviour
     private Transform inspectedObjectTransform;
     [SerializeField]
     private Volume blurVolume;
+    [Header("Pause Menu")]
+    [SerializeField] private GameObject pauseMenu;
 
 
     public enum GameState
     {
         Normal,
         Puzzle,
-        Inspect
+        Inspect,
+        Pause
     }
 
     public GameState state;
@@ -73,7 +76,7 @@ public class GameManager : MonoBehaviour
     {
         state = GameState.Inspect;
         if (handObject.childCount == 0) return;
-        
+
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(inspectorModeActionMap);
         var heldObject = handObject.GetComponentInChildren<Item>().gameObject;
         StartCoroutine(MoveToInspectedPosition(heldObject, inspectedObjectTransform, 0.5f));
@@ -106,6 +109,24 @@ public class GameManager : MonoBehaviour
         }
 
         objectToMove.transform.position = targetTransform.position;
+    }
+    public void Show()
+    {
+        pauseMenu.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        state = GameState.Pause;
+        Time.timeScale = 0;
+    }
+    public void Hide()
+    {
+        pauseMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        state = GameState.Normal;
+        Time.timeScale = 1;
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
 }
