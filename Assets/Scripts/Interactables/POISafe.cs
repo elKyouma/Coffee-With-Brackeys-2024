@@ -17,7 +17,7 @@ public class POISafe : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        transform.parent.GetComponentInChildren<SafeDoorLock>().OpeningFailed();
+        transform.parent.GetComponentInChildren<SafeDoorLock>().OpeningFailed(true);
         GameManager.Instance.EnterPuzzleMode(POIObject);
     }
     public void Selected()
