@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     private const string defaultActionMap = "Movement";
     private const string puzzleModeActionMap = "PuzzleMode";
     private const string inspectorModeActionMap = "InspectorMode"; // Mode to inspect objects in inventory (rotatables)
+    private const string pauseActionMap = "Pause";
     private GameObject ActivePOI;
 
     public static GameManager Instance;
@@ -32,16 +33,17 @@ public class GameManager : MonoBehaviour
     private Transform inspectedObjectTransform;
     [SerializeField]
     private Volume blurVolume;
-    [Header("Pause Menu")]
+    [Header("UI")]
     [SerializeField] private GameObject pauseMenu;
-
+    [SerializeField] private GameObject optionsMenu;
 
     public enum GameState
     {
         Normal,
         Puzzle,
         Inspect,
-        Pause
+        Pause,
+        Options
     }
 
     public GameState state;
@@ -110,23 +112,59 @@ public class GameManager : MonoBehaviour
 
         objectToMove.transform.position = targetTransform.position;
     }
-    public void Show()
+
+    public void Back(InputAction.CallbackContext context)
     {
-        pauseMenu.SetActive(true);
-        Cursor.lockState = CursorLockMode.None;
-        state = GameState.Pause;
-        Time.timeScale = 0;
+        if (!context.started) return;
+
+        switch (state)
+        {
+            case GameState.Options:
+                HideOptions();
+                break;
+            case GameState.Pause:
+                HidePause();
+                break;
+            default:
+                break;
+        }
     }
-    public void Hide()
-    {
-        pauseMenu.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
-        state = GameState.Normal;
-        Time.timeScale = 1;
-    }
+
     public void QuitGame()
     {
         Application.Quit();
     }
 
+    public void HideOptions()
+    {
+        optionsMenu.SetActive(false);
+        pauseMenu.SetActive(true);
+        state = GameState.Pause;
+    }
+
+    public void ShowPause()
+    {
+        if (state == GameState.Options) return;
+        player.GetComponent<PlayerInput>().SwitchCurrentActionMap(pauseActionMap);
+        pauseMenu.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        state = GameState.Pause;
+        Time.timeScale = 0;
+    }
+
+    public void HidePause()
+    {
+        if (state != GameState.Pause) return;
+        player.GetComponent<PlayerInput>().SwitchCurrentActionMap(defaultActionMap);
+        pauseMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        state = GameState.Normal;
+        Time.timeScale = 1;
+    }
+    public void ShowOptions()
+    {
+        pauseMenu.SetActive(false);
+        optionsMenu.SetActive(true);
+        state = GameState.Options;
+    }
 }
