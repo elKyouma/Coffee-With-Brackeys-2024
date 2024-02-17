@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Gemini
-  m_Shader: {fileID: -6465566751694194690, guid: 900d149b67cad5c07b1488761eade3af, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: bf72c1bd6624cb6fc858a57a7c8c74b2, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -46,9 +46,9 @@ Material:
     - _DecalMeshViewBias: 0
     - _DrawOrder: 0
     m_Colors:
-    - _Tint: {r: 0.31948692, g: 1, b: 0.35800645, a: 1}
+    - _Tint: {r: 0.2645202, g: 0.8584906, b: 0.10933607, a: 0.8862745}
   m_BuildTextureStacks: []
---- !u!114 &6680786237080969075
+--- !u!114 &2465647165991066665
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
