@@ -5,15 +5,22 @@ public class CrosshairManager : MonoBehaviour
 {
     [SerializeField]
     private Image crosshairImage; // Assign this in the Inspector with your crosshair UI element
-    private Color onItemColor;
-    private Color onInteractableColor;
+    [SerializeField] private Color onItemColor;
+    [SerializeField] private Color onInteractableColor;
+    [SerializeField] private Color defaultColor;
+
 
     private void Update()
     {
         var state = GameManager.Instance.state;
-        if (GameManager.Instance.HandObject.GetComponentInChildren<IInteractable>() != null)
+        var selection = Interactor.Selection;
+        if (!selection)
         {
-            if (GameManager.Instance.HandObject.GetComponentInChildren<Item>() != null)
+            crosshairImage.color = defaultColor;
+        }
+        else
+        {
+            if (selection.GetComponent<Item>() != null)
             {
                 crosshairImage.color = onItemColor;
             }
@@ -22,10 +29,7 @@ public class CrosshairManager : MonoBehaviour
                 crosshairImage.color = onInteractableColor;
             }
         }
-        else
-        {
-            crosshairImage.color = Color.white;
-        }
+
         switch (state)
         {
             case GameManager.GameState.Normal:
