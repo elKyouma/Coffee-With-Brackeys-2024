@@ -120,6 +120,7 @@ public class GameManager : MonoBehaviour
         switch (state)
         {
             case GameState.Options:
+                Cursor.lockState = CursorLockMode.Locked;
                 HideOptions();
                 break;
             case GameState.Pause:

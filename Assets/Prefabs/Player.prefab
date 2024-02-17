@@ -329,7 +329,7 @@ Transform:
   m_GameObject: {fileID: 2409172383350187202}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000014901161, y: -0, z: 0.0000000018626451, w: 1}
-  m_LocalPosition: {x: 0.461, y: -0.106, z: 0.775}
+  m_LocalPosition: {x: 0.317, y: -0.179, z: 0.404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -558,6 +558,38 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 74563856-01c9-4ade-be7a-b738a500293b
     m_ActionName: Movement/DropItem[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ShowPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e03637ec-ecd3-4af0-93be-a7837c9fc30b
+    m_ActionName: Movement/Pause[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2546684271293287326, guid: dbc1fc790e05e1077912cb3eeda72265, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Back
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d3d036c8-771d-4abc-b5ef-0682ee28d362
+    m_ActionName: Pause/Back[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -575,6 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461cd396e3fc7cc4eb9c92bde05c1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sensitivity: 1
 --- !u!114 &1753370362994247186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,7 +734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114565867274256808, guid: d295472d4ce25404e9aed2627c34801f, type: 3}
       propertyPath: JumpUpSpeed
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114565867274256808, guid: d295472d4ce25404e9aed2627c34801f, type: 3}
       propertyPath: MaxAirMoveSpeed

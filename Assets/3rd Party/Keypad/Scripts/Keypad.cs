@@ -37,6 +37,8 @@ public class Keypad : MonoBehaviour
     [SerializeField] private TMP_Text keypadDisplayText;
     [SerializeField] private AudioSource audioSource;
 
+    [SerializeField] private SoundSO doorOpeningSound;
+
 
     private string currentInput;
     private bool displayingResult = false;
@@ -125,6 +127,7 @@ public class Keypad : MonoBehaviour
         panelMesh.material.SetVector("_EmissionColor", screenGrantedColor * screenIntensity);
         GameManager.Instance.ExitPuzzleMode();
         audioSource.PlayOneShot(accessGrantedSfx);
+        SoundManager.Instance.PlaySound(doorOpeningSound, gameObject.transform.position);
     }
 
 }

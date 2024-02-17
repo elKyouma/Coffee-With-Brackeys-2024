@@ -22,9 +22,11 @@ namespace KinematicCharacterController.Examples
 
         private static Vector2 mousePos = Vector2.zero;
         public static Vector2 MousePosition { get { return mousePos; } private set { mousePos = value; } }
+        public float sensitivity = 1f;
 
         private void Start()
         {
+            PlayerPrefs.SetFloat("Sensitivity", sensitivity);
             character = GetComponentInChildren<MyCharacterController>();
             characterCamera = GetComponentInChildren<MyCharacterCamera>();
 
@@ -94,8 +96,8 @@ namespace KinematicCharacterController.Examples
         private void HandleCameraInput()
         {
             // Create the look input vector for the camera
-            float mouseLookAxisUp = cameraMovement.y;
-            float mouseLookAxisRight = cameraMovement.x;
+            float mouseLookAxisUp = cameraMovement.y * sensitivity;
+            float mouseLookAxisRight = cameraMovement.x * sensitivity;
             Vector3 lookInputVector = new Vector3(mouseLookAxisRight, mouseLookAxisUp, 0f);
 
             // Prevent moving the camera while the cursor isn't locked
@@ -131,6 +133,12 @@ namespace KinematicCharacterController.Examples
 
             // Apply inputs to character
             character.SetInputs(ref characterInputs);
+        }
+
+        public void UpdateSensitivity(float newSensitivity)
+        {
+            PlayerPrefs.SetFloat("Sensitivity", newSensitivity);
+            sensitivity = newSensitivity + 0.1f;
         }
     }
 }
