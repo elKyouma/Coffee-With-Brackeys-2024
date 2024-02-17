@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TelephoneScript : OutlineInteractable
 {
-    private bool isRinging = false;
+    private bool isRinging = true;
     private SoundSO dialogue = null;
 
     [SerializeField] private Light diode;
