@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3289340961789545148}
   - component: {fileID: 139256781904403920}
   - component: {fileID: 3779559934316053476}
-  m_Layer: 0
+  - component: {fileID: 4028750511880241133}
+  m_Layer: 7
   m_Name: CrowbarObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,6 +75,39 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4028750511880241133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777994070436921340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde92b1cb6bfc48b698f888a3b45cb18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressed:
+    m_Name: Pressed
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 584720b7-3286-4de0-ad6a-3fc63ed3236d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  axis:
+    m_Name: Axis
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 5619cd15-4d79-46f2-bdd7-36dac87170af
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  rotateAllowed: 0
+  speed: 1
+  inverted: 0
 --- !u!1001 &2637410682774932764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85,6 +119,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 360bed210c67fd64daba72af0aa7ba7f, type: 3}
       propertyPath: m_Name
       value: crowbar
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 360bed210c67fd64daba72af0aa7ba7f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 360bed210c67fd64daba72af0aa7ba7f, type: 3}
       propertyPath: m_LocalScale.x
