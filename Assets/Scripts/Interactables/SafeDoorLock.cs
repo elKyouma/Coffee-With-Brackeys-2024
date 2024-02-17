@@ -21,6 +21,8 @@ public class SafeDoorLock : OutlineInteractable
     public float currentAngle = 0;
     public int stage = 0;
 
+    [SerializeField] private SoundSO stageCompete;
+
     public override void Interact()
     {
         if (IsOpenable)
@@ -55,20 +57,18 @@ public class SafeDoorLock : OutlineInteractable
         switch (stage)
         {
             case 0:
-                if (currentAngle < startOpening) stage++;
+                if (currentAngle < startOpening + code[0] + 3.6f) StageComplete();
                 break;
             case 1:
-                if (currentAngle < startOpening + code[0] + 3.6f) stage++;
-                break;
-            case 2:
-                if (currentAngle > startOpening + code[1] - 3.6f) stage++;
+                if (currentAngle > startOpening + code[1] - 3.6f) StageComplete();
                 if (currentAngle < startOpening + code[0] - 7.2f) OpeningFailed();
                 break;
-            case 3:
-                if (currentAngle < startOpening + code[2] + 3.6f) solved = true;
+            case 2:
+                if (currentAngle < startOpening + code[2] + 3.6f) StageComplete();
                 if (currentAngle > startOpening + code[1] + 7.2f) OpeningFailed();
                 break;
         }
+        SoundManager.Instance.PlaySound(stageCompete, transform.position);
 
         if (solved)
         {
@@ -80,6 +80,13 @@ public class SafeDoorLock : OutlineInteractable
         }
 
     }
+
+    private void StageComplete()
+    {
+        stage++;
+        if (stage > 2) solved = true;
+    }
+
     public void OpeningFailed()
     {
         currentAngle = 0;
