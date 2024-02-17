@@ -10,9 +10,6 @@ public class GameManager : MonoBehaviour
     private const string puzzleModeActionMap = "PuzzleMode";
     private const string inspectorModeActionMap = "InspectorMode"; // Mode to inspect objects in inventory (rotatables)
     private GameObject ActivePOI;
-    [Header("Pause Menu")]
-    [SerializeField] private GameObject pauseMenu;
-
 
     public static GameManager Instance;
 
@@ -35,13 +32,16 @@ public class GameManager : MonoBehaviour
     private Transform inspectedObjectTransform;
     [SerializeField]
     private Volume blurVolume;
+    [Header("Pause Menu")]
+    [SerializeField] private GameObject pauseMenu;
 
 
     public enum GameState
     {
         Normal,
         Puzzle,
-        Inspect
+        Inspect,
+        Pause
     }
 
     public GameState state;
@@ -110,18 +110,19 @@ public class GameManager : MonoBehaviour
 
         objectToMove.transform.position = targetTransform.position;
     }
-    public void hideOrShow()
+    public void Show()
     {
-        if (pauseMenu.activeInHierarchy == true)
-        {
-            pauseMenu.SetActive(false);
-            Time.timeScale = 0;
-        }
-        else
-        {
-            pauseMenu.SetActive(true);
-            Time.timeScale = 1;
-        }
+        pauseMenu.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        state = GameState.Pause;
+        Time.timeScale = 0;
+    }
+    public void Hide()
+    {
+        pauseMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        state = GameState.Normal;
+        Time.timeScale = 1;
     }
     public void QuitGame()
     {
