@@ -22,7 +22,6 @@ public class ClockPuzzle : MonoBehaviour
     {
         longHandPosition = AdjustHandPosition(longHand);
         shortHandPosition = AdjustHandPosition(shortHand);
-        Debug.Log("short hand position:" + shortHandPosition);
         if (Mathf.Abs(longHandPosition - longHandSolution) < 10f)
         {
             if(Mathf.Abs(shortHandPosition - shortHandSolution) < 10f)
@@ -38,7 +37,6 @@ public class ClockPuzzle : MonoBehaviour
     private float AdjustHandPosition(GameObject hand)
     {
         float newPosition = hand.transform.eulerAngles.x;
-        //Debug.Log(newPosition);
         newPosition -= 270f;
         if (newPosition < 0)
             newPosition += 360f;
