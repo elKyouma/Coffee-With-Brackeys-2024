@@ -14,6 +14,8 @@ public class Interactor : MonoBehaviour
     private Transform previousSelection = null;
     public static Transform Selection { get; private set; }
 
+    [SerializeField] private LayerMask interactMask;
+
     private void OnEnable()
     {
         Player.OnInteraction += Interact;
@@ -70,7 +72,7 @@ public class Interactor : MonoBehaviour
             ray = playerCamera.ScreenPointToRay(screenCentre);
 
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit) && Vector3.Distance(playerCamera.transform.position, hit.point) <= InteractionDistance)
+        if (Physics.Raycast(ray.origin, ray.direction, out hit, 4f, interactMask.value) && Vector3.Distance(playerCamera.transform.position, hit.point) <= InteractionDistance)
         {
             var selection = hit.transform;
             if (selection.GetComponent<IInteractable>() != null && (selection.GetComponent<OutlineInteractable>() == null || selection.GetComponent<OutlineInteractable>()?.State == GameManager.Instance.state))
