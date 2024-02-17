@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 public enum pullAxis { X, Y, Z }
 
 public class Book : OutlineInteractable
@@ -16,10 +17,30 @@ public class Book : OutlineInteractable
     private pullAxis pullAxis;
     public int id;
     private bool isMoving = false;
+    [SerializeField] private bool hasSymbol;
+    [SerializeField] private GameObject symbol;
+    [SerializeField] private Texture symbolTexture;
+    [SerializeField] Transform symbolPosition;
 
     void Start()
     {
         bookshelfPuzzle = FindObjectOfType<BookshelfPuzzle>();
+        if (hasSymbol)
+        {
+            var symbolObject = Instantiate(symbol, transform, false);
+            symbolObject.transform.localPosition = symbolPosition.localPosition;
+            symbolObject.transform.localRotation = symbolPosition.localRotation;
+
+            var newMaterial = new Material(Shader.Find("Shader Graphs/Decal"));
+            newMaterial.SetTexture("Base_Map", symbolTexture);
+
+            var decalProjector = symbolObject.GetComponent<DecalProjector>();
+            if (decalProjector != null)
+            {
+                decalProjector.material = newMaterial;
+            }
+        }
+
     }
 
     public override void Interact()
