@@ -15,7 +15,7 @@ public class Book : OutlineInteractable
     [SerializeField]
     private pullAxis pullAxis;
     public int id;
-
+    private bool isMoving = false;
 
     void Start()
     {
@@ -24,12 +24,16 @@ public class Book : OutlineInteractable
 
     public override void Interact()
     {
-        PullBook();
+        StartCoroutine(PullBook());
         bookshelfPuzzle.UpdateBooks();
     }
 
-    public void PullBook()
+    public IEnumerator PullBook()
     {
+        if (isMoving)
+        {
+            yield break;
+        }
         Vector3 pullVector = Vector3.zero;
         // Calculate the pull vector based on the pull axis
         switch (pullAxis)
@@ -53,5 +57,8 @@ public class Book : OutlineInteractable
 
         // Toggle the pulled state
         isPulled = !isPulled;
+        isMoving = true;
+        yield return new WaitForSeconds(animationTime);
+        isMoving = false;
     }
 }
