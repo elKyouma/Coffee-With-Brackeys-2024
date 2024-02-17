@@ -5,7 +5,7 @@ using UnityEngine;
 public class SafeDoor : MonoBehaviour
 {
     [SerializeField, Range(0.2f, 1f)]
-    private float openingSpeed = 0.5f;
+    private float openingSpeed = 30f;
 
     private MeshRenderer meshRenderer;
     private float startAngle;
@@ -27,15 +27,8 @@ public class SafeDoor : MonoBehaviour
         float rotateAngles = -angles;
         Transform point = GetComponentInParent<Transform>();
 
-        if (transform.rotation.eulerAngles.y == startAngle)
-        {
-            point.LeanRotateY(startAngle + rotateAngles, openingSpeed);
-            SoundManager.Instance.PlaySound(openingSound, transform.position);
-        }
-        else
-        {   
-            point.LeanRotateY(startAngle, openingSpeed);
-            SoundManager.Instance.PlaySound(closingSound, transform.position);
-        }
+        SoundManager.Instance.PlaySound(openingSound, transform.position);
+        point.LeanRotateY(startAngle + rotateAngles, openingSpeed);
+
     }
 }

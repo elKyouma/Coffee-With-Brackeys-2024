@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     private const string puzzleModeActionMap = "PuzzleMode";
     private const string inspectorModeActionMap = "InspectorMode"; // Mode to inspect objects in inventory (rotatables)
     private GameObject ActivePOI;
+    [Header("Pause Menu")]
+    [SerializeField] private GameObject pauseMenu;
+
 
     public static GameManager Instance;
 
@@ -73,7 +76,7 @@ public class GameManager : MonoBehaviour
     {
         state = GameState.Inspect;
         if (handObject.childCount == 0) return;
-        
+
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(inspectorModeActionMap);
         var heldObject = handObject.GetComponentInChildren<Item>().gameObject;
         StartCoroutine(MoveToInspectedPosition(heldObject, inspectedObjectTransform, 0.5f));
@@ -106,6 +109,23 @@ public class GameManager : MonoBehaviour
         }
 
         objectToMove.transform.position = targetTransform.position;
+    }
+    public void hideOrShow()
+    {
+        if (pauseMenu.activeInHierarchy == true)
+        {
+            pauseMenu.SetActive(false);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            pauseMenu.SetActive(true);
+            Time.timeScale = 1;
+        }
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
 }
