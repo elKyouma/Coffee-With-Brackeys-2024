@@ -9,13 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2848166188767400830}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: LightSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2848166188767400830
 Transform:
   m_ObjectHideFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 841652522222812577}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.725}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5958570274252978323}
   - component: {fileID: 3295831395783589210}
   - component: {fileID: 1975141463665719084}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: UVLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,14 +77,14 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.7030439, g: 0.09706947, b: 0.72507924, a: 1}
-  m_Intensity: 2
-  m_Range: 4
-  m_SpotAngle: 159.0046
-  m_InnerSpotAngle: 77.84207
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 3
+  m_Range: 8
+  m_SpotAngle: 69.412094
+  m_InnerSpotAngle: 45.1678
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 685471249698506675}
   - component: {fileID: 5481064824327389662}
   - component: {fileID: 7475719964292250792}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,14 +195,14 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.77346087, g: 0.34314522, b: 0.877275, a: 1}
-  m_Intensity: 2
-  m_Range: 3
-  m_SpotAngle: 179
-  m_InnerSpotAngle: 113.4619
+  m_Color: {r: 0.792326, g: 0.18244925, b: 0.9433962, a: 1}
+  m_Intensity: 7
+  m_Range: 12
+  m_SpotAngle: 72.899345
+  m_InnerSpotAngle: 56.008068
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -278,7 +278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5066549472224516413}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: InHandPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ Transform:
   m_GameObject: {fileID: 1333085860157338124}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000007450581, y: -1.323489e-23, z: 0.000000011175869, w: 1}
-  m_LocalPosition: {x: -0.74999994, y: 0.38, z: 0.37999985}
+  m_LocalPosition: {x: -0.713, y: 0.35, z: -1.272}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -309,7 +309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9212076091727973331}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: OutsideHandPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 419485890186207553}
   - component: {fileID: 2465341980855932299}
   - component: {fileID: 5722183881602256995}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: FlashLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 8480240438837219654}
   - component: {fileID: 707965748162093287}
   - component: {fileID: 1233950946396067058}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: UVFlashLightObj Variant
   m_TagString: Untagged
   m_Icon: {fileID: 0}

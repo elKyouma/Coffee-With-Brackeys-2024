@@ -51,6 +51,13 @@ public class Inventory : MonoBehaviour
             x.gameObject.layer = LayerMask.NameToLayer("Default");
         Player.OnItemUseEvent -= ItemInHand.UseItem;
 
+        if (ItemInHand is FlashLight)
+        {
+            FlashLight flashLight = (FlashLight)ItemInHand;
+            flashLight.inHand = false;
+            flashLight.ReplaceLight();
+        }
+
         ItemInHand.TurnOnOutline();
     }
 }

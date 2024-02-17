@@ -59,6 +59,9 @@
         },
         {
             "m_Id": "24434141631643af80f776f24dce59e6"
+        },
+        {
+            "m_Id": "0c443579cdd74f4cac8f86342d20ce57"
         }
     ],
     "m_GroupDatas": [],
@@ -179,8 +182,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 972.4999389648438,
-            "y": -8.000007629394532
+            "x": 971.0,
+            "y": -8.000041007995606
         },
         "m_Blocks": [
             {
@@ -211,6 +214,9 @@
             },
             {
                 "m_Id": "8490ff41ae094ef09ef690fe6839cf7b"
+            },
+            {
+                "m_Id": "0c443579cdd74f4cac8f86342d20ce57"
             }
         ]
     },
@@ -255,6 +261,40 @@
     },
     "m_Labels": [],
     "m_Channel": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
+    "m_ObjectId": "0c443579cdd74f4cac8f86342d20ce57",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "SurfaceDescription.Emission",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 0.0,
+            "y": 0.0,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "7d5b935b57d544c491ebcc0282ee0895"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SerializedDescriptor": "SurfaceDescription.Emission"
 }
 
 {
@@ -842,6 +882,36 @@
     "m_ShaderOutputName": "Sampler",
     "m_StageCapability": 3,
     "m_BareResource": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.ColorRGBMaterialSlot",
+    "m_ObjectId": "7d5b935b57d544c491ebcc0282ee0895",
+    "m_Id": 0,
+    "m_DisplayName": "Emission",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Emission",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 38.08428192138672,
+        "y": 1212.351806640625,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": [],
+    "m_ColorMode": 1,
+    "m_DefaultColor": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 1.0
+    }
 }
 
 {
