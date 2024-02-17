@@ -27,6 +27,10 @@ public class SafeDoorLock : OutlineInteractable
     [SerializeField] private SoundSO stageUP;
     [SerializeField] private SoundSO failingSound;
 
+    [SerializeField] private TelephoneScript telephone;
+    [SerializeField] private SoundSO failSolveDialogue;
+    private bool hasRung = false;
+
     public int SoundAngle
     {
         get { return soundAngle; }
@@ -117,7 +121,14 @@ public class SafeDoorLock : OutlineInteractable
         rotate = false;
         LeanTween.rotateLocal(gameObject, new Vector3(0, 0, 0), 0.5f);
         if (!POI)
+        {
             SoundManager.Instance.PlaySound(failingSound, transform.position);
+            if(!hasRung)
+            {
+                telephone.StartRinging(failSolveDialogue, 3f);
+                hasRung = true;
+            }
+        }
     }
 }
 
