@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Audio;
+using UnityEngine.UI;
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] private AudioSource musicSource;
@@ -14,6 +15,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private GameObject soundBoxPrefab;
     private GameObject soundBox;
 
+    [SerializeField] private Slider masterSlider;
+    [SerializeField] private AudioMixer masterMixer;
 
 
     public static SoundManager Instance;
@@ -26,6 +29,7 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
+        SetVolume(PlayerPrefs.GetFloat("MasterVolume", 1));
         musicSource.volume = musicVolume;
         ambienceSource.volume = ambienceVolume;
         footStepSource.volume = footStepVolume;
@@ -42,5 +46,18 @@ public class SoundManager : MonoBehaviour
         footStepSource.mute = active;
     }
 
-
+    public void RefreshSliders(float music, float ambience)
+    {
+        masterSlider.value = music;
+    }
+    public void SetVolume(float volume)
+    {
+        RefreshSliders(volume, volume);
+        PlayerPrefs.SetFloat("MasterVolume", volume);
+        masterMixer.SetFloat("Master", Mathf.Log10(volume) * 20);
+    }
+    public void SetVolumeFromSlider()
+    {
+        SetVolume(masterSlider.value);
+    }
 }

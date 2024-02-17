@@ -134,15 +134,6 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
-    public void ChangeMusicVolume(float volume)
-    {
-        SoundManager.Instance.musicVolume = volume;
-    }
-    public void ChangeAmbienceVolume(float volume)
-    {
-        SoundManager.Instance.ambienceVolume = volume;
-    }
-
 
     public void HideOptions()
     {
