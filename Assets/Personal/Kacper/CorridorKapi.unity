@@ -1985,18 +1985,6 @@ PrefabInstance:
       propertyPath: masterMixer
       value: 
       objectReference: {fileID: 24100000, guid: 401e738c8e7844bed9ac4897c0a958f3, type: 2}
-    - target: {fileID: 2185731288703841219, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: musicSlider
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2185731288703841219, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: masterSlider
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2185731288703841219, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
-      propertyPath: ambienceSlider
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6052804349186955174, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
