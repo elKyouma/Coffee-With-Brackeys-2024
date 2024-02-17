@@ -5561,6 +5561,7 @@ MonoBehaviour:
   playerCharacter: {fileID: 782529861}
   inspectedObjectTransform: {fileID: 673482777}
   blurVolume: {fileID: 323133982}
+  pauseMenu: {fileID: 0}
   state: 0
 --- !u!4 &684779836
 Transform:
@@ -9954,6 +9955,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 26112653216024038, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052804349186955174, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405153164661266264, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7064344789895243292, guid: 47495880ecdbcb04a9b31369097e5ce1, type: 3}
       propertyPath: m_Name
       value: SoundManager
