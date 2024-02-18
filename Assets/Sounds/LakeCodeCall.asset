@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audio: {fileID: 8300000, guid: a46ca8d64be29de42b258cf5298cdc8a, type: 3}
   soundVolume: 1
+  subtitle: Delve into the image of nature, where the secret lies hidden. The code
+    to the chest rests among the waters of the lake.
