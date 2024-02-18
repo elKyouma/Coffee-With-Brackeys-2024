@@ -20,6 +20,10 @@ public abstract class Item : MonoBehaviour, IInteractable
         materials = new List<Material>();
         foreach (Renderer renderer in renderers)
             materials.AddRange(renderer.materials);
+
+        foreach (Material material in materials)
+            material.SetColor("_OutlineColor", Color.yellow);
+
         // Instantiate outline materials
 
         // Disable Rotatable if exists
