@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -36,7 +37,10 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject optionsMenu;
-
+    [SerializeField] public bool subtitlesEnabled = true;
+    [SerializeField] private GameObject button;
+    // button 
+    [SerializeField] private TextMeshProUGUI subtitleText;
     public enum GameState
     {
         Normal,
@@ -128,6 +132,12 @@ public class GameManager : MonoBehaviour
             default:
                 break;
         }
+    }
+    public void SubtitleSwitch()
+    {
+        subtitlesEnabled = !subtitlesEnabled;
+        subtitleText.enabled = subtitlesEnabled;
+        button.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = subtitlesEnabled ? "Subtitles: On" : "Subtitles: Off";
     }
 
     public void QuitGame()
