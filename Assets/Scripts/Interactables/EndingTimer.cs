@@ -26,7 +26,7 @@ public class EndingTimer : OutlineInteractable
         counterAudioSource.clip = rocketLaunchSound.audio;
         counterAudioSource.Play();
         // Screen shake 
-        cameraShaker.ShakeCamera(1f, 5f);
+        cameraShaker.ShakeOn(1f, 5f);
     }
     public override void Interact()
     {
