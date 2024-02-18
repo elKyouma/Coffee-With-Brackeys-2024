@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
         var heldObject = handObject.GetComponentInChildren<Item>().gameObject;
         StopAllCoroutines();
         StartCoroutine(MoveToInspectedPosition(heldObject, handObject, 0.01f));
+        heldObject.transform.rotation = handObject.rotation;
         blurVolume.enabled = false;
         heldObject.GetComponentInChildren<Rotatable>().rotateAllowed = false;
     }
