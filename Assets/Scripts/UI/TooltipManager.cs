@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class TooltipManager : MonoBehaviour
 {
     public static TooltipManager Instance;
-    [SerializeField] private GameObject tooltipPrefab; // Assign in Inspector
-    private List<string> tooltipMessages = new List<string>(); // Stores unique tooltip messages
-    private List<GameObject> activeTooltips = new List<GameObject>(); // Tracks active tooltip GameObjects
-    private Queue<GameObject> tooltipPool = new Queue<GameObject>(); // Object pool for tooltips
+    [SerializeField] private GameObject tooltipPrefab;
     [SerializeField] private GameObject tooltipCanvas;
-    private bool needToUpdateTooltips = true; // Flag to control tooltip updates\
     [SerializeField] private Sprite[] tooltipTextures;
+
+    private List<string> tooltipMessages = new List<string>();
+    private List<TooltipData> activeTooltips = new List<TooltipData>();
+    private Queue<TooltipData> tooltipPool = new Queue<TooltipData>();
+    private bool needToUpdateTooltips = true;
 
     private void Awake()
     {
@@ -28,17 +29,16 @@ public class TooltipManager : MonoBehaviour
 
         PrepopulatePool(5); // Adjust number based on expected maximum tooltips
     }
-
     private void PrepopulatePool(int count)
     {
         for (int i = 0; i < count; i++)
         {
             GameObject tooltipGO = Instantiate(tooltipPrefab, tooltipCanvas.transform);
             tooltipGO.SetActive(false);
-            tooltipPool.Enqueue(tooltipGO);
+            TooltipData tooltipData = new TooltipData(tooltipGO, tooltipGO.GetComponentInChildren<TextMeshProUGUI>(), tooltipGO.GetComponentInChildren<Image>());
+            tooltipPool.Enqueue(tooltipData);
         }
     }
-
     void Update()
     {
         if (needToUpdateTooltips)
@@ -50,13 +50,13 @@ public class TooltipManager : MonoBehaviour
     }
     public void RequestTooltipUpdate()
     {
-        needToUpdateTooltips = true; // Public method to allow external scripts to request a tooltip update
+        needToUpdateTooltips = true;
     }
 
     private void CheckAndDisplayTooltipsBasedOnGameState()
     {
         // Example logic to add tooltips based on game state
-        if (Interactor.Selection != null && Interactor.Selection.GetComponent<IInteractable>() != null)
+        if (Interactor.Selection != null)
         {
             AddTooltip(" to interact", tooltipTextures[0]);
         }
@@ -78,52 +78,47 @@ public class TooltipManager : MonoBehaviour
 
     void AddTooltip(string message, Sprite image)
     {
-        if (!tooltipMessages.Contains(message)) // Check to prevent duplicate messages
+        if (!tooltipMessages.Contains(message))
         {
             tooltipMessages.Add(message);
-            GameObject tooltipGO = GetTooltipFromPool();
-            TextMeshProUGUI tooltipText = tooltipGO.GetComponentInChildren<TextMeshProUGUI>();
-            Image tooltipImage = tooltipGO.GetComponentInChildren<Image>();
-            tooltipImage.sprite = image;
-            tooltipText.text = message;
-            activeTooltips.Add(tooltipGO);
+            TooltipData tooltipData = GetTooltipFromPool();
+            tooltipData.TextComponent.text = message;
+            tooltipData.ImageComponent.sprite = image;
+            activeTooltips.Add(tooltipData);
         }
     }
 
-    GameObject GetTooltipFromPool()
+    TooltipData GetTooltipFromPool()
     {
         if (tooltipPool.Count > 0)
         {
-            GameObject pooledTooltip = tooltipPool.Dequeue();
-            pooledTooltip.SetActive(true);
+            TooltipData pooledTooltip = tooltipPool.Dequeue();
+            pooledTooltip.GameObject.SetActive(true);
             return pooledTooltip;
         }
         else
         {
-            return Instantiate(tooltipPrefab, tooltipCanvas.transform);
+            GameObject newTooltipGO = Instantiate(tooltipPrefab, tooltipCanvas.transform);
+            return new TooltipData(newTooltipGO, newTooltipGO.GetComponentInChildren<TextMeshProUGUI>(), newTooltipGO.GetComponentInChildren<Image>());
         }
     }
-
     void DisplayActiveTooltips()
     {
         float screenHeight = Screen.height; // Get the screen height
         float screenWidth = Screen.width; // Get the screen width
-
-        // Assume each tooltip's height is dynamically calculated or fixed
         float tooltipHeight = 50; // Adjust based on actual height in your prefab
         float margin = 10; // Margin between tooltips
         float startingY = screenHeight * 0.1f; // Start 10% up from the bottom of the screen, adjust as needed
 
         for (int i = 0; i < activeTooltips.Count; i++)
         {
-            // Dynamically calculate the Y position based on the screen height, tooltip height, and margin
+            // Calculate the Y position based on the screen height, tooltip height, and margin
             float yPos = startingY + (i * (tooltipHeight + margin));
+            // Example: Set X position to 5% from the left edge of the screen
+            float xPos = screenWidth * 0.05f;
 
-            // Dynamically set the X position or keep it constant if you want tooltips aligned in a specific way
-            float xPos = screenWidth * 0.05f; // Example: 5% from the left edge of the screen
-
-            // Update the RectTransform anchoredPosition to position tooltips dynamically
-            RectTransform tooltipRect = activeTooltips[i].GetComponent<RectTransform>();
+            // Use cached RectTransform from TooltipData
+            RectTransform tooltipRect = activeTooltips[i].GameObject.GetComponent<RectTransform>();
             tooltipRect.anchoredPosition = new Vector2(xPos, yPos);
         }
     }
@@ -133,16 +128,29 @@ public class TooltipManager : MonoBehaviour
     {
         while (activeTooltips.Count > 0)
         {
-            GameObject tooltip = activeTooltips[0];
+            TooltipData tooltip = activeTooltips[0];
             activeTooltips.RemoveAt(0);
             ReturnTooltipToPool(tooltip);
         }
         tooltipMessages.Clear();
     }
 
-    void ReturnTooltipToPool(GameObject tooltip)
+    void ReturnTooltipToPool(TooltipData tooltipData)
     {
-        tooltip.SetActive(false);
-        tooltipPool.Enqueue(tooltip);
+        tooltipData.GameObject.SetActive(false);
+        tooltipPool.Enqueue(tooltipData);
+    }
+    class TooltipData
+    {
+        public GameObject GameObject;
+        public TextMeshProUGUI TextComponent;
+        public Image ImageComponent;
+
+        public TooltipData(GameObject gameObject, TextMeshProUGUI textComponent, Image imageComponent)
+        {
+            GameObject = gameObject;
+            TextComponent = textComponent;
+            ImageComponent = imageComponent;
+        }
     }
 }
