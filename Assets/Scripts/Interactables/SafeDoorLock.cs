@@ -13,7 +13,7 @@ public class SafeDoorLock : OutlineInteractable
 {
     public GameObject door;
 
-    private List<float> code = new List<float>() { -129.6f, 489.6f, 324f };
+    private List<float> code = new List<float>() { -14.4f, 482.4f, 248.4f };
 
     private bool IsOpenable = true;
     private bool rotate = false;
@@ -83,16 +83,16 @@ public class SafeDoorLock : OutlineInteractable
         switch (stage)
         {
             case 0:
+                if (currentAngle > 414) OpeningFailed(false);
                 if (currentAngle < startOpening + code[0] + 3.6f) StageComplete();
-                if (currentAngle > 500) OpeningFailed(false);
                 break;
             case 1:
                 if (currentAngle > startOpening + code[1] - 3.6f) StageComplete();
-                if (currentAngle < startOpening + code[0] - 7.2f) OpeningFailed(false);
+                if (currentAngle < startOpening + code[0] - 72f) OpeningFailed(false);
                 break;
             case 2:
                 if (currentAngle < startOpening + code[2] + 3.6f) StageComplete();
-                if (currentAngle > startOpening + code[1] + 7.2f) OpeningFailed(false);
+                if (currentAngle > startOpening + code[1] + 72f) OpeningFailed(false);
                 break;
         }
 
@@ -103,6 +103,7 @@ public class SafeDoorLock : OutlineInteractable
             IsOpenable = false;
             rotate = false;
             GameManager.Instance.ExitPuzzleMode();
+            Destroy(transform.parent.GetComponentInChildren<POISafe>());
         }
 
     }

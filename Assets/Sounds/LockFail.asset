@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: LockFail
   m_EditorClassIdentifier: 
   audio: {fileID: 8300000, guid: 0aa2dc2010488d648bdc9a28816c2d9e, type: 3}
-  soundVolume: 0.6
+  soundVolume: 1.5
