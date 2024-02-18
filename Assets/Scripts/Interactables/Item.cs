@@ -10,14 +10,16 @@ public abstract class Item : MonoBehaviour, IInteractable
     private const string tag = "ItemCatcher";
     private bool interactable = true;
     private Renderer[] renderers;
-    private Material outlineFillMaterial;
+    private List<Material> materials;
     public bool Active { get { return interactable && GameManager.Instance.state == GameManager.GameState.Normal; } }
 
     private void Awake()
     {
         // Cache renderers
         renderers = GetComponentsInChildren<Renderer>();
-        outlineFillMaterial = renderers[0].material;
+        materials = new List<Material>();
+        foreach (Renderer renderer in renderers)
+            materials.AddRange(renderer.materials);
         // Instantiate outline materials
 
         // Disable Rotatable if exists
@@ -29,33 +31,11 @@ public abstract class Item : MonoBehaviour, IInteractable
     {
         TurnOffOutline();
         Interactor.AddInteractable(transform);
-
-        foreach (var renderer in renderers)
-        {
-
-            // Append outline shaders
-            var materials = renderer.sharedMaterials.ToList();
-
-            materials.Add(outlineFillMaterial);
-
-            renderer.materials = materials.ToArray();
-        }
     }
 
     private void OnDisable()
     {
         Interactor.DeleteInteractable(transform);
-
-        foreach (var renderer in renderers)
-        {
-
-            // Remove outline shaders
-            var materials = renderer.sharedMaterials.ToList();
-
-            materials.Remove(outlineFillMaterial);
-
-            renderer.materials = materials.ToArray();
-        }
     }
 
     public void Interact()
@@ -73,12 +53,14 @@ public abstract class Item : MonoBehaviour, IInteractable
 
     public void TurnOnOutline()
     {
-        outlineFillMaterial.SetFloat("_Frequency", 3f);
+        foreach(Material material in materials)
+            material.SetFloat("_Frequency", 3f);
     }
 
     public void TurnOffOutline()
     {
-        outlineFillMaterial.SetFloat("_Frequency", 0.0f);
+        foreach (Material material in materials)
+            material.SetFloat("_Frequency", 0.0f);
     }
 
     public void Selected()
