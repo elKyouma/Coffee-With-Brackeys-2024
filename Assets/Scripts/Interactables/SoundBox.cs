@@ -9,15 +9,15 @@ public class SoundBox : MonoBehaviour
     public void Play(SoundSO sound, float offset)
     {
         source = GetComponent<AudioSource>();
-        StartCoroutine(SoundOffset(offset));
-        source.volume = sound.soundVolume;
-        source.PlayOneShot(sound.audio);
-        StartCoroutine(SoundBoxDestruction(sound.audio.length));
+        StartCoroutine(SoundOffset(sound, offset));
+        StartCoroutine(SoundBoxDestruction(sound.audio.length + offset));
     }
 
-    IEnumerator SoundOffset(float time)
+    IEnumerator SoundOffset(SoundSO sound, float time)
     {
         yield return new WaitForSeconds(time);
+        source.volume = sound.soundVolume;
+        source.PlayOneShot(sound.audio);
     }
 
     IEnumerator SoundBoxDestruction(float time)

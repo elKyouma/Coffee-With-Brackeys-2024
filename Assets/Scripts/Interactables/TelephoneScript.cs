@@ -5,6 +5,7 @@ using UnityEngine;
 public class TelephoneScript : OutlineInteractable
 {
     private bool isRinging = false;
+    private bool isPlaying = false;
     private SoundSO dialogue = null;
 
     [SerializeField] private Light diode;
@@ -14,15 +15,25 @@ public class TelephoneScript : OutlineInteractable
 
     public override void Interact()
     {
-        if(isRinging)
+        if (isRinging)
         {
             isRinging = false;
             ringingSource.mute = true;
             dialogueSource.Play();
             diode.intensity = 0f;
         }
+        else if (!isPlaying)
+        {
+            StartCoroutine(StartDialogue(dialogueSource.clip.length));
+        }
     }
-
+    public IEnumerator StartDialogue(float time = 0f)
+    {
+        isPlaying = true;
+        dialogueSource.Play();
+        yield return new WaitForSeconds(time);
+        isPlaying = false;
+    }
     public void StartRinging(SoundSO newDialogue, float offset = 0f)
     {
         dialogueSource.clip = newDialogue.audio;
@@ -31,7 +42,7 @@ public class TelephoneScript : OutlineInteractable
     }
     private void Update()
     {
-        if(isRinging)
+        if (isRinging)
         {
             diode.intensity = Mathf.Sin(2 * Time.time);
         }
