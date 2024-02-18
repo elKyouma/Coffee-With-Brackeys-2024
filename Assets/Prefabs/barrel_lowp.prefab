@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 790033055105961829}
   - component: {fileID: 3455688254900753122}
   - component: {fileID: 1946792244684980825}
+  - component: {fileID: 8164140933500894105}
   m_Layer: 0
   m_Name: barrel_lowp
   m_TagString: Untagged
@@ -84,3 +85,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &8164140933500894105
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142377791784114501}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1964935
+  m_Height: 0.60845727
+  m_Direction: 1
+  m_Center: {x: -0.00024463236, y: 0.3082967, z: -0.0006657094}
