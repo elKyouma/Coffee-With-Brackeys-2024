@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Personal/Kacper/Scena Kapiego.unity
-    guid: 8cb2a413938ae37838902666d2d65513
+    path: Assets/Personal/Kuba/Corridor.unity
+    guid: f3403408d9bb958439e51e3c5633089f
   m_configObjects: {}
