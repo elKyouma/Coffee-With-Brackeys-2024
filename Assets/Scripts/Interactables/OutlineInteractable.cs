@@ -43,12 +43,14 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
     public void TurnOnOutline()
     {
         // Apply properties according to mode
+        if (materials == null) return;
         foreach (Material material in materials)
             material.SetFloat("_Frequency", 2f);
     }
 
     private void TurnOffOutline()
     {
+        if (materials == null) return;
         foreach (Material material in materials)
             material.SetFloat("_Frequency", 0f);
     }    
