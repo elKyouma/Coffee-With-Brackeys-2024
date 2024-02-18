@@ -208,6 +208,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8708b6af3ba10afcb8dab62f7a2e088, type: 3}
+--- !u!1 &8969698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4911337950314080279, guid: 727e7e96561e6b2f4960f00ef5986031, type: 3}
+  m_PrefabInstance: {fileID: 9060537184817466977}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &21337474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2205,11 +2210,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4433934979002262853, guid: 2559acdb79730914384f45f36f37e6c3, type: 3}
   m_PrefabInstance: {fileID: 212418421}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &212917771 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 518285698512953871, guid: 727e7e96561e6b2f4960f00ef5986031, type: 3}
-  m_PrefabInstance: {fileID: 9060537184817466977}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &214220720 stripped
 Transform:
@@ -28297,9 +28297,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1688956734}
     - target: {fileID: 5827023169854974981, guid: 4b819a1f276019dd48aaa056c4e7e27e, type: 3}
+      propertyPath: tooltipCanvas
+      value: 
+      objectReference: {fileID: 8969698}
+    - target: {fileID: 5827023169854974981, guid: 4b819a1f276019dd48aaa056c4e7e27e, type: 3}
       propertyPath: tooltipContainer
       value: 
-      objectReference: {fileID: 212917771}
+      objectReference: {fileID: 0}
     - target: {fileID: 5975969466822979900, guid: 4b819a1f276019dd48aaa056c4e7e27e, type: 3}
       propertyPath: m_Name
       value: UIManager
@@ -28544,7 +28548,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 684779835}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6771651908299300834, guid: 727e7e96561e6b2f4960f00ef5986031, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 727e7e96561e6b2f4960f00ef5986031, type: 3}
