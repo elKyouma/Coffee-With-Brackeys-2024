@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class CameraShaker : MonoBehaviour
 {
-    private float stress = 0;
 
+    private float stress = 0;
     private Vector3 _lastPosition;
     private Vector3 _lastRotation;
     [Tooltip("Exponent for calculating the shake factor. Useful for creating different effect fade outs")]
@@ -15,15 +15,14 @@ public class CameraShaker : MonoBehaviour
     public Vector3 MaximumAngularShake = Vector3.one * 5;
     [Tooltip("Maximum translation that the gameobject can receive when applying the shake effect.")]
     public Vector3 MaximumTranslationShake = Vector3.one * 0.25f;
+    public AnimationCurve curve;
 
-
-    private float time;
+    private float time, lentgh, amp;
 
     private void Update()
     {
-
-        float shake = Mathf.Pow(stress, TraumaExponent);
-        if (shake > 0)
+        stress = amp * curve.Evaluate((lentgh - time)/lentgh);
+        if (time > 0)
         {
             var previousRotation = _lastRotation;
             var previousPosition = _lastPosition;
@@ -42,7 +41,7 @@ public class CameraShaker : MonoBehaviour
 
             transform.localPosition += _lastPosition - previousPosition;
             transform.localRotation = Quaternion.Euler(transform.localRotation.eulerAngles + _lastRotation - previousRotation);
-            stress = stress - Time.deltaTime;
+            time -= Time.deltaTime;
             return;
         }
 
@@ -53,16 +52,13 @@ public class CameraShaker : MonoBehaviour
         _lastPosition = Vector3.zero;
         _lastRotation = Vector3.zero;
 
-        if(stress < (time / 2))
-        {
-            TraumaExponent = 1 / TraumaExponent;
-        }
     }
 
-    public void ShakeOn(float newtime)
+    public void ShakeOn(float newTime, float amp)
     {
-        time = newtime;
-        TraumaExponent = 2;
+        this.amp = amp;
+        lentgh = newTime;
+        time = newTime;
     }
 
 }

@@ -55,10 +55,6 @@ public class BookshelfPuzzle : MonoBehaviour
         {
             AnimateBookshelfDown();
         }
-        else if (!ValidatePuzzle() && hasMoved)
-        {
-            MoveBookshelfBack();
-        }
         // When the puzzle is not solved and hasn't been moved, we do nothing here.
     }
 
@@ -66,7 +62,7 @@ public class BookshelfPuzzle : MonoBehaviour
     {
         hasMoved = true; // Mark as moved
         fireplaceAudioSource.mute = false;
-        cameraShaker.ShakeOn(animationTime);
+        cameraShaker.ShakeOn(animationTime * 0.8f, 1f);
         LeanTween.moveY(objectToMove, objectToMove.transform.position.y - moveDistance, animationTime)
             .setEaseOutCubic()
             .setDelay(animationDelay)
@@ -75,18 +71,6 @@ public class BookshelfPuzzle : MonoBehaviour
                 // Optional: Actions after moving down, if necessary.
 
                 fireplaceAudioSource.mute = true;
-            });
-        
-    }
-
-    private void MoveBookshelfBack()
-    {
-        LeanTween.moveY(objectToMove, objectToMove.transform.position.y + moveDistance, animationTime)
-            .setEaseOutCubic()
-            .setDelay(animationDelay)
-            .setOnComplete(() =>
-            {
-                hasMoved = false; // Reset move flag after moving back
             });
         
     }

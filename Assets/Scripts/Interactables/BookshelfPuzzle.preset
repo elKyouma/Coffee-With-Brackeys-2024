@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BookshelfPuzzle
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 0e7af8d9b027e3539b5719f62cd53e19, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: books.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: solutionArray.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: solutionArray.Array.data[0]
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: solutionArray.Array.data[1]
+    value: 121
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: solutionArray.Array.data[2]
+    value: 235
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: solutionArray.Array.data[3]
+    value: 255
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: objectToMove
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: animationTime
+    value: 12
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: animationDelay
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: moveDistance
+    value: 6.8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: bookSlideSound
+    value: 
+    objectReference: {fileID: 11400000, guid: 03e65d77877ffff49bf3d6a6a5874f5b, type: 2}
+  - target: {fileID: 0}
+    propertyPath: fireplaceAudioSource
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: cameraShaker
+    value: 
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
