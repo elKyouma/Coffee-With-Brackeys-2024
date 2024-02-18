@@ -490,6 +490,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2057241220}
     m_Modifications:
     - target: {fileID: 204650960832838476, guid: 532f72a558cee634a8c169bc32a4c8d9, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 204650960832838476, guid: 532f72a558cee634a8c169bc32a4c8d9, type: 3}
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
@@ -2615,7 +2619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4446140727227248225, guid: 7677266fddfb9fc4494ccc2df212afeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.519
+      value: 13.41
       objectReference: {fileID: 0}
     - target: {fileID: 4446140727227248225, guid: 7677266fddfb9fc4494ccc2df212afeb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2623,7 +2627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4446140727227248225, guid: 7677266fddfb9fc4494ccc2df212afeb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.4063
+      value: -5.399
       objectReference: {fileID: 0}
     - target: {fileID: 4446140727227248225, guid: 7677266fddfb9fc4494ccc2df212afeb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2657,6 +2661,10 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8502093929751072490, guid: 7677266fddfb9fc4494ccc2df212afeb, type: 3}
+      propertyPath: center
+      value: 
+      objectReference: {fileID: 112550358}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3435,6 +3443,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7410935424962429566, guid: a4a157692db27004faeba6fd9a32f63e, type: 3}
+      propertyPath: openingSound
+      value: 
+      objectReference: {fileID: 11400000, guid: e1793ec5bf12fae468523c36789899bd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3882,6 +3894,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8502093929751072490, guid: 7677266fddfb9fc4494ccc2df212afeb, type: 3}
+      propertyPath: center
+      value: 
+      objectReference: {fileID: 112550358}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5553,7 +5569,8 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 66980197377838218, guid: 42301f06cca3e9f4998b7c62254ef40c, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42301f06cca3e9f4998b7c62254ef40c, type: 3}
@@ -18744,6 +18761,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8502093929751072490, guid: 7677266fddfb9fc4494ccc2df212afeb, type: 3}
+      propertyPath: center
+      value: 
+      objectReference: {fileID: 112550358}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20671,6 +20692,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 8502093929751072490, guid: 7677266fddfb9fc4494ccc2df212afeb, type: 3}
+      propertyPath: center
+      value: 
+      objectReference: {fileID: 112550358}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21271,7 +21296,7 @@ MonoBehaviour:
   longHandSolution: 30
   shortHandSolution: 120
   painting: {fileID: 4366959628719737271}
-  solveSound: {fileID: 11400000, guid: d145797ea7fa3e54aaf92f075970386b, type: 2}
+  solveSound: {fileID: 11400000, guid: 2a9c733ec43e00c40b1923de44fa9686, type: 2}
 --- !u!82 &1898608933
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23031,6 +23056,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 103013019}
     m_Modifications:
+    - target: {fileID: 204650960832838476, guid: 532f72a558cee634a8c169bc32a4c8d9, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5216489089806680292, guid: 532f72a558cee634a8c169bc32a4c8d9, type: 3}
       propertyPath: m_Name
       value: BirdCageObj
@@ -27975,7 +28004,8 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 66980197377838218, guid: 42301f06cca3e9f4998b7c62254ef40c, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42301f06cca3e9f4998b7c62254ef40c, type: 3}
