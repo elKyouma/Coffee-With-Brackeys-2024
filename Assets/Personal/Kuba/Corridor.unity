@@ -24700,6 +24700,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4387524460431891451, guid: a15b7198b4236164c9d043ade0962767, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 401e738c8e7844bed9ac4897c0a958f3, type: 2}
     - target: {fileID: 4774636472348458853, guid: a15b7198b4236164c9d043ade0962767, type: 3}
       propertyPath: BypassEffects
       value: 1
