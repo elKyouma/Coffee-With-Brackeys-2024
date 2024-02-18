@@ -2,12 +2,10 @@ Outliny nie dzialaja
 lupa nie dziala ciemne w chuj i działa jak lustro
 za małe cyferki
 poduszka sie respi na mordzie
-q w UI
 Światło dostaje pierdolca
 Latarka nie ma outline
 Nasrać symbole pod UV
 Crosshair sie nie wylacza podczas use item
-Zoom inspect mode
 Zagadka z inspect mode
 Drzwi od szafki kolizja
 Office inspect mode????
