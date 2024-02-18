@@ -127,7 +127,7 @@ public class Keypad : MonoBehaviour
         panelMesh.material.SetVector("_EmissionColor", screenGrantedColor * screenIntensity);
         GameManager.Instance.ExitPuzzleMode();
         audioSource.PlayOneShot(accessGrantedSfx);
-        SoundManager.Instance.PlaySound(doorOpeningSound, gameObject.transform.position);
+        SoundManager.Instance.PlaySound(doorOpeningSound, gameObject.transform.position, 3f);
     }
 
 }

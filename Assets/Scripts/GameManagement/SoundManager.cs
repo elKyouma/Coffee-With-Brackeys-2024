@@ -35,7 +35,7 @@ public class SoundManager : MonoBehaviour
         footStepSource.volume = footStepVolume;
     }
 
-    public void PlaySound(SoundSO sound, Vector3 soundPosition, float offset = 0)
+    public void PlaySound(SoundSO sound, Vector3 soundPosition, float offset = 0f)
     {
         soundBox = Instantiate(soundBoxPrefab, soundPosition, Quaternion.identity, gameObject.transform);
         soundBox.GetComponent<SoundBox>().Play(sound, offset);
