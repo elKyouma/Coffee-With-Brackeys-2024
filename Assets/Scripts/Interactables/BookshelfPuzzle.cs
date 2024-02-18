@@ -18,6 +18,7 @@ public class BookshelfPuzzle : MonoBehaviour
 
     [SerializeField] private CameraShaker cameraShaker;
     [SerializeField] private Transform doorVC;
+    [SerializeField] private Transform particle;
     void Start()
     {
         solution = new HashSet<int>(solutionArray);
@@ -66,12 +67,14 @@ public class BookshelfPuzzle : MonoBehaviour
 
 
         doorVC.gameObject.SetActive(true);
+        particle.gameObject.SetActive(true);
         LeanTween.moveY(objectToMove, objectToMove.transform.position.y - moveDistance, animationTime)
             .setEaseInSine()
             .setDelay(animationDelay)
             .setOnComplete(() =>
             {
                 doorVC.gameObject.SetActive(false);
+                particle.gameObject.SetActive(false);
                 // Optional: Actions after moving down, if necessary.
 
                 fireplaceAudioSource.mute = true;
