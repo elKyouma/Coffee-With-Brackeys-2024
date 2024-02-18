@@ -62,6 +62,7 @@ namespace KinematicCharacterController.Examples
         public void OnCameraMove(InputAction.CallbackContext context) => cameraMovement = context.ReadValue<Vector2>();
         public void OnInteract(InputAction.CallbackContext context)
         {
+            TooltipManager.Instance.RequestTooltipUpdate();
             if (context.started) OnInteraction?.Invoke();
         }
 
@@ -83,13 +84,13 @@ namespace KinematicCharacterController.Examples
         public void OnEnterInspectMode(InputAction.CallbackContext context)
         {
             if (context.started) OnInspection?.Invoke();
-
+            TooltipManager.Instance.RequestTooltipUpdate();
             GameManager.Instance.EnterInspectorMode();
         }
         public void OnLeaveInspectMode(InputAction.CallbackContext context)
         {
             if (context.started) return;
-
+            TooltipManager.Instance.RequestTooltipUpdate();
             GameManager.Instance.ExitInspectorMode();
         }
 

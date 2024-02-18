@@ -58,6 +58,8 @@ public class Interactor : MonoBehaviour
                 result = interactables[i];
             }
         }
+        TooltipManager.Instance.RequestTooltipUpdate();
+
         return result;
     }
 
@@ -79,6 +81,7 @@ public class Interactor : MonoBehaviour
                 return selection;
         }
 
+
         return null;
     }
 
@@ -94,6 +97,7 @@ public class Interactor : MonoBehaviour
         {
             previousSelection?.GetComponent<IInteractable>()?.Unselected();
             Selection?.GetComponent<IInteractable>().Selected();
+            TooltipManager.Instance.RequestTooltipUpdate();
         }
 
     }
