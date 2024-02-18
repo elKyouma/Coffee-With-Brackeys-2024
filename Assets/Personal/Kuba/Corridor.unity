@@ -9936,7 +9936,7 @@ MonoBehaviour:
   optionsMenu: {fileID: 752105247}
   subtitlesEnabled: 1
   button: {fileID: 1800672317}
-  subtitleText: {fileID: 1949631323}
+  subtitleText: {fileID: 1694422416}
   state: 0
 --- !u!4 &684779836
 Transform:
