@@ -35,6 +35,7 @@ namespace KinematicCharacterController.Examples
 
         private void Start()
         {
+            zoomDefault = objectCamera.fieldOfView;
             PlayerPrefs.GetFloat("Sensivity", 1.1f);
             sensitivitySlider.value = sensitivity - 0.1f;
             character = GetComponentInChildren<MyCharacterController>();
@@ -102,6 +103,8 @@ namespace KinematicCharacterController.Examples
             if (context.started) return;
             TooltipManager.Instance.RequestTooltipUpdate();
             objectCamera.fieldOfView = zoomDefault;
+            StopAllCoroutines();
+            StartCoroutine(ZoomToTargetFOV(zoomDefault));
             GameManager.Instance.ExitInspectorMode();
         }
         public void HandleZoom(InputAction.CallbackContext context)

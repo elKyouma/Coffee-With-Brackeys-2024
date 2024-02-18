@@ -1636,6 +1636,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5314033096001898704, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 439
+      objectReference: {fileID: 0}
     - target: {fileID: 5339525058596899277, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.82
@@ -1679,7 +1683,7 @@ PrefabInstance:
     - target: {fileID: 6016244139878336777, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: m_LookAt
       value: 
-      objectReference: {fileID: 2063932747}
+      objectReference: {fileID: 0}
     - target: {fileID: 7658603888617653837, guid: 4108961260372f147b3f905ed641b0f3, type: 3}
       propertyPath: sensitivitySlider
       value: 
@@ -11523,11 +11527,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4433934979002262853, guid: 2559acdb79730914384f45f36f37e6c3, type: 3}
   m_PrefabInstance: {fileID: 828871229}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &833194016 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 564275394852602586, guid: efa2173636d29a341a904d1e3c1636b6, type: 3}
-  m_PrefabInstance: {fileID: 1725873834}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &837005874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4911337950314080279, guid: 727e7e96561e6b2f4960f00ef5986031, type: 3}
@@ -18894,11 +18893,11 @@ PrefabInstance:
     - target: {fileID: 7672239337899971135, guid: de20a1662867a34c4981f436e6017797, type: 3}
       propertyPath: particle
       value: 
-      objectReference: {fileID: 833194016}
+      objectReference: {fileID: 0}
     - target: {fileID: 7672239337899971135, guid: de20a1662867a34c4981f436e6017797, type: 3}
       propertyPath: cameraShaker
       value: 
-      objectReference: {fileID: 2063932748}
+      objectReference: {fileID: 0}
     - target: {fileID: 7672239337899971135, guid: de20a1662867a34c4981f436e6017797, type: 3}
       propertyPath: moveDistance
       value: 5.5
@@ -21239,11 +21238,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 986598769004666487, guid: d1260057171a5dc049ed3e5e6ed42207, type: 3}
   m_PrefabInstance: {fileID: 1058639847}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1376823677 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3191536402413872102, guid: efa2173636d29a341a904d1e3c1636b6, type: 3}
-  m_PrefabInstance: {fileID: 1725873834}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &1390792237
 Mesh:
@@ -31985,22 +31979,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fontColor: {r: 0.8352942, g: 0.015686275, b: 0.94117653, a: 1}
   backgroundColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
---- !u!4 &2063932747 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1869046812151816670, guid: efa2173636d29a341a904d1e3c1636b6, type: 3}
-  m_PrefabInstance: {fileID: 1725873834}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2063932748 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2618177859751373616, guid: efa2173636d29a341a904d1e3c1636b6, type: 3}
-  m_PrefabInstance: {fileID: 1725873834}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cad8720a66e372d4481c7b807d4f09f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &2067722840
 Mesh:
   m_ObjectHideFlags: 0
@@ -35587,7 +35565,6 @@ Transform:
   - {fileID: 896821815}
   - {fileID: 439423275}
   - {fileID: 541045044}
-  - {fileID: 1376823677}
   - {fileID: 1073086767}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

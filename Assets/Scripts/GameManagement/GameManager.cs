@@ -91,12 +91,10 @@ public class GameManager : MonoBehaviour
 
         player.GetComponent<PlayerInput>().SwitchCurrentActionMap(defaultActionMap);
         var heldObject = handObject.GetComponentInChildren<Item>().gameObject;
-        heldObject.transform.position = handObject.position;
-        // reset rotation
-        heldObject.transform.rotation = handObject.rotation;
+        StopAllCoroutines();
+        StartCoroutine(MoveToInspectedPosition(heldObject, handObject, 0.01f));
         blurVolume.enabled = false;
         heldObject.GetComponentInChildren<Rotatable>().rotateAllowed = false;
-        heldObject.transform.parent = handObject;
     }
 
     IEnumerator MoveToInspectedPosition(GameObject objectToMove, Transform targetTransform, float duration)
