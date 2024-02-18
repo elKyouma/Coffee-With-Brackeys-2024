@@ -7,4 +7,5 @@ public class SoundSO : ScriptableObject
 {
     [SerializeField] public AudioClip audio;
     [SerializeField] public float soundVolume = 1;
+    [SerializeField] public string subtitle;
 }
