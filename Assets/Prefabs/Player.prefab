@@ -81,6 +81,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7293672194121120896}
+  - component: {fileID: 896021842730289938}
   m_Layer: 0
   m_Name: toLookAt
   m_TagString: Untagged
@@ -103,6 +104,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5329951881616782388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &896021842730289938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335228899787215800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad8720a66e372d4481c7b807d4f09f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TraumaExponent: 0.5
+  MaximumAngularShake: {x: 5, y: 5, z: 5}
+  MaximumTranslationShake: {x: 0.25, y: 0.25, z: 0.25}
 --- !u!1 &1481878585450965328
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +592,7 @@ MonoBehaviour:
     m_ActionName: Movement/Pause[/Keyboard/escape]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2546684271293287326, guid: dbc1fc790e05e1077912cb3eeda72265, type: 3}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Back
         m_Mode: 0
@@ -590,6 +606,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: d3d036c8-771d-4abc-b5ef-0682ee28d362
     m_ActionName: Pause/Back[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7658603888617653837}
+        m_TargetAssemblyTypeName: KinematicCharacterController.Examples.Player, Assembly-CSharp
+        m_MethodName: HandleZoom
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 83681fa1-043e-4006-b322-11a850572dfc
+    m_ActionName: InspectorMode/Zoom[/Mouse/scroll/y]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -608,6 +640,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivity: 1
+  zoomDefault: 60
+  zoomMax: 80
+  zoomMin: 10
+  zoomSpeed: 2
+  objectCamera: {fileID: 1936644425750161361}
 --- !u!114 &1753370362994247186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,6 +804,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1398904762131290, guid: d295472d4ce25404e9aed2627c34801f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4176014517000396943}
+    - targetCorrespondingSourceObject: {fileID: 1398904762131290, guid: d295472d4ce25404e9aed2627c34801f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 313531560043056440}
   m_SourcePrefab: {fileID: 100100000, guid: d295472d4ce25404e9aed2627c34801f, type: 3}
 --- !u!1 &2127964818799493676 stripped
 GameObject:
@@ -844,11 +884,54 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 7ab5d59d-c1b4-4dc2-8c41-8448e9c1b667
     m_ActionName: PuzzleMode/Leave[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 20f5c4b0-2644-4ff2-b527-8ff5556079b5
+    m_ActionName: Movement/Inspect Mode[/Keyboard/i]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 74563856-01c9-4ade-be7a-b738a500293b
+    m_ActionName: Movement/DropItem[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e03637ec-ecd3-4af0-93be-a7837c9fc30b
+    m_ActionName: Movement/Pause[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aa9e1541-e8ae-4773-8326-758cd0f8301e
+    m_ActionName: PuzzleMode/MousePos[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 36f7b97e-1004-49c1-b1f6-881d673896bc
+    m_ActionName: PuzzleMode/Interact[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cbadce40-9dae-4f52-9180-f17f0b3de771
+    m_ActionName: InspectorMode/Leave[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d3d036c8-771d-4abc-b5ef-0682ee28d362
+    m_ActionName: Pause/Back[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 5314033096001898704}
+--- !u!114 &313531560043056440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127964818799493676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2477ccdbf9ed8142a78516807fc9d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: bae2b9453f12c374f8936be0ebccf88c, type: 2}
+  phoneTrigger: {fileID: 0}
+  telephone: {fileID: 0}
 --- !u!4 &2133640956271638530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4718917724592500, guid: d295472d4ce25404e9aed2627c34801f, type: 3}

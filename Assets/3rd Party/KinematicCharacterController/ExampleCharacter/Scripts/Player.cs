@@ -23,6 +23,13 @@ namespace KinematicCharacterController.Examples
         private static Vector2 mousePos = Vector2.zero;
         public static Vector2 MousePosition { get { return mousePos; } private set { mousePos = value; } }
         public float sensitivity = 1f;
+        [Header("Zoom Settings")]
+        [SerializeField] private float zoomDefault = 60f;
+        [SerializeField] private float zoomMax = 80f;
+        [SerializeField] private float zoomMin = 20f;
+        [SerializeField] private float zoomSpeed = 10f;
+        private float targetFOV; // Target field of view
+        [SerializeField] private Camera objectCamera;
 
         private void Start()
         {
@@ -62,6 +69,7 @@ namespace KinematicCharacterController.Examples
         public void OnCameraMove(InputAction.CallbackContext context) => cameraMovement = context.ReadValue<Vector2>();
         public void OnInteract(InputAction.CallbackContext context)
         {
+            TooltipManager.Instance.RequestTooltipUpdate();
             if (context.started) OnInteraction?.Invoke();
         }
 
@@ -83,15 +91,37 @@ namespace KinematicCharacterController.Examples
         public void OnEnterInspectMode(InputAction.CallbackContext context)
         {
             if (context.started) OnInspection?.Invoke();
-
+            TooltipManager.Instance.RequestTooltipUpdate();
             GameManager.Instance.EnterInspectorMode();
         }
         public void OnLeaveInspectMode(InputAction.CallbackContext context)
         {
             if (context.started) return;
-
+            TooltipManager.Instance.RequestTooltipUpdate();
+            objectCamera.fieldOfView = zoomDefault;
             GameManager.Instance.ExitInspectorMode();
         }
+        public void HandleZoom(InputAction.CallbackContext context)
+        {
+            if (!context.started || GameManager.Instance.state != GameManager.GameState.Inspect) return;
+
+            float scrollInput = -context.ReadValue<float>(); // Adjust scroll direction if necessary
+            float targetFOV = Mathf.Clamp(objectCamera.fieldOfView + scrollInput * zoomSpeed, zoomMin, zoomMax);
+
+            StopAllCoroutines(); // Stop existing zoom coroutine to start a new one
+            StartCoroutine(ZoomToTargetFOV(targetFOV));
+        }
+
+        IEnumerator ZoomToTargetFOV(float targetFOV)
+        {
+            while (!Mathf.Approximately(objectCamera.fieldOfView, targetFOV))
+            {
+                // Smoothly interpolate the camera's field of view towards the target FOV
+                objectCamera.fieldOfView = Mathf.Lerp(objectCamera.fieldOfView, targetFOV, Time.deltaTime * zoomSpeed);
+                yield return null; // Wait for the next frame before continuing the loop
+            }
+        }
+
 
         private void HandleCameraInput()
         {

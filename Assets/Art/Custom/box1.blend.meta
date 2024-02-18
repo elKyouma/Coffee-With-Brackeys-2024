@@ -3,7 +3,22 @@ guid: 1057f23211e2cc147acb5349a833a333
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lut_Box_Mat
+    second: {fileID: 2100000, guid: 640215b26769445499c79ce92026e4b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Pieces
+    second: {fileID: 2100000, guid: 3312295fb15bc1f43994632d1937c8bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Padlock
+    second: {fileID: 2100000, guid: 10d0feca438d44642965b2e1b3bfaef3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

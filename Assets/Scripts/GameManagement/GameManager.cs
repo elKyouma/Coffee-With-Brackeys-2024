@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     public Transform HandObject { get { return handObject; } }
 
     [SerializeField]
-    private Transform inspectedObjectTransform;
+    public Transform inspectedObjectTransform;
     [SerializeField]
     private Volume blurVolume;
     [Header("UI")]
@@ -96,6 +96,7 @@ public class GameManager : MonoBehaviour
         heldObject.transform.rotation = handObject.rotation;
         blurVolume.enabled = false;
         heldObject.GetComponentInChildren<Rotatable>().rotateAllowed = false;
+        heldObject.transform.parent = handObject;
     }
 
     IEnumerator MoveToInspectedPosition(GameObject objectToMove, Transform targetTransform, float duration)
@@ -120,7 +121,6 @@ public class GameManager : MonoBehaviour
         switch (state)
         {
             case GameState.Options:
-                Cursor.lockState = CursorLockMode.Locked;
                 HideOptions();
                 break;
             case GameState.Pause:
