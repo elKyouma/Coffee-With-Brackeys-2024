@@ -22705,6 +22705,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sofa
       objectReference: {fileID: 0}
+    - target: {fileID: 4158558459389028268, guid: 9213a2e01686399418d9f7f494d1cabc, type: 3}
+      propertyPath: axis.m_Name
+      value: Axis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158558459389028268, guid: 9213a2e01686399418d9f7f494d1cabc, type: 3}
+      propertyPath: pressed.m_Name
+      value: Pressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161481251258932913, guid: 9213a2e01686399418d9f7f494d1cabc, type: 3}
+      propertyPath: axis.m_Name
+      value: Axis
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161481251258932913, guid: 9213a2e01686399418d9f7f494d1cabc, type: 3}
+      propertyPath: pressed.m_Name
+      value: Pressed
+      objectReference: {fileID: 0}
     - target: {fileID: 8425326771918490248, guid: 9213a2e01686399418d9f7f494d1cabc, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
