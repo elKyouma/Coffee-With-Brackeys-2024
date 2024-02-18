@@ -12864,7 +12864,7 @@ MonoBehaviour:
   rocketLaunchSound: {fileID: 11400000, guid: 7be1f058073ef794186e60290d8047a5, type: 2}
   counterAudioSource: {fileID: 978004336}
   animator: {fileID: 0}
-  cameraShaker: {fileID: 0}
+  cameraShaker: {fileID: 606147652}
 --- !u!82 &978004336
 AudioSource:
   m_ObjectHideFlags: 0
