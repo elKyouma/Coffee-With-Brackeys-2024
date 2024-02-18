@@ -29,7 +29,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
   m_LocalPosition: {x: 0.0036, y: -0.009, z: 0.004}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6664600024900314649}
   m_LocalEulerAnglesHint: {x: 180, y: 90, z: -90}
@@ -94,6 +94,22 @@ PrefabInstance:
     - target: {fileID: 2124528383134618650, guid: 172484556059ef04d8dc8f42a5ef702a, type: 3}
       propertyPath: m_Name
       value: Letter Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880449832041443762, guid: 172484556059ef04d8dc8f42a5ef702a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880449832041443762, guid: 172484556059ef04d8dc8f42a5ef702a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880449832041443762, guid: 172484556059ef04d8dc8f42a5ef702a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880449832041443762, guid: 172484556059ef04d8dc8f42a5ef702a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6273473087975333910, guid: 172484556059ef04d8dc8f42a5ef702a, type: 3}
       propertyPath: m_LocalPosition.x
