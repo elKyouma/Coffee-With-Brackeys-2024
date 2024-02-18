@@ -24,7 +24,7 @@ public class TooltipManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        PrepopulatePool(4); // Adjust number based on expected maximum tooltips
+        PrepopulatePool(5); // Adjust number based on expected maximum tooltips
     }
 
     private void PrepopulatePool(int count)
@@ -61,10 +61,11 @@ public class TooltipManager : MonoBehaviour
         if (GameManager.Instance.HandObject.GetComponentInChildren<Item>() != null && GameManager.Instance.state == GameManager.GameState.Normal)
         {
             AddTooltip("^ to use item");
+            AddTooltip("Q to drop item");
         }
         if (GameManager.Instance.HandObject.GetComponentInChildren<Rotatable>() != null && GameManager.Instance.state == GameManager.GameState.Normal)
         {
-            AddTooltip("I to inspect");
+            AddTooltip("R to inspect");
         }
         if (GameManager.Instance.state == GameManager.GameState.Inspect || GameManager.Instance.state == GameManager.GameState.Puzzle)
         {
