@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ad0793a89b4e0a4a946b43986ecedfb, type: 3}
   m_Name: UnlockSoundSafe
   m_EditorClassIdentifier: 
-  audio: {fileID: 8300000, guid: 6aad9b1621195a24ea56e3f02044fd2f, type: 3}
-  soundVolume: 2
+  audio: {fileID: 8300000, guid: a768a818ab2e4c745a40c26f382b99d1, type: 3}
+  soundVolume: 1

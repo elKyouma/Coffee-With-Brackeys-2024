@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingSpeed: 0.5
-  openingSound: {fileID: 11400000, guid: c3dc56b327c23114f8b5ed1c081daf67, type: 2}
+  openingSound: {fileID: 11400000, guid: e1793ec5bf12fae468523c36789899bd, type: 2}
   closingSound: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
 --- !u!1 &2275993310029768137
 GameObject:
@@ -689,7 +689,11 @@ MonoBehaviour:
   door: {fileID: 3601128460350048111}
   currentAngle: 0
   stage: 0
-  stageCompete: {fileID: 11400000, guid: 872d22710c66b774bad94ce6f1c57e85, type: 2}
+  cliclingSound: {fileID: 11400000, guid: f83ccad4ebf5e8345a31995020f8e807, type: 2}
+  stageUP: {fileID: 11400000, guid: 675a9b6a2f04de4439e56614056957cf, type: 2}
+  failingSound: {fileID: 11400000, guid: 848871a24bbb00b45bc7eb3a7a225bdf, type: 2}
+  telephone: {fileID: 0}
+  failSolveDialogue: {fileID: 11400000, guid: f75ca20313e2c0f4bab836e82a68df47, type: 2}
 --- !u!136 &4460390121440441476
 CapsuleCollider:
   m_ObjectHideFlags: 0

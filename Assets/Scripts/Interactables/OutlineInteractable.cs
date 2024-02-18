@@ -7,7 +7,8 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
 {
 
     private Renderer[] renderers;
-    private Material outlineFillMaterial;
+    private List<Material> materials;
+
 
     [SerializeField]
     GameManager.GameState state;
@@ -17,8 +18,14 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
     {
         // Instantiate outline materials
         renderers = GetComponentsInChildren<Renderer>();
-        outlineFillMaterial = renderers[0].material;
-        outlineFillMaterial.SetColor("_OutlineColor", Color.white);
+        materials = new List<Material>();
+        foreach (Renderer renderer in renderers)
+            materials.AddRange(renderer.materials);
+
+        Color color = Color.white;
+        color.a = 0.4f;
+        foreach (Material material in materials)
+            material.SetColor("_OutlineColor", color);
     }
 
     private void OnEnable()
@@ -36,10 +43,15 @@ public abstract class OutlineInteractable : MonoBehaviour, IInteractable
     public void TurnOnOutline()
     {
         // Apply properties according to mode
-        outlineFillMaterial.SetFloat("_Frequency", 2f);
+        foreach (Material material in materials)
+            material.SetFloat("_Frequency", 2f);
     }
 
-    private void TurnOffOutline() => outlineFillMaterial.SetFloat("_Frequency", 0f);
+    private void TurnOffOutline()
+    {
+        foreach (Material material in materials)
+            material.SetFloat("_Frequency", 0f);
+    }    
     public virtual void Selected() => TurnOnOutline();
     public void Unselected() => TurnOffOutline();
 }
