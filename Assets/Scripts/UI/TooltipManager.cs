@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class TooltipManager : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class TooltipManager : MonoBehaviour
     private List<GameObject> activeTooltips = new List<GameObject>(); // Tracks active tooltip GameObjects
     private Queue<GameObject> tooltipPool = new Queue<GameObject>(); // Object pool for tooltips
     [SerializeField] private GameObject tooltipCanvas;
-    private bool needToUpdateTooltips = true; // Flag to control tooltip updates
+    private bool needToUpdateTooltips = true; // Flag to control tooltip updates\
+    [SerializeField] private Sprite[] tooltipTextures;
 
     private void Awake()
     {
@@ -56,31 +58,33 @@ public class TooltipManager : MonoBehaviour
         // Example logic to add tooltips based on game state
         if (Interactor.Selection != null && Interactor.Selection.GetComponent<IInteractable>() != null)
         {
-            AddTooltip("E to interact");
+            AddTooltip(" to interact", tooltipTextures[0]);
         }
         if (GameManager.Instance.HandObject.GetComponentInChildren<Item>() != null && GameManager.Instance.state == GameManager.GameState.Normal)
         {
-            AddTooltip("^ to use item");
-            AddTooltip("Q to drop item");
+            AddTooltip(" to use item", tooltipTextures[1]);
+            AddTooltip(" to drop item", tooltipTextures[2]);
         }
         if (GameManager.Instance.HandObject.GetComponentInChildren<Rotatable>() != null && GameManager.Instance.state == GameManager.GameState.Normal)
         {
-            AddTooltip("R to inspect");
+            AddTooltip(" to inspect", tooltipTextures[3]);
         }
         if (GameManager.Instance.state == GameManager.GameState.Inspect || GameManager.Instance.state == GameManager.GameState.Puzzle)
         {
-            AddTooltip("Esc to exit");
+            AddTooltip(" to exit", tooltipTextures[4]);
         }
         DisplayActiveTooltips();
     }
 
-    void AddTooltip(string message)
+    void AddTooltip(string message, Sprite image)
     {
         if (!tooltipMessages.Contains(message)) // Check to prevent duplicate messages
         {
             tooltipMessages.Add(message);
             GameObject tooltipGO = GetTooltipFromPool();
             TextMeshProUGUI tooltipText = tooltipGO.GetComponentInChildren<TextMeshProUGUI>();
+            Image tooltipImage = tooltipGO.GetComponentInChildren<Image>();
+            tooltipImage.sprite = image;
             tooltipText.text = message;
             activeTooltips.Add(tooltipGO);
         }
