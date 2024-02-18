@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ad0793a89b4e0a4a946b43986ecedfb, type: 3}
   m_Name: SifiDoorOpener
   m_EditorClassIdentifier: 
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 243afbed0e9fc864a834ff93d6f6977a, type: 3}
   soundVolume: 1

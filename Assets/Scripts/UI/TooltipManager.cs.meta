@@ -3,7 +3,9 @@ guid: 7f4ddc479e45e5418ad413732adba9d1
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - tooltipPrefab: {instanceID: 0}
+  - tooltipCanvas: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

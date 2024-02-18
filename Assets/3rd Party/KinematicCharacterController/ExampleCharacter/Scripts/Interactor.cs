@@ -58,7 +58,7 @@ public class Interactor : MonoBehaviour
                 result = interactables[i];
             }
         }
-        TooltipManager.Instance.RequestTooltipUpdate();
+        TooltipManager.Instance?.RequestTooltipUpdate();
 
         return result;
     }
