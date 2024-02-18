@@ -10,10 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ad0793a89b4e0a4a946b43986ecedfb, type: 3}
-  m_Name: SafeHintDialogue
+  m_Name: rocketStartSciFi
   m_EditorClassIdentifier: 
-  audio: {fileID: 8300000, guid: ee1b038916e7b6442bd709669cd65b7f, type: 3}
+  audio: {fileID: 8300000, guid: c561fc62a8278ba41b8886aead08f9ea, type: 3}
   soundVolume: 1
-  subtitle: Fucking moron, how many times do I have to tell you how to open that
-    fucking safe? I even wrote it for you on a fucking piece of paper. You're not
-    stupid enough to even fuck that up! Don't call me again
