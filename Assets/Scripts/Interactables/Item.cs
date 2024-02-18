@@ -4,27 +4,23 @@ using UnityEngine;
 using System.Linq;
 
 
-[RequireComponent(typeof(Rotatable)), SelectionBase]
+[RequireComponent(typeof(Rotatable)),SelectionBase]
 public abstract class Item : MonoBehaviour, IInteractable
 {
     private const string tag = "ItemCatcher";
     private bool interactable = true;
     private Renderer[] renderers;
-    private Material outlineMaskMaterial;
-    private Material outlineFillMaterial;
+    private List<Material> materials;
     public bool Active { get { return interactable && GameManager.Instance.state == GameManager.GameState.Normal; } }
 
     private void Awake()
     {
         // Cache renderers
         renderers = GetComponentsInChildren<Renderer>();
-
+        materials = new List<Material>();
+        foreach (Renderer renderer in renderers)
+            materials.AddRange(renderer.materials);
         // Instantiate outline materials
-        outlineMaskMaterial = Instantiate(Resources.Load<Material>(@"Materials/OutlineMask"));
-        outlineFillMaterial = Instantiate(Resources.Load<Material>(@"Materials/OutlineFill"));
-
-        outlineMaskMaterial.name = "OutlineMask (Instance)";
-        outlineFillMaterial.name = "OutlineFill (Instance)";
 
         // Disable Rotatable if exists
         if (GetComponentInChildren<Rotatable>())
@@ -33,36 +29,13 @@ public abstract class Item : MonoBehaviour, IInteractable
 
     private void OnEnable()
     {
+        TurnOffOutline();
         Interactor.AddInteractable(transform);
-
-        foreach (var renderer in renderers)
-        {
-
-            // Append outline shaders
-            var materials = renderer.sharedMaterials.ToList();
-
-            materials.Add(outlineMaskMaterial);
-            materials.Add(outlineFillMaterial);
-
-            renderer.materials = materials.ToArray();
-        }
     }
 
     private void OnDisable()
     {
         Interactor.DeleteInteractable(transform);
-
-        foreach (var renderer in renderers)
-        {
-
-            // Remove outline shaders
-            var materials = renderer.sharedMaterials.ToList();
-
-            materials.Remove(outlineMaskMaterial);
-            materials.Remove(outlineFillMaterial);
-
-            renderer.materials = materials.ToArray();
-        }
     }
 
     public void Interact()
@@ -80,19 +53,14 @@ public abstract class Item : MonoBehaviour, IInteractable
 
     public void TurnOnOutline()
     {
-        // Apply properties according to mode
-        outlineFillMaterial.SetColor("_OutlineColor", Color.yellow);
-
-        outlineMaskMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.LessEqual);
-        outlineFillMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.LessEqual);
-        outlineFillMaterial.SetFloat("_OutlineWidth", 7f);
-        TooltipManager.Instance.RequestTooltipUpdate();
+        foreach(Material material in materials)
+            material.SetFloat("_Frequency", 3f);
     }
 
     public void TurnOffOutline()
     {
-        outlineFillMaterial.SetFloat("_OutlineWidth", 0.0f);
-        TooltipManager.Instance.RequestTooltipUpdate();
+        foreach (Material material in materials)
+            material.SetFloat("_Frequency", 0.0f);
     }
 
     public void Selected()
