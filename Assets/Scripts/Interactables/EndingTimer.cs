@@ -7,10 +7,13 @@ public class EndingTimer : OutlineInteractable
     [SerializeField] private SoundSO counterSound;
     [SerializeField] private SoundSO rocketLaunchSound;
     [SerializeField] private AudioSource counterAudioSource;
+    [SerializeField] private Animator animator;
+    [SerializeField] private CameraShaker cameraShaker;
     private bool lost;
     public void OnEnable()
     {
         StartCoroutine(EndGame());
+        animator.SetBool("isRunning", true);
     }
     public IEnumerator EndGame()
     {
@@ -22,6 +25,8 @@ public class EndingTimer : OutlineInteractable
         lost = true;
         counterAudioSource.clip = rocketLaunchSound.audio;
         counterAudioSource.Play();
+        // Screen shake 
+        cameraShaker.ShakeCamera(1f, 5f);
     }
     public override void Interact()
     {
