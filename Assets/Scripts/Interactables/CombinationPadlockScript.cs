@@ -57,6 +57,7 @@ public class CombinationPadlockScript : MonoBehaviour
     public void Unlock()
     {
         Debug.Log("Unlocked");
+        box.GetComponent<POIActivator>().enabled = false;
         SoundManager.Instance.PlaySound(unlockSound, transform.position);
         LeanTween.moveLocalY(MetalPiece, MetalPiece.transform.localPosition.y + metalPieceOffset, 1f);
         GameManager.Instance.ExitPuzzleMode();
