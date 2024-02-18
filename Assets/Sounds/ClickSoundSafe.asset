@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ClickSoundSafe
   m_EditorClassIdentifier: 
   audio: {fileID: 8300000, guid: 7013425166a1cf34b98d5de1c735a320, type: 3}
-  soundVolume: 0.1
+  soundVolume: 0.4

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: UnlockSoundSafe
   m_EditorClassIdentifier: 
   audio: {fileID: 8300000, guid: 6aad9b1621195a24ea56e3f02044fd2f, type: 3}
-  soundVolume: 2
+  soundVolume: 1000
