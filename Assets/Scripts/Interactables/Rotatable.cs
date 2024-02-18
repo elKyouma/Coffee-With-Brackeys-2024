@@ -13,6 +13,8 @@ public class Rotatable : MonoBehaviour
 	private bool inRotation;
 	private void Awake()
 	{
+		if (pressed == null) return;
+		if (axis == null) return;
 		cam = Camera.main.transform;
 		pressed.Enable();
 		axis.Enable();
