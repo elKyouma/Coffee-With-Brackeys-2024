@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using KinematicCharacterController;
 using KinematicCharacterController.Examples;
 using System;
+using UnityEngine.UI;
 
 namespace KinematicCharacterController.Examples
 {
@@ -23,6 +24,7 @@ namespace KinematicCharacterController.Examples
         private static Vector2 mousePos = Vector2.zero;
         public static Vector2 MousePosition { get { return mousePos; } private set { mousePos = value; } }
         public float sensitivity = 1f;
+        [SerializeField] private Slider sensitivitySlider;
         [Header("Zoom Settings")]
         [SerializeField] private float zoomDefault = 60f;
         [SerializeField] private float zoomMax = 80f;
@@ -33,7 +35,8 @@ namespace KinematicCharacterController.Examples
 
         private void Start()
         {
-            PlayerPrefs.SetFloat("Sensitivity", sensitivity);
+            PlayerPrefs.GetFloat("Sensivity", 1.1f);
+            sensitivitySlider.value = sensitivity - 0.1f;
             character = GetComponentInChildren<MyCharacterController>();
             characterCamera = GetComponentInChildren<MyCharacterCamera>();
 
