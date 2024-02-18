@@ -8556,6 +8556,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1260057171a5dc049ed3e5e6ed42207, type: 3}
+--- !u!1 &553635956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8767168962543285567, guid: 2784003e781272c4a80eff1105c88cf7, type: 3}
+  m_PrefabInstance: {fileID: 978004331}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &574011666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12705,13 +12710,131 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8767168962543285567, guid: 2784003e781272c4a80eff1105c88cf7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 978004335}
+    - targetCorrespondingSourceObject: {fileID: 8767168962543285567, guid: 2784003e781272c4a80eff1105c88cf7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 978004336}
   m_SourcePrefab: {fileID: 100100000, guid: 2784003e781272c4a80eff1105c88cf7, type: 3}
 --- !u!4 &978004332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 981903619532383541, guid: 2784003e781272c4a80eff1105c88cf7, type: 3}
   m_PrefabInstance: {fileID: 978004331}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &978004335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553635956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0823c335876b7cf099992d5825e6bc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  counterSound: {fileID: 0}
+  rocketLaunchSound: {fileID: 0}
+  counterAudioSource: {fileID: 978004336}
+--- !u!82 &978004336
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553635956}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 401e738c8e7844bed9ac4897c0a958f3, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &986574916
 PrefabInstance:
   m_ObjectHideFlags: 0
