@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 
-[RequireComponent(typeof(Rotatable)),SelectionBase]
+[RequireComponent(typeof(Rotatable)), SelectionBase]
 public abstract class Item : MonoBehaviour, IInteractable
 {
     private const string tag = "ItemCatcher";
@@ -86,11 +86,13 @@ public abstract class Item : MonoBehaviour, IInteractable
         outlineMaskMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.LessEqual);
         outlineFillMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.LessEqual);
         outlineFillMaterial.SetFloat("_OutlineWidth", 7f);
+        TooltipManager.Instance.RequestTooltipUpdate();
     }
 
     public void TurnOffOutline()
     {
         outlineFillMaterial.SetFloat("_OutlineWidth", 0.0f);
+        TooltipManager.Instance.RequestTooltipUpdate();
     }
 
     public void Selected()
@@ -98,8 +100,6 @@ public abstract class Item : MonoBehaviour, IInteractable
         if (!Active) return;
 
         TurnOnOutline();
-
-
     }
 
     public void Unselected()
