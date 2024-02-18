@@ -65,7 +65,7 @@ public class BookshelfPuzzle : MonoBehaviour
         fireplaceAudioSource.mute = false;
         cameraShaker.ShakeOn(animationTime + animationDelay, 1f);
 
-
+        GameManager.Instance.FreezeInput();
         doorVC.gameObject.SetActive(true);
         particle.gameObject.SetActive(true);
         LeanTween.moveY(objectToMove, objectToMove.transform.position.y - moveDistance, animationTime)
@@ -73,13 +73,14 @@ public class BookshelfPuzzle : MonoBehaviour
             .setDelay(animationDelay)
             .setOnComplete(() =>
             {
+                GameManager.Instance.UnfreezeInput();
                 doorVC.gameObject.SetActive(false);
                 particle.gameObject.SetActive(false);
                 // Optional: Actions after moving down, if necessary.
 
                 fireplaceAudioSource.mute = true;
             });
-        
+
     }
 
     private bool ValidatePuzzle()

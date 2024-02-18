@@ -134,7 +134,14 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
-
+    public void FreezeInput()
+    {
+        player.GetComponent<PlayerInput>().SwitchCurrentActionMap(pauseActionMap);
+    }
+    public void UnfreezeInput()
+    {
+        player.GetComponent<PlayerInput>().SwitchCurrentActionMap(defaultActionMap);
+    }
     public void HideOptions()
     {
         optionsMenu.SetActive(false);
