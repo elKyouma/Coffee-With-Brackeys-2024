@@ -12,7 +12,7 @@ public class Plank : OutlineInteractable, IDestructable
         if (!IsDestructable) return;
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.isKinematic = false;
-        rb.velocity = transform.right * 2;
+        rb.linearVelocity = transform.right * 2;
         SoundManager.Instance.PlaySound(breakingSound, transform.position);
         IsDestructable = false;
         transform.parent.GetComponentInChildren<DoorWithPlanks>().DeletePlank();

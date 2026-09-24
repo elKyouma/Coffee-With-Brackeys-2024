@@ -22,10 +22,12 @@ public class ClockPuzzle : MonoBehaviour
     {
         longHandPosition = AdjustHandPosition(longHand);
         shortHandPosition = AdjustHandPosition(shortHand);
+        Debug.Log(longHandPosition + " " + shortHandPosition);
         if (Mathf.Abs(longHandPosition - longHandSolution) < 10f)
         {
             if(Mathf.Abs(shortHandPosition - shortHandSolution) < 10f)
             {
+                Debug.Log("SOLVED");
                 painting.MovePainting();
                 if(!isSolved)
                     SoundManager.Instance.PlaySound(solveSound, longHand.transform.position);

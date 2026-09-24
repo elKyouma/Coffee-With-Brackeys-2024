@@ -88,6 +88,6 @@ public abstract class Item : MonoBehaviour, IInteractable
 
         transform.position = GameManager.Instance.PlayerCharacter.position;
         transform.position += Vector3.up;
-        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
     }
 }
