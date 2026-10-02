@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7989221908870830395}
-  - component: {fileID: 4161274475298274036}
+  - component: {fileID: 824027467964659446}
+  - component: {fileID: 7107454084765137191}
+  - component: {fileID: 4363842492821340097}
   m_Layer: 0
   m_Name: Player VC
   m_TagString: Untagged
@@ -29,11 +31,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1828572385391327015}
+  m_Children: []
   m_Father: {fileID: 5339525058596899277}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4161274475298274036
+--- !u!114 &824027467964659446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,36 +43,66 @@ MonoBehaviour:
   m_GameObject: {fileID: 638651315705867811}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
+  Priority:
+    Enabled: 0
+    m_Value: 0
+  OutputChannel: 1
+  StandbyUpdate: 2
   m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 7293672194121120896}
-  m_Follow: {fileID: 2133640956271638530}
-  m_Lens:
+  m_LegacyPriority: 10
+  Target:
+    TrackingTarget: {fileID: 2133640956271638530}
+    LookAtTarget: {fileID: 7293672194121120896}
+    CustomLookAtTarget: 1
+  Lens:
     FieldOfView: 60.000004
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    FocusDistance: 10
-    m_SensorSize: {x: 1, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 1828572385391327015}
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 1, y: 1}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
+--- !u!114 &7107454084765137191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638651315705867811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d1163fa822e8b418a0a603ec078d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineHardLockToTarget
+  Damping: 0
+--- !u!114 &4363842492821340097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638651315705867811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineHardLookAt
+  LookAtOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1335228899787215800
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,77 +201,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1481878585450965328
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1828572385391327015}
-  - component: {fileID: 7229082541789487926}
-  - component: {fileID: 2416796880989412204}
-  - component: {fileID: 1434136898077187120}
-  m_Layer: 0
-  m_Name: cm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1828572385391327015
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481878585450965328}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7989221908870830395}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7229082541789487926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481878585450965328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2416796880989412204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481878585450965328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36d1163fa822e8b418a0a603ec078d5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Damping: 0
---- !u!114 &1434136898077187120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481878585450965328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2015054052643346661
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,14 +323,14 @@ MonoBehaviour:
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
-  m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &2409172383350187202
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +371,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4446888757965305456}
-  - component: {fileID: 6016244139878336777}
+  - component: {fileID: 2302950229776642512}
+  - component: {fileID: 731995109869471711}
   m_Layer: 0
   m_Name: DoorVC
   m_TagString: Untagged
@@ -431,11 +392,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 2.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2091734045330994848}
+  m_Children: []
   m_Father: {fileID: 2134024146955996734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6016244139878336777
+--- !u!114 &2302950229776642512
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -444,36 +404,53 @@ MonoBehaviour:
   m_GameObject: {fileID: 2884480340696374736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
+  Priority:
+    Enabled: 0
+    m_Value: 0
+  OutputChannel: 1
+  StandbyUpdate: 2
   m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
-  m_Lens:
+  m_LegacyPriority: 10
+  Target:
+    TrackingTarget: {fileID: 0}
+    LookAtTarget: {fileID: 0}
+    CustomLookAtTarget: 0
+  Lens:
     FieldOfView: 60.000004
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    FocusDistance: 10
-    m_SensorSize: {x: 1, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 2091734045330994848}
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 1, y: 1}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
+--- !u!114 &731995109869471711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2884480340696374736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineHardLookAt
+  LookAtOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &3769642523188655690
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +529,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 03deb255-8ab7-464e-99ba-b08b6824a8fa
-    m_ActionName: Movement/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+    m_ActionName: 'Movement/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7658603888617653837}
@@ -568,7 +545,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: cba995eb-597f-4772-b79f-a10872ff2d88
-    m_ActionName: Movement/CameraMove[/Mouse/delta]
+    m_ActionName: 'Movement/CameraMove[/Mouse/delta]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7658603888617653837}
@@ -584,7 +561,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 90a98ce1-b54f-4b53-9477-eaa6bb906977
-    m_ActionName: Movement/Interaction[/Keyboard/e]
+    m_ActionName: 'Movement/Interaction[/Keyboard/e]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7658603888617653837}
@@ -600,7 +577,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: ae42f600-e63b-4145-9b74-3d8b19bb384b
-    m_ActionName: Movement/ItemUse[/Mouse/leftButton]
+    m_ActionName: 'Movement/ItemUse[/Mouse/leftButton]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7658603888617653837}
@@ -616,7 +593,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 7ab5d59d-c1b4-4dc2-8c41-8448e9c1b667
-    m_ActionName: PuzzleMode/Leave[/Keyboard/escape]
+    m_ActionName: 'PuzzleMode/Leave[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7658603888617653837}
@@ -632,7 +609,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 20f5c4b0-2644-4ff2-b527-8ff5556079b5
-    m_ActionName: Movement/Inspect Mode[/Keyboard/i]
+    m_ActionName: 'Movement/Inspect Mode[/Keyboard/i]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7658603888617653837}
@@ -648,7 +625,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: cbadce40-9dae-4f52-9180-f17f0b3de771
-    m_ActionName: InspectorMode/Leave[/Keyboard/escape]
+    m_ActionName: 'InspectorMode/Leave[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7658603888617653837}
@@ -664,7 +641,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: aa9e1541-e8ae-4773-8326-758cd0f8301e
-    m_ActionName: PuzzleMode/MousePos[/Mouse/position]
+    m_ActionName: 'PuzzleMode/MousePos[/Mouse/position]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7658603888617653837}
@@ -680,7 +657,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 36f7b97e-1004-49c1-b1f6-881d673896bc
-    m_ActionName: PuzzleMode/Interact[/Mouse/leftButton]
+    m_ActionName: 'PuzzleMode/Interact[/Mouse/leftButton]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7658603888617653837}
@@ -696,7 +673,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 74563856-01c9-4ade-be7a-b738a500293b
-    m_ActionName: Movement/DropItem[/Keyboard/q]
+    m_ActionName: 'Movement/DropItem[/Keyboard/q]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
@@ -712,7 +689,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: e03637ec-ecd3-4af0-93be-a7837c9fc30b
-    m_ActionName: Movement/Pause[/Keyboard/escape]
+    m_ActionName: 'Movement/Pause[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
@@ -728,7 +705,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: d3d036c8-771d-4abc-b5ef-0682ee28d362
-    m_ActionName: Pause/Back[/Keyboard/escape]
+    m_ActionName: 'Pause/Back[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7658603888617653837}
@@ -744,7 +721,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 83681fa1-043e-4006-b322-11a850572dfc
-    m_ActionName: InspectorMode/Zoom[/Mouse/scroll/y]
+    m_ActionName: 'InspectorMode/Zoom[/Mouse/scroll/y]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -829,63 +806,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7221821768506145011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &9144632401974492067
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2091734045330994848}
-  - component: {fileID: 2038456674242168770}
-  - component: {fileID: 5239863170398696639}
-  m_Layer: 0
-  m_Name: cm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2091734045330994848
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9144632401974492067}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4446888757965305456}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2038456674242168770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9144632401974492067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5239863170398696639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9144632401974492067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2129346042086908278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1028,8 +948,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: KinematicCharacterController.Examples.ExamplePlayer,
-          Assembly-CSharp
+        m_TargetAssemblyTypeName: KinematicCharacterController.Examples.ExamplePlayer, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
         m_Arguments:
@@ -1041,12 +960,11 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 03deb255-8ab7-464e-99ba-b08b6824a8fa
-    m_ActionName: Movement/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+    m_ActionName: 'Movement/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: KinematicCharacterController.Examples.ExamplePlayer,
-          Assembly-CSharp
+        m_TargetAssemblyTypeName: KinematicCharacterController.Examples.ExamplePlayer, Assembly-CSharp
         m_MethodName: OnCameraMove
         m_Mode: 0
         m_Arguments:
@@ -1058,51 +976,51 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: cba995eb-597f-4772-b79f-a10872ff2d88
-    m_ActionName: Movement/CameraMove[/Mouse/delta]
+    m_ActionName: 'Movement/CameraMove[/Mouse/delta]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 90a98ce1-b54f-4b53-9477-eaa6bb906977
-    m_ActionName: Movement/Interaction[/Keyboard/e]
+    m_ActionName: 'Movement/Interaction[/Keyboard/e]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: ae42f600-e63b-4145-9b74-3d8b19bb384b
-    m_ActionName: Movement/ItemUse[/Mouse/leftButton]
+    m_ActionName: 'Movement/ItemUse[/Mouse/leftButton]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 7ab5d59d-c1b4-4dc2-8c41-8448e9c1b667
-    m_ActionName: PuzzleMode/Leave[/Keyboard/escape]
+    m_ActionName: 'PuzzleMode/Leave[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 20f5c4b0-2644-4ff2-b527-8ff5556079b5
-    m_ActionName: Movement/Inspect Mode[/Keyboard/i]
+    m_ActionName: 'Movement/Inspect Mode[/Keyboard/i]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 74563856-01c9-4ade-be7a-b738a500293b
-    m_ActionName: Movement/DropItem[/Keyboard/q]
+    m_ActionName: 'Movement/DropItem[/Keyboard/q]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: e03637ec-ecd3-4af0-93be-a7837c9fc30b
-    m_ActionName: Movement/Pause[/Keyboard/escape]
+    m_ActionName: 'Movement/Pause[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: aa9e1541-e8ae-4773-8326-758cd0f8301e
-    m_ActionName: PuzzleMode/MousePos[/Mouse/position]
+    m_ActionName: 'PuzzleMode/MousePos[/Mouse/position]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 36f7b97e-1004-49c1-b1f6-881d673896bc
-    m_ActionName: PuzzleMode/Interact[/Mouse/leftButton]
+    m_ActionName: 'PuzzleMode/Interact[/Mouse/leftButton]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: cbadce40-9dae-4f52-9180-f17f0b3de771
-    m_ActionName: InspectorMode/Leave[/Keyboard/escape]
+    m_ActionName: 'InspectorMode/Leave[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: d3d036c8-771d-4abc-b5ef-0682ee28d362
-    m_ActionName: Pause/Back[/Keyboard/escape]
+    m_ActionName: 'Pause/Back[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 83681fa1-043e-4006-b322-11a850572dfc
-    m_ActionName: InspectorMode/Zoom[/Mouse/scroll/y]
+    m_ActionName: 'InspectorMode/Zoom[/Mouse/scroll/y]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -1319,14 +1237,14 @@ MonoBehaviour:
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
-  m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!114 &4494101677234224140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1339,25 +1257,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
+  ShowDebugText: 0
+  ShowCameraFrustum: 1
+  IgnoreTimeScale: 0
+  WorldUpOverride: {fileID: 0}
+  ChannelMask: -1
+  UpdateMethod: 2
+  BlendUpdateMethod: 1
+  LensModeOverride:
+    Enabled: 0
+    DefaultMode: 2
+  DefaultBlend:
+    Style: 1
+    Time: 2
+    CustomCurve:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 11400000, guid: 58e5ca6b459e3d54ebf1c960c2b5ee23, type: 2}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  CustomBlends: {fileID: 11400000, guid: 58e5ca6b459e3d54ebf1c960c2b5ee23, type: 2}
